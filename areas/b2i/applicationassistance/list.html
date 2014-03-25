@@ -136,57 +136,59 @@
         <span id="mfpManagement" class="leftNavHeader"><span class="arrow expand"></span><span
                 class="arrow expand"></span>B2i</span>
         <ul class="leftnav-groupcontainer" id="div_sublinks_mfpManagement" style="display: block;" collapsible="true">
-
-            <li>
-                <a class="ltss-icon-arrow" href="#/b2i/history/list">
-                    History
-                    <span role="presentation" class="ltss-icon-container icon-arrow"></span>
-                </a>
-            </li>
             <li>
                 <a class=" funds ltss-icon-arrow" href="#/questionnaire/list">Questionnaire<span
                         class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
                                                                                          class="ltss-icon-container icon-arrow"></span></a>
             </li>
-            <li ng-show="referralStatus == 'inProgress' || referralStatus == 'submitted' ">
-                <a class="funds ltss-icon-arrow" href="#/initialreferral/details">Initial Referral<span
-                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
-                                                                                         class="ltss-icon-container icon-arrow"></span></a>
-            </li>
-            <li ng-hide="referralStatus">
-                <a class="funds ltss-icon-arrow" href="#/initialreferral/create">+ Add New Initial Referral<span
-                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
-                                                                                         class="ltss-icon-container icon-arrow"></span></a>
-            </li>
-            <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
-                <a class="funds ltss-icon-arrow" href="#/freedomofchoice/list">Freedom of Choice<span
-                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
-                                                                                         class="ltss-icon-container icon-arrow"></span></a>
-            </li>
-            <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
-                <a class="funds ltss-icon-arrow" href="#/providerassignment/list">Provider Assignment<span
-                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
-                                                                                         class="ltss-icon-container icon-arrow"></span></a>
-            </li>
-            <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
-                <a class="selected ltss-icon-arrow" href="#/applicationassistance/list">Application Assistance<span
-                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
-                                                                                         class="ltss-icon-container icon-arrow"></span></a>
-            </li>
-            <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
-                <a class="funds ltss-icon-arrow" href="#/consenttoparticipate/list">Consent to Participate<span
-                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
-                                                                                         class="ltss-icon-container icon-arrow"></span></a>
-            </li>
-            <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
-                <a class="funds ltss-icon-arrow" href="#/qualityoflife/list">Quality of Life Survey<span
-                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
-                                                                                         class="ltss-icon-container icon-arrow"></span></a>
-            </li>
-            <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
-                <a class="funds ltss-icon-arrow" href="#/dischargeform/list">Discharge Form<span
-                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
-                                                                                         class="ltss-icon-container icon-arrow"></span></a>
+            <li class="active-node">
+                <a class="ltss-icon-arrow" href="#/initialreferral/list">
+                    Initial Referral History
+                    <span role="presentation" class="ltss-icon-container icon-arrow"></span>
+                </a>
+                <ul>
+
+                    <li ng-show="referralStatus == 'inProgress' || referralStatus == 'submitted' ">
+                        <a class="funds ltss-icon-arrow" href="#/initialreferral/details">Initial Referral<span
+                                class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                 class="ltss-icon-container icon-arrow"></span></a>
+                    </li>
+                    <li ng-hide="referralStatus">
+                        <a class="funds ltss-icon-arrow" href="#/initialreferral/create">+ Add New Initial Referral<span
+                                class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                 class="ltss-icon-container icon-arrow"></span></a>
+                    </li>
+                    <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                        <a class="funds ltss-icon-arrow" href="#/freedomofchoice/list">Freedom of Choice<span
+                                class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                 class="ltss-icon-container icon-arrow"></span></a>
+                    </li>
+                    <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                        <a class="funds ltss-icon-arrow" href="#/providerassignment/list">Provider Assignment<span
+                                class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                 class="ltss-icon-container icon-arrow"></span></a>
+                    </li>
+                    <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                        <a class="selected ltss-icon-arrow" href="#/applicationassistance/list">Application Assistance<span
+                                class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                 class="ltss-icon-container icon-arrow"></span></a>
+                    </li>
+                    <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                        <a class="funds ltss-icon-arrow" href="#/consenttoparticipate/list">Consent to Participate<span
+                                class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                 class="ltss-icon-container icon-arrow"></span></a>
+                    </li>
+                    <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                        <a class="funds ltss-icon-arrow" href="#/qualityoflife/list">Quality of Life Survey<span
+                                class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                 class="ltss-icon-container icon-arrow"></span></a>
+                    </li>
+                    <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                        <a class="funds ltss-icon-arrow" href="#/dischargeform/list">Discharge Form<span
+                                class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                 class="ltss-icon-container icon-arrow"></span></a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </li>

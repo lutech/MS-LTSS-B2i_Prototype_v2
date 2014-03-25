@@ -140,9 +140,10 @@ angular.module('myApp', [
         //Default View
         $routeProvider.otherwise({redirectTo: '/client/profile/details'});
     }]).
-    run(function ($rootScope, ReferralStatus) {
+    run(function ($rootScope, ReferralStatus, QuestionnaireStatus) {
         $rootScope.resetAll = function() {
             ReferralStatus.setReferralStatus(false)
+            QuestionnaireStatus.setQuestionnaireStatus(false)
             window.location.assign("#/client/profile/details")
         };
     $rootScope.$on('$viewContentLoaded', function () {
