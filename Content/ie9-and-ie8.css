@@ -1,0 +1,138 @@
+﻿.header-link a:visited {
+	background: rgba(12, 93, 150, 0.08) !important;
+	border: 1px solid rgba(12, 93, 150, 0.1) !important;
+}
+
+.header-link a:hover {
+	background: rgba(12, 93, 150, 0.12) !important;
+}
+/* IE8 Fix for Legend Display:none */
+fieldset span.hide-legend {
+	display: none;
+}
+
+input[type=checkbox],
+input[type=radio] {
+	margin-top: 3px !important;
+	margin-bottom: 3px !important;
+	margin-right: -4px !important;
+}
+
+.workspace-header-bar .float-right li button, .workspace-header-bar .float-right li input[type=submit], .workspace-header-bar .float-right li input[type=cancel],
+.workspace-header-bar .float-right button, .workspace-header-bar .float-right input[type=submit], .workspace-header-bar .float-right input[type=cancel] {
+	padding-left: inherit;
+	padding-right: inherit;
+	float: inherit;
+}
+
+.searchspace-footer-bar button, .searchspace-footer-bar input[type='submit'], .searchspace-footer-bar input[type='cancel'], .searchspace-footer-bar input[type='button']:hover {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+/* Box shadow causes the horizontal lines in main container background */
+#workspace-maincontent,
+.wokspace-content-container {
+	box-shadow: none !important;
+}
+
+/*Commented out by LN 11/5/13. Should no longer be needed. Will remove over time to ensure it does not break anything.*/
+/*.LeftContentNav {margin:0; padding:0; list-style:none; margin:0 5px; margin-top:10px; background-color:#EEE; padding: 0; border:2px solid #2597FA; border-radius:5px; }
+	.LeftContentNav ul {margin:0; padding:0; list-style:none;}
+	.LeftContentNav li {margin:0; padding:0; list-style:none; height:40px; border:none; border-top:1px solid #999; width:100%;}
+	.LeftContentNav li:first-child {margin:0; padding:0; list-style:none; height:40px; border:none !important; border-bottom:1px solid #CCC; width:100%;}
+	.LeftContentNav li:last-child {border:none;}
+	.LeftContentNav ul li a {border:none !important;border-radius:0}
+	.LeftContentNav ul li:first-child a {border-radius:0;}
+	.LeftContentNav li:first-child a {border-radius: 4px 4px 0 0}
+	.LeftContentNav li:last-child a {border-radius: 0}
+	.LeftContentNav ul li a:link, a:visited {color:#235070; margin:0; padding:0; list-style:none; text-decoration:none; padding:0 10px 0 30px; line-height:40px; font-weight:bold; display:block; margin:0;}
+	
+	.LeftContentNav ul ul li {border:none !important; height:30px !important}
+	.LeftContentNav ul ul li a {border:none !important; font-weight:normal !important; line-height:30px !important;}
+	.LeftContentNav ul ul li a:focus {border:1px dotted #235070 !important; font-weight:normal !important; line-height:30px !important;}
+	
+	.LeftContentNav li.case {background: transparent url(images/leftnav_case.png) no-repeat 10px 12px;} 
+	.LeftContentNav li.program {background: transparent url(images/leftnav_tasks.png) no-repeat 10px 12px;} 
+	.LeftContentNav li.profile {background: transparent url(images/leftnav_profile.png) no-repeat 10px 12px;} 
+	.LeftContentNav li.list {background: transparent url(images/leftnav_list.png) no-repeat 10px 12px;} 
+	.LeftContentNav li.form {background: transparent url(images/leftnav_form.png) no-repeat 10px 12px;} 
+	
+	
+	.LeftContentNav li.case:hover {background: #ddd url(images/leftnav_case.png) no-repeat 10px 12px;} 
+	.LeftContentNav li.program:hover {background: #ddd url(images/leftnav_tasks.png) no-repeat 10px 12px;} 
+	.LeftContentNav li.profile:hover {background: #ddd url(images/leftnav_profile.png) no-repeat 10px 12px;} 
+	.LeftContentNav li.list:hover {background: #ddd url(images/leftnav_list.png) no-repeat 10px 12px;}
+	.LeftContentNav li.form:hover {background: #ddd url(images/leftnav_form.png) no-repeat 10px 12px;}
+	
+	.LeftContentNav li.case:visited {background: transparent url(images/leftnav_case.png) no-repeat 10px 12px;} 
+	.LeftContentNav li.program:visited {background: transparent url(images/leftnav_tasks.png) no-repeat 10px 12px;} 
+	.LeftContentNav li.profile:visited {background: transparent url(images/leftnav_profile.png) no-repeat 10px 12px;} 
+	.LeftContentNav li.list:visited {background: transparent url(images/leftnav_list.png) no-repeat 10px 12px;} 
+	.LeftContentNav li.form:visited {background: transparent url(images/leftnav_form.png) no-repeat 10px 12px;}
+	
+	 
+	.LeftContentNav ul ul li.case:active {background: #AAA url(images/leftnav_case.png) no-repeat 10px 12px;} 
+	.LeftContentNav ul ul li.program:active {background: #AAA url(images/leftnav_tasks.png) no-repeat 10px 12px;} 
+	.LeftContentNav ul ul li.profile:active {background: #AAA url(images/leftnav_profile.png) no-repeat 10px 12px;} 
+	.LeftContentNav ul ul li.list:active {background: #AAA url(images/leftnav_list.png) no-repeat 10px 12px;}
+	.LeftContentNav ul ul li.form:active {background: #AAA url(images/leftnav_form.png) no-repeat 10px 12px;}
+	
+	.LeftContentNav li.case a:focus, 
+	.LeftContentNav li.form a:focus, 
+	.LeftContentNav li.program a:focus, 
+	.LeftContentNav li.profile a:focus, 
+	.LeftContentNav li.list a:focus  {border:1px dotted #235070 !important;}
+	
+	
+	.LeftContentNav li.case a:hover, 
+	.LeftContentNav li.form a:hover, 
+	.LeftContentNav li.program a:hover, 
+	.LeftContentNav li.profile a:hover, 
+	.LeftContentNav li.list a:hover  {background: transparent url(images/leftnav_arrow.png) no-repeat 95% 12px;}
+	
+	.LeftContentNav li.case a:active, 
+	.LeftContentNav li.form a:active, 
+	.LeftContentNav li.program a:active, 
+	.LeftContentNav li.profile a:active, 
+	.LeftContentNav li.list a:active  {background: transparent url(images/leftnav_arrow.png) no-repeat 95% 12px !important; color:#235070 !important}
+	
+	.LeftContentNav li.selected  {border:none !important; background: #1683E0;} 
+	   
+	.LeftContentNav li.selected.program  {background: #1683E0 url(images/leftnav_tasks_wht.png) no-repeat 10px 12px;}  
+	.LeftContentNav li.selected.case {background: #1683E0 url(images/leftnav_case_wht.png) no-repeat 10px 12px;} 
+	.LeftContentNav li.selected.profile {background: #1683E0 url(images/leftnav_profile_wht.png) no-repeat 10px 12px;} 
+	.LeftContentNav li.selected.list {background: #1683E0 url(images/leftnav_list_wht.png) no-repeat  10px 12px;} 
+	.LeftContentNav li.selected.form {background: #1683E0 url(images/leftnav_form_wht.png) no-repeat  10px 12px;}
+	
+	
+	.LeftContentNav li.case a:visited, 
+	.LeftContentNav li.form a:visited, 
+	.LeftContentNav li.program a:visited, 
+	.LeftContentNav li.profile a:visited, 
+	.LeftContentNav li.list a:visited  {background-color:transparent;}
+	
+	.LeftContentNav ul ul li a:visited {background-color:Transparent;}
+	.LeftContentNav ul ul li a:hover {background: #ddd url(images/leftnav_arrow.png) no-repeat 95% 8px !important; color:#235070}
+	.LeftContentNav ul ul li a:active {background: #ddd url(images/leftnav_arrow.png) no-repeat 95% 8px !important; color:#235070 !important}
+	
+	
+	
+	.LeftContentNav li.selected a:link,
+	.LeftContentNav li.selected a:active,
+	.LeftContentNav li.selected a:visited,
+	.LeftContentNav li.selected a:hover {color:#235070 !important; background: transparent url(images/leftnav_arrow_wht.png) no-repeat 95% 50% !important;}    
+	
+	.genericform-style.read-only div.panelbar-form-style fieldset.fieldset-container-one {margin-top:20px;}
+	.genericform-style.read-only div.panelbar-form-style fieldset.fieldset-container-one legend.legend-header-one {top:-23px; background-color: #EAEAEA !important;}
+	.genericform-style.read-only fieldset.fieldset-container-one .header-link  { margin-top: 9px; }
+	.genericform-style.read-only div.panelbar-form-style fieldset.fieldset-container-one .panelbar-content fieldset.fieldset-container-two {margin:0}
+	.genericform-style.read-only div.panelbar-form-style fieldset.fieldset-container-one .panelbar-content fieldset.fieldset-container-two .header-link { margin-top: 2px; }
+	
+	fieldset.fieldset-container-one div.row label {margin: 4px 0 3px 0 !important;}
+	.task-action a:link,
+	.form-action a:link,
+	.task-action a:visited,
+	.form-action a:visited,
+	div.task-action a:visited,
+	div.form-action a:visited {  line-height:148% !important; }*/

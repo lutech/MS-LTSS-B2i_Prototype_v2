@@ -1,0 +1,5 @@
+﻿{
+	"GoalCategoryId" : "goals/-1",
+	"DesiredGoalDescription" : "to learn.",
+	"AnnualProgressId" : "annualprogresstypes/-1"
+}

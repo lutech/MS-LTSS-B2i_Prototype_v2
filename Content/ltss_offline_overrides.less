@@ -1,0 +1,69 @@
+﻿@import "ltss_modules.less";
+
+.header
+{
+    h1
+    {
+        color: #fff;
+        font-size: 125%;
+        line-height: 100%;
+    }
+
+} 
+
+.selection-summaryinfo
+{
+    .workspace-header-bar
+    {
+
+        .button-save-style
+        {
+            .color-button-base-state-one;
+        }
+
+            .button-save-style:hover
+            {
+                .color-button-hover-state
+            }
+
+            .button-save-style:active
+            {
+                .color-button-active-state;
+            }
+    }
+}
+
+#bodyContent
+{
+    .position-absolute(43px);
+    z-index: 0;
+}
+
+#body-content
+{
+    .position-absolute(0px);
+}
+
+#sidenav
+{
+    .LeftContentNav-clientinfo
+    {
+        #cliensummaryinfo
+        {
+            div.header
+            {
+                min-height: 28px;
+            }
+        }
+    }
+}
+
+/* Note: Design for a min width of 768px & max width of 1280px */
+@media only screen and (min-width: 1289px)
+{
+    .genericform-style
+    {
+        margin: 0px;
+        max-width: none;
+    }
+}

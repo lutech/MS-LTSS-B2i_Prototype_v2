@@ -1,0 +1,809 @@
+﻿@import "ltss_styles.less";
+
+/*BASE
+====================================================================================================================================================================================================*/
+
+/*Container Elements 
+----------------------------------------------------------*/
+
+body
+{
+    .text-style-default;
+}
+div,
+body,
+header,
+footer,
+hgroup,
+nav,
+section,
+aside
+{
+    display: block;
+}
+
+    div:focus,
+    body:focus,
+    header:focus,
+    footer:focus,
+    hgroup:focus,
+    nav:focus,
+    section:focus,
+    aside:focus
+    {
+        outline: none;
+    }
+
+section
+{
+    border: 0;
+}
+footer
+
+{
+    clear: both;
+    font-size: .8em;
+    height: 30px;
+    border: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+    footer p
+    {
+        color: #999;
+        padding-left: 10px;
+    }
+
+
+/*Text Elements 
+----------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    .margin;
+    .padding;
+}
+
+h1
+{
+    font-size: 2em;
+}
+
+h2
+{
+    font-size: 1.75em;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+h3 span
+{
+    font-size: 80%;
+    margin: 0 0 0 5px;
+    padding: 0;
+    line-height: normal;
+}
+
+hr
+{
+    margin: 10px 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 1px solid #aaa;
+}
+
+ul,
+li
+{
+    .margin;
+    .padding;
+    list-style: none;
+    list-style-type: none;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+span
+{
+    text-indent: 0px;
+    border: none;
+}
+
+/*Fieldsets
+----------------------------------------------------------*/
+fieldset
+{
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    legend
+    {
+        position: absolute;
+        left: -99999px;
+        height: 0px;
+        -webkit-padding-start: 0px;
+        -webkit-padding-end: 0px;
+        padding-left: 0px;
+    }
+}
+
+
+
+    fieldset input[type="submit"]
+    {
+        background-color: #DDD;
+        border: 1px solid #999;
+        color: #444;
+        text-decoration: none;
+        outline: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+
+        fieldset input[type="submit"]:hover
+        {
+            color: #444;
+            background-color: #EEE;
+        }
+
+    fieldset span.required-indicator
+    {
+        padding-left: 4px;
+    }
+
+/*Form Elements (Text Inputs, Selects, Radiobuttons, Checkboxes)
+====================================================================================================================================================================================================*/
+table:not(.k-content)
+{
+
+    thead
+    {
+        th
+        {
+        }
+    }
+
+    tbody
+    {
+        tr
+        {
+            background-color: #fff !important;
+
+            td
+            {
+                vertical-align: top;
+            }
+        }
+
+            tr:nth-child(even)
+            {
+                background-color: @alternate-row-color-one !important;
+            }
+    }
+}
+/*Form Elements (Text Inputs, Selects, Radiobuttons, Checkboxes)
+====================================================================================================================================================================================================*/
+.form-element-base-border(@border: 1px, @border-style: solid, @border-color: @primary-color-three)
+{
+    border: @arguments;
+}
+
+.form-element-base-style
+{
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    margin-left: 2px;
+}
+
+/*Interface Elements 
+----------------------------------------------------------*/
+
+/*Inputs
+----------------------------------------------------------*/
+input[placeholder]:not(.k-input), [placeholder]:not(.k-input), *[placeholder]:not(.k-input)
+{
+    font-style: normal;
+}
+
+input:not(.k-input):not([type=radio]):not([type=checkbox]):not([type=button]):not([type=submit]),
+textarea
+{
+    padding: 4px;
+    .outline;
+    .margin;
+}
+
+select
+{
+    padding: 3px 3px 3px 0px;
+    .outline;
+}
+
+
+/* Input Sizes
+----------------------------------------------------------*/
+input[type="text"]:not(.k-input)
+{
+    .form-element-base-border;
+    .form-element-base-style;
+    width: 196px;
+}
+
+input[type="text"].textbox-small
+{
+    width: 100px;
+}
+
+input[type="text"].width-300,
+input[type="text"].textbox-medium
+{
+    width: 300px;
+}
+
+input[type="text"].textbox-large
+{
+    width: 470px;
+}
+
+
+
+input[type="text"].frequency
+{
+    width: 30px;
+}
+
+input[type="text"].extension
+{
+    width: 40px;
+}
+/* Select Sizes
+----------------------------------------------------------*/
+select:not(.k-input),
+.k-dropdown,
+.k-combobox,
+.k-dropdown .k-dropdown-wrap .k-input,
+.k-combobox .k-dropdown-wrap .k-input
+{
+    .form-element-base-border;
+    .form-element-base-style;
+    .margin;
+    width: 206px !important;
+    display: inline-block;
+    background: #fff;
+}
+
+
+    select.selector-small,
+    select.required.selector-small,
+    .k-dropdown.selector-small,
+    .k-combobox.selector-small,
+    .k-dropdown.selector-small .k-dropdown-wrap .k-input,
+    .k-combobox.selector-small .k-dropdown-wrap .k-input
+    {
+        width: 75px !important;
+    }
+
+    select.selector-medium,
+    select.required.selector-medium,
+    .k-dropdown.selector-medium,
+    .k-combobox.selector-medium,
+    .k-dropdown.selector-medium .k-dropdown-wrap .k-input,
+    .k-combobox.selector-medium .k-dropdown-wrap .k-input
+    {
+        width: 300px !important;
+    }
+
+    select.selector-large,
+    select.required.selector-large,
+    .k-dropdown.selector-large,
+    .k-combobox.selector-large,
+    .k-dropdown.selector-large .k-dropdown-wrap .k-input,
+    .k-combobox.selector-large .k-dropdown-wrap .k-input
+    {
+        width: 470px !important;
+    }
+
+/* Auto-Width Textbox/Select Size
+----------------------------------------------------------*/
+select.auto-width,
+span.label.auto-width,
+div.column-left fieldset.fieldset-container-one div.row.summary span.auto-width,
+div.column-right fieldset.fieldset-container-one div.row.summary span.auto-width,
+div.column-left div.fieldset-container-one p span.auto-width,
+div.column-right div.fieldset-container-one p span.auto-width,
+fieldset.fieldset-container-one div.row span.label.auto-width,
+fieldset.fieldset-container-one div.row.alpha span.label.auto-width
+{
+    min-width: 0px !important;
+    display: inline-block !important;
+    max-width: 90% !important;
+}
+
+    fieldset.fieldset-container-one div.row.alpha span.label.auto-width .label-info
+    {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0px !important;
+        display: block;
+    }
+
+select.auto-width,
+.k-dropdown.auto-width,
+.k-combobox.auto-width,
+.k-dropdown.auto-width .k-dropdown-wrap .k-input,
+.k-combobox.auto-width .k-dropdown-wrap .k-input
+{
+    min-width: 152px !important;
+}
+
+span.auto-width select:not(.k-input)
+{
+    min-width: 152px !important;
+    max-width: 94%;
+}
+
+input[type="text"].span-half
+{
+    margin: 0px;
+    padding: 2px;
+    resize: none;
+    width: 48% !important;
+    display: inline-block !important;
+}
+
+input[type="text"].span-full,
+label.span-full
+{
+    resize: none;
+    width: 95% !important;
+    display: inline-block !important;
+}
+
+/* Textareas
+----------------------------------------------------------*/
+
+.texteditor-textarea,
+.comments-textarea:not(span):not(div),
+.comments-textarea-tall,
+.texteditor-textarea-required,
+.comments-textarea-active
+{
+    .border;
+    .margin-bottom;
+    width: 100%;
+    max-height: 400px;
+    height: 100px;
+    resize: vertical;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.comments-textarea-tall
+{
+    margin-bottom: 0px;
+}
+
+.html-texteditor-textarea
+{
+    margin: 0;
+    padding: 6px;
+    resize: none;
+    width: 60%;
+    height: 440px;
+    max-height: 500px;
+    font-family: Arial, Verdana, inherit;
+    font-size: inherit;
+    border: 1px solid #aaa;
+}
+/* Radiobuttons
+----------------------------------------------------------*/
+input[type=radio]
+{
+    margin: 6px -3px 6px 2px;
+}
+
+/* Checkboxes
+----------------------------------------------------------*/
+input[type=checkbox]
+{
+    margin: 6px -3px 6px 0px;
+}
+
+
+/* Input States
+----------------------------------------------------------*/
+/*Focus*/
+input[type="text"]:focus,
+textarea:focus,
+select:focus,
+.k-combobox .k-dropdown-wrap .k-input:focus,
+.k-dropdown .k-state-focused .k-input
+{
+    border-color: @focus-color-one !important;
+    .box-shadow(0px, 0px, 0px, 1px, @focus-color-one escape("!important"));
+}
+
+input[type='checkbox']:focus,
+input[type='radio']:focus
+{
+    outline: none;
+    .box-shadow(0px, 0px, 0px, 1px, @focus-color-one);
+}
+
+/*Read Only*/
+input[type="text"].readonly,
+input[type="text"][readonly="readonly"],
+select.readonly,
+textarea.readonly,
+textarea[readonly="readonly"]
+{
+    .background-base-color-six;
+    .border(@primary-color-four);
+    .outline;
+    color: @gray-tone-two;
+}
+
+    /*Read Only w/ Focus*/
+    input[type="text"].readonly:focus,
+    input[type="text"][readonly="readonly"]:focus,
+    textarea.readonly:focus,
+    select.readonly:focus,
+    textarea[readonly="readonly"]:focus
+    {
+        border-color: (@primary-color-four) !important;
+        .box-shadow(0px, 0px, 0px, 0px, transparent escape("!important"));
+    }
+
+/*Required*/
+input[type="text"].required,
+textarea.required,
+select.required,
+.k-dropdown .k-dropdown-wrap .k-input.required,
+.k-combobox .k-dropdown-wrap .k-input.required
+{
+    background: @highlight-color;
+}
+
+/*Read Only w/ Required*/
+input[type="text"].readonly.required,
+input[type="text"][readonly="readonly"].required,
+input[type="text"][required="required"].readonly,
+input[type="text"][readonly="readonly"][required="required"],
+textarea.readonly.required,
+textarea[readonly="readonly"].required,
+textarea[required="required"].readonly,
+textarea[readonly="readonly"][required="required"],
+select.readonly.required,
+.k-dropdown .k-dropdown-wrap .k-input.readonly.required,
+.k-combobox .k-dropdown-wrap .k-input.readonly.required
+{
+    background: lighten(@highlight-color, 10%);
+    .border(@primary-color-four);
+    .outline;
+    color: @gray-tone-two;
+}
+
+/*Interface Elements (Buttons, Links)
+====================================================================================================================================================================================================*/
+a
+{
+    color: @actionlink-color;
+}
+
+button,
+input[type='button'],
+input[type='submit'],
+input[type='cancel']
+{
+    font-family: inherit !important;
+}
+
+    /*Begin fix FireFox button height issue*/
+    button,
+    input[type='button'],
+    input[type='submit'],
+    input[type='cancel']::-moz-focus-inner
+    {
+        /*border: 0; 
+		padding: 0;*/
+        line-height: normal !important;
+    }
+        /*End fix FireFox button height issue*/
+
+        /*Focus*/
+        button:focus,
+        input[type=submit]:focus,
+        input[type=button]:focus,
+        a:focus
+        {
+            outline: none;
+            border-color: @focus-color-one !important;
+            .box-shadow(0px, 0px, 0px, 1px, @focus-color-one escape('!important'));
+        }
+
+/*3rd Party Elements Overrides (Kendo UI, Jquery, Etc.)
+====================================================================================================================================================================================================*/
+
+/*Kendo UI
+----------------------------------------------------------*/
+.k-datepicker,
+.k-timepicker,
+.k-datetimepicker,
+.k-picker-wrap
+{
+    padding: 0px !important;
+    border-radius: 0px !important;
+    border: 0px solid transparent !important;
+    background: none !important;
+    width: auto !important;
+}
+
+    .k-picker-wrap .k-input
+    {
+        font-size: 95% !important;
+        line-height: normal !important;
+        padding: 4px 22px 4px 4px !important;
+        text-indent: 0px !important;
+        color: inherit !important;
+        border: 1px solid @primary-color-three !important;
+        border-radius: 0px !important;
+        height: auto !important;
+        width: auto !important;
+        -webkit-box-shadow: 0px 0px 0px 0px transparent !important;
+        -moz-box-shadow: 0px 0px 0px 0px transparent !important;
+        -ms-box-shadow: 0px 0px 0px 0px transparent !important;
+        box-shadow: 0px 0px 0px 0px transparent !important;
+
+        .k-icon
+        {
+            right: 6px !important;
+        }
+    }
+
+        .k-picker-wrap .k-input:focus
+        {
+            -webkit-box-shadow: 0px 0px 0px 1px @focus-color-one !important;
+            -moz-box-shadow: 0px 0px 0px 1px @focus-color-one !important;
+            -ms-box-shadow: 0px 0px 0px 1px @focus-color-one !important;
+            box-shadow: 0px 0px 0px 1px @focus-color-one !important;
+        }
+
+    .k-picker-wrap .k-select,
+    .k-numeric-wrap .k-select,
+    .k-dropdown-wrap .k-select
+    {
+        padding: 3px !important;
+    }
+
+.k-datetimepicker
+{
+    .k-input
+    {
+        width: 160px !important;
+        padding-right: 40px !important;
+    }
+}
+
+
+.k-dropdown,
+.k-combobox
+{
+    .border;
+
+    .k-dropdown-wrap
+    {
+        padding: 0px !important;
+        border-radius: 0px;
+        border: none !important;
+        height: auto;
+        background: none !important;
+
+        .k-input
+        {
+            padding: 4px 20px 4px 0px;
+            box-shadow: none;
+            border-radius: 0px;
+            height: auto;
+            font-size: inherit;
+            line-height: inherit;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .k-select
+        {
+            margin: 3px 0px;
+        }
+    }
+}
+
+.k-popup
+{
+    .k-list
+    {
+        .k-item
+        {
+            border-radius: 0px;
+            border-color: transparent !important;
+        }
+
+        .k-state-hover
+        {
+            background: @gray-tone-four;
+        }
+
+            .k-state-selected,
+            .k-state-focused,
+            .k-state-selected.k-state-focused,
+            .k-state-hover.k-state-selected,
+            .k-state-hover.k-state-selected.k-state-focused
+            {
+                background: @action-color;
+                color: #fff;
+            }
+    }
+}
+
+.k-calendar
+{
+    .k-state-hover
+    {
+        background: @gray-tone-four !important;
+
+        a
+        {
+            background: @gray-tone-four !important;
+        }
+    }
+
+        .k-state-selected,
+        .k-state-focused,
+        .k-state-selected.k-state-focused,
+        .k-state-hover.k-state-selected,
+        .k-state-hover.k-state-selected.k-state-focused
+        {
+            background: @action-color !important;
+            color: #fff;
+
+            a
+            {
+                background: @action-color !important;
+                color: inherit;
+            }
+        }
+}
+
+/*Chosen Dropdown
+----------------------------------------------------------*/
+.chosen-container-single
+{
+    .chosen-single,
+    .chosen-single.chosen-default
+    {
+        .form-element-base-border;
+        .form-element-base-style;
+        border-radius: 0 !important;
+        border: 1px solid #999 !important;
+        outline: none;
+        margin: 0px 0px 0px 0px;
+        width: 196px;
+    }
+
+    a:hover,
+    a:active
+    {
+        background-color: transparent !important;
+    }
+
+    .chosen-drop
+    {
+        width: auto;
+        min-width: 200px;
+    }
+}
+
+.chosen-container:focus,
+.chosen-container-active
+{
+    .chosen-single,
+    .chosen-single.chosen-default
+    {
+        border-color: @focus-color-one !important;
+        .box-shadow(0px, 0px, 0px, 1px, @focus-color-one escape("!important"));
+    }
+}
+/*JQuery DataTable
+----------------------------------------------------------*/
+
+.ui-multiselect-checkboxes input[type=checkbox]
+{
+    margin: 3px 3px 3px 4px;
+}
+
+button.ui-multiselect
+{
+    border-radius: 0px !important;
+    margin: 0px !important;
+    padding-right: 0px !important;
+}
+
+    button.ui-multiselect.ui-state-active
+    {
+        .ui-icon
+        {
+            background-image: url(themes/base/images/ui-icons_444_256x240.png);
+        }
+    }
+/*JQuery DataTable
+----------------------------------------------------------*/
+
+
+.dataTable
+{
+    thead
+    {
+        tr
+        {
+            th
+            {
+                .DataTables_sort_wrapper
+                {
+                    position: relative;
+                    padding-right: 16px;
+
+                    .ui-icon
+                    {
+                        display: inline-block;
+                        position: absolute;
+                        right: 0px;
+                        top: 50%;
+                        margin-top: -8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dataTables_paginate
+{
+    text-align: right;
+    line-height: 26px !important;
+    margin-right: 20px !important;
+
+    a
+    {
+        border: none;
+        margin: 0 3px !important;
+        background: none;
+    }
+}

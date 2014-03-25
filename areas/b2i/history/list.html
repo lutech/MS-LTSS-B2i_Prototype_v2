@@ -1,0 +1,563 @@
+<!-- Left Side Navigation-->
+<div id="sidenav" class="sidenav">
+<div class="LeftContentNav-clientinfo" id="Client_Profile_Summary" tabindex="0">
+    <a href="#Main_Content_Menu" class="ui-hide">Skip to Main Content Menu</a>
+
+    <div>
+        <div id="cliensummaryinfo">
+            <div class="panel panelBarItem">
+                <div class="header collapsed">
+                    <div class="arrow collapse"></div>
+                <span class="header">
+                    <h2 class="name">
+                        <span class="show-for-print">Client: </span>Cicio Smith</h2>
+                </span>
+                <span class="p-auto-width">
+                    <span id="cs-id"><span class="p-label">ID: </span><span
+                            class="p-data-element">1119088IC885100</span></span>
+                    <span id="cs-dob"><span class="p-label">DOB: </span><span
+                            class="p-data-element">01/01/1950</span></span>
+                </span>
+                    <span id="cs-mfpe"><span class="p-label">MFP Eligible: </span><span
+                            class="p-data-element">N/A</span></span>
+                </div>
+                <div class="body" style="display: none; height: 0px; overflow: hidden;">
+                    <div class="panelbar-content">
+                    <span class="p-left">
+                        <div class="row">
+                            <span class="label">Medicaid #</span>
+
+
+                            <span class="data-element">12345678901 (Community)</span>
+                        </div>
+                        <div class="row">
+                            <span class="label">Primary Language:</span>
+
+
+                            <span class="data-element"></span>
+                        </div>
+                        <div class="row">
+                            <span class="label">Phone #:</span>
+
+
+                            <span id="Client_PrimaryPhone_Phone" class="readonly data-element">(123) 456-7890</span>
+
+
+                        </div>
+                    </span>
+                    <span class="p-right">
+                        <div class="row">
+                            <span class="label">Facility Name:</span>
+
+
+                            <span class="data-element"></span>
+                        </div>
+                        <div class="row">
+                            <span class="label">Jurisdiction/County:</span>
+
+
+                            <span class="data-element">Adams</span>
+                        </div>
+                        <div class="row">
+
+
+                            <span class="label">Address:</span>
+    <span class="data-element">
+        8 Merril Street<br>
+
+        Adams MS, 31010
+        <input id="Client_CurrentAddress_Address_FullAddress" name="Client.CurrentAddress.Address.FullAddress"
+               type="hidden" value="8 Merril Street, Adams, MS 31010">
+    </span>
+
+                        </div>
+                                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+
+                $('#cliensummaryinfo').panelBar();
+                ltssPanelBar.collapseAll('#cliensummaryinfo')
+            });
+        </script>
+
+
+    </div>
+</div>
+<nav id="Main_Content_Menu" tabindex="0">
+<a href="#workspace" class="ui-hide">Skip to Main Content</a>
+
+<div class="hide-for-print" id="lftNav">
+<div>
+
+
+<ul class="left-side-nav js-accordion">
+    <li>
+    <span id="clientManagement" class="leftNavHeader">
+        <span class="arrow expand"></span>
+        Client
+    </span>
+        <ul class="leftnav-groupcontainer" id="div_sublinks_clientManagement" style="" collapsible="true">
+
+            <li>
+                <a href="#/client/profile/details">Profile</a>
+            </li>
+            <li style="display: none;">
+
+                <ul>
+                    <li style="display: none;">
+
+                    </li>
+                    <li style="display: none;">
+
+                    </li>
+                    <li style="display: none;">
+
+                    </li>
+                </ul>
+            </li>
+            <li style="display: none;">
+
+            </li>
+            <li style="display: none;">
+
+                <ul>
+                    <li style="display: none;">
+
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="hideIfNoLinks active-node">
+        <span id="mfpManagement" class="leftNavHeader"><span class="arrow expand"></span><span
+                class="arrow expand"></span>B2i</span>
+        <ul class="leftnav-groupcontainer" id="div_sublinks_mfpManagement" style="display: block;" collapsible="true">
+
+            <li>
+                <a class="selected ltss-icon-arrow" href="#/b2i/history/list">
+                    History
+                    <span role="presentation" class="ltss-icon-container icon-arrow"></span>
+                </a>
+            </li>
+            <li>
+                <a class="funds ltss-icon-arrow" href="#/questionnaire/list">Questionnaire<span
+                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                         class="ltss-icon-container icon-arrow"></span></a>
+            </li>
+            <li ng-show="referralStatus == 'inProgress' || referralStatus == 'submitted' ">
+                <a class="funds ltss-icon-arrow" href="#/initialreferral/details">Initial Referral<span
+                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                         class="ltss-icon-container icon-arrow"></span></a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<div id="ineligibleDiv" style="width: 300px; display: none">
+    <form action="/webapp/Clients/Client/ClientLeftNavigation/clients/e87e6bec-58bd-4628-9466-002e1bdd70f9"
+          id="ineligibleParams" method="post" novalidate="novalidate">
+        <fieldset class="fieldset-container-one">
+            <legend class="legend-header-one">Client is Waiver Registry Ineligible</legend>
+            <div class="row">
+                <span>This client cannot be added to the waiver registry because they:</span>
+                <ul>
+                    <li>Already have an active enrollment</li>
+                    <li>Have a date of death</li>
+                    <li>Already have an active waiver registry entry</li>
+                </ul>
+            </div>
+            <hr>
+            <div style="text-align: center">
+                <button type="button" onclick="ltss.overlay.close();">Done</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+
+        $('a.addWaiverLink').click(function (e) {
+            isWaiverWaitlistEligible($(this).attr('href'));
+            return false;
+        });
+
+        $("a[sectionStatusClass]").each(function () {
+            var $anchor = $(this);
+            var $statusSpan = $(document.createElement('span'));
+            $statusSpan.addClass($anchor.attr('sectionStatusClass'));
+            $statusSpan.attr('title', $anchor.attr('sectionStatusTitle'));
+            $statusSpan.text(" ");
+            $anchor.prepend($statusSpan);
+        });
+
+        if ($('#Section8').length == 0) {
+            $('#menuSection8').hide();
+        } else {
+            $('#menuSection8').show();
+        }
+        if ($('#Section9').length == 0) {
+            $('#menuSection9').hide();
+        } else {
+            $('#menuSection9').show();
+        }
+        if ($('#Section10').length == 0) {
+            $('#menuSection10').hide();
+        } else {
+            $('#menuSection10').show();
+        }
+    });
+
+    function ShowIneligible() {
+        ltss.overlay.show({
+            contentSelector: '#ineligibleDiv',
+            options: {
+                modal: true,
+                modalClose: true,
+                helpers: {
+                    overlay: {
+                        opacity: 0.3
+                    }
+                }
+            }
+        });
+    }
+
+    function isWaiverWaitlistEligible(link) {
+        var url = '/webapp/Assessments/WaiverRegistry/DetermineWaiverWaitlistEligibility/';
+        var clientId = 'clients/e87e6bec-58bd-4628-9466-002e1bdd70f9';
+        $.getJSON(url, { clientId: clientId },
+                function (result) {
+                    if (result.data == true) {
+                        window.location = link;
+                    } else {
+                        ShowIneligible();
+                    }
+                });
+    }
+
+</script>
+<script src="/webapp/Scripts/ICanHaz.min.js" type="text/javascript"></script>
+<script src="/webapp/Scripts/dataStore.js" type="text/javascript"></script>
+<script src="/webapp/Scripts/jquery.validate.min.js" type="text/javascript"></script>
+<script src="/webapp/Scripts/jquery.validate.unobtrusive.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    function formatText(item) {
+        if (item.text.length > 380) {
+            item.formattedText = item.text.substr(0, 380) + '...';
+        }
+        else {
+            item.formattedText = item.text;
+        }
+    }
+
+    function formatDate(item) {
+        var date;
+        if (item.Timestamp instanceof Date) {
+            date = item.Timestamp;
+        }
+        else {
+            date = new Date(parseInt(item.Timestamp.substr(6)));
+        }
+
+        var month;
+
+        switch (date.getMonth()) {
+            case 0:
+                month = 'January';
+                break;
+            case 1:
+                month = 'February';
+                break;
+            case 2:
+                month = 'March';
+                break;
+            case 3:
+                month = 'April';
+                break;
+            case 4:
+                month = 'May';
+                break;
+            case 5:
+                month = 'June';
+                break;
+            case 6:
+                month = 'July';
+                break;
+            case 7:
+                month = 'August';
+                break;
+            case 8:
+                month = 'September';
+                break;
+            case 9:
+                month = 'October';
+                break;
+            case 10:
+                month = 'November';
+                break;
+            case 11:
+                month = 'December';
+                break;
+        }
+
+        var hour = date.getHours();
+        var minute = date.getMinutes();
+        var day = date.getDate();
+        var year = date.getFullYear();
+        var ampm = ''
+
+        if (hour >= 12) {
+            ampm = 'PM'
+        }
+        else {
+            ampm = 'AM'
+        }
+
+        if (hour > 12) {
+            hour -= 12;
+        }
+        else if (hour == 0) {
+            hour = 12
+        }
+
+        if (minute < 10) {
+            minute = '0' + minute;
+        }
+
+        item.formattedDate = month + ' ' + day + ', ' + year + ', ' + hour + ':' + minute + ' ' + ampm;
+    }
+
+    function showCaseNotes(config) {
+        overlayCfg = config;
+
+
+        ltss.overlay.show({
+            contentSelector: '#caseNotesOverlay',
+            options: {
+                modal: true,
+                scrolling: 'no'
+            }
+        });
+        $.fancybox.showLoading();
+        $.getJSON(config.url, function (data) {
+            initProgramTypeSelect(data);
+            $('#caseNotesClientName').html('<span class="bold">' + 'Client&#39;s Name: ' + '</span>' + data.data.ClientName);
+            $('#caseNotesProgram').html('Case Notes');
+            if (data.data.CaseNotes.length > 0) {
+                initDataStore(data);
+                renderNotes(ds.getSorted('Timestamp', 'DESC', 'Timestamp'));
+                initDotDotDot('.textWrapper');
+            }
+            else {
+                $('#noCaseNotes').css('display', 'block');
+                $('#cmbSort').attr('readonly', 'readonly');
+            }
+
+            $('#caseNotesListMask').css('display', 'none');
+        });
+    }
+
+    function closeCaseNotes() {
+        $("#formCaseNoteEntry span.field-validation-error").addClass("field-validation-valid").removeClass("field-validation-error");
+        $("#formCaseNoteEntry textarea.input-validation-error").removeClass("field-validation-error");
+        ltss.overlay.close();
+    }
+
+    function renderNotes(data) {
+        $('#caseNotesList').html(ich.caseNotes({ notes: data }));
+        $('#caseNotesList .casenotes-item:even').addClass('even');
+        $('#caseNotesList .casenotes-item:odd').addClass('odd');
+
+        if (data.length > 0) {
+            $('#noCaseNotes').css('display', 'none');
+        }
+        else {
+            $('#noCaseNotes').css('display', 'block');
+        }
+        caseNotesListPrint = $("#caseNotesList").html();
+    }
+
+    function initProgramTypeSelect(data) {
+        $("#programType").empty();
+        $("#programType").append("<option selected='true' value=''></option>");
+        if (data.data.ProgramTypes) {
+            $.each(data.data.ProgramTypes, function (index, value) {
+                $("#programType").append("<option value=" + value.Value + ">" + value.Text + "</option>");
+            });
+        }
+    }
+    function initDataStore(data) {
+        ds = new DataStore({ data: data.data.CaseNotes });
+        ds.each(function (item) {
+            formatDate(item);
+        });
+    }
+</script>
+
+
+</div>
+</div>
+</nav>
+</div>
+<!-- Main_Content Content Area-->
+<div id="workspace" tabindex="0">
+    <div role="presentation" class="workspace p-client-layout">
+        <div class="selection-summaryinfo">
+            <div role="presentation">
+
+                <button class="leftNav-dropDownButton hide-for-print"><span class="icon-reorder "></span></button>
+                <h3>B2i - History</h3>
+
+                <div class="workspace-header-bar">
+                    <div class="float-right">
+                        <button id="expandCollapseAll" runat="server" class="isCollapsed">Expand All</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Messages/Alerts -->
+        <div class="Message-Container hide-for-print" aria-live="assertive" aria-atomic="true" aria-relevant="all">
+            <section class="message-wrapper">
+                <div id="messages">
+                </div>
+            </section>
+        </div>
+        <!-- Content Body -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                //ltssPanelBar.addExpandCollapseButton();
+            });
+        </script>
+        <div class="workspace-content-container" id="workspace-maincontent">
+
+            <div id="taskPanelBar" class="panelbar-task-style">
+
+                <div class="panel panelBarItem">
+                    <div class="header expanded">
+                        <div class="arrow expand"></div>
+                        <h4>Referrals
+                        </h4>
+
+                        <div class="task-action TaskDetailLink">
+                            <a href="#/initialreferral/create" title="Create Assessment &amp; POC Request">Add</a>
+                        </div>
+
+                        <div class="task-action TaskDetailLink">
+
+
+                        </div>
+                    </div>
+                    <div class="body" style="height: auto; overflow: visible;">
+                        <div class="panelbar-content">
+                            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid"></div>
+                            <table class="inline-dataTable dataTable" summary="interRAI HC MD" data-afterrender="statusComment"
+                                   id="DataTables_Table_0">
+                                <thead>
+                                <tr role="row">
+                                    <th class="ui-state-default" role="columnheader" tabindex="0"
+                                        aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Reference Date
+                       : activate to sort column ascending">
+                                        <div class="DataTables_sort_wrapper">Referral Date
+                                            <span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
+                                        </div>
+                                    </th>
+                                    <th class="ui-state-default" role="columnheader" tabindex="0"
+                                        aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status
+                       : activate to sort column ascending">
+                                        <div class="DataTables_sort_wrapper">Referred By
+                                            <span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
+                                        </div>
+                                    </th>
+                                    <th class="ui-state-default" role="columnheader" tabindex="0"
+                                        aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="NF LOC
+                       : activate to sort column ascending">
+                                        <div class="DataTables_sort_wrapper">Status
+                                            <span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span>
+                                        </div>
+                                    </th>
+                                    <th class="hide-for-print ui-state-default" role="columnheader" rowspan="1" colspan="1"
+                                        aria-label="Actions">
+                                        <div class="DataTables_sort_wrapper">Actions<span class="DataTables_sort_icon"></span>
+                                        </div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="odd" ng-hide="referralStatus">
+                                    <td valign="top" colspan="7" class="dataTables_empty">No data available in table</td>
+                                </tr>
+                                <tr class="odd" ng-show="referralStatus == 'inProgress' || referralStatus == 'submitted' ">
+                                    <td valign="top" >01/01/2014</td>
+                                    <td valign="top" >Holly Green</td>
+                                    <td valign="top" ><span ng-show="referralStatus == 'inProgress'">In Progress</span><span ng-show="referralStatus == 'submitted' ">Submitted</span></td>
+                                    <td valign="top" ><a href="#/initialreferral/details">Details</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+
+                    $(".ProfileEditLink").click(function (event) {
+                        event.stopPropagation();
+                    });
+                    $('.panelbar-task-style').panelBar();
+
+                    $(".TaskDetailLink").click(function (event) {
+                        event.stopPropagation();
+                    });
+                    ltssPanelBar.setup(".panelbar-task-style");
+                    $(".panelbar-formheader-style").panelBar();
+                    ltssPanelBar.setup(".panelbar-formheader-style");
+                });
+            </script>
+            <div id="divConfirm" style="display: none">
+                <form id="formConfirm" action="" method="post" novalidate="novalidate">
+                    <div id="msg" style="margin-bottom: 10px"></div>
+                    <div id="div_reason" style="display: none;">
+                        <label id="lblReason" for="reason" style="margin-bottom: 5px;">Reason:<span
+                                class="complete-required-indicator" title="This field is required to submit.">*</span></label>
+                        <textarea class="comments-textarea required" id="reason" name="reason" maxlength="300"></textarea>
+                        <span class="field-validation-valid" data-valmsg-replace="true" data-valmsg-for="reason"></span>
+                    </div>
+                    <div id="div_comment" style="display: none;">
+                        <label id="lblComment" for="comment" style="margin-bottom: 5px;">Comment:<span
+                                id="commentRequiredIndicator"
+                                style="display: none;"
+                                class="complete-required-indicator"
+                                title="This field is required to submit.">*</span></label>
+                        <textarea class="comments-textarea" id="comment" name="comment" maxlength="300"></textarea>
+                        <span class="field-validation-valid" data-valmsg-replace="true" data-valmsg-for="comment"></span>
+                    </div>
+                    <div class="fancybox-dialog-controls">
+                        <button id="btnYes" type="submit">
+                            Yes
+                        </button>
+                        <button id="btnNo" type="button">
+                            No
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <script type="text/javascript" src="/webapp/Scripts/ltss.confirm.js" async=""></script>
+
+
+        </div>
+    </div>
+</div>
+<a href="#workspace" class="ui-hide">Skip back to start of Main Content</a>
+<a href="#Main_Content_Menu" class="ui-hide">Skip back to Main Content Menu</a>
+<a href="#mainTabbedNav" class="ui-hide">Skip back to Top Level Navigation</a>
+<a href="#Main_Application_Menu" tabindex="0" class="ui-hide">Skip back to Main Application Menu</a>

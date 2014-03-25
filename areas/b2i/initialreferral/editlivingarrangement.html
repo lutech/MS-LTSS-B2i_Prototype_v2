@@ -1,0 +1,1110 @@
+<!-- Left Side Navigation-->
+<div id="sidenav" class="sidenav">
+    <div class="LeftContentNav-clientinfo" id="Client_Profile_Summary" tabindex="0">
+        <a href="#Main_Content_Menu" class="ui-hide">Skip to Main Content Menu</a>
+
+        <div>
+            <div id="cliensummaryinfo">
+                <div class="panel panelBarItem">
+                    <div class="header collapsed">
+                        <div class="arrow collapse"></div>
+                        <span class="header">
+                            <h2 class="name"><span class="show-for-print">Client: </span>Cicio Smith</h2>
+                        </span>
+                        <span class="p-auto-width">
+                            <span id="cs-id"><span class="p-label">ID: </span><span
+                                    class="p-data-element">1119088IC885100</span></span>
+                            <span id="cs-dob"><span class="p-label">DOB: </span><span
+                                    class="p-data-element">01/01/1950</span></span>
+                        </span>
+                        <span id="cs-mfpe">
+                            <span class="p-label">MFP Eligible: </span>
+                            <span class="p-data-element">N/A</span>
+                        </span>
+                    </div>
+                    <div class="body" style="display: none; height: 0px; overflow: hidden;">
+                        <div class="panelbar-content">
+                            <span class="p-left">
+                                <div class="row">
+                                    <span class="label">Medicaid #</span>
+
+
+                                    <span class="data-element">12345678901 (Community)</span>
+                                </div>
+                                <div class="row">
+                                    <span class="label">Primary Language:</span>
+
+
+                                    <span class="data-element"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="label">Phone #:</span>
+
+
+                                    <span id="Client_PrimaryPhone_Phone"
+                                          class="readonly data-element">(123) 456-7890</span>
+
+
+                                </div>
+                            </span>
+                            <span class="p-right">
+                                <div class="row">
+                                    <span class="label">Facility Name:</span>
+
+
+                                    <span class="data-element"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="label">Jurisdiction/County:</span>
+
+
+                                    <span class="data-element">Adams</span>
+                                </div>
+                                <div class="row">
+                                    <span class="label">Address:</span>
+                                    <span class="data-element">
+                                        8 Merril Street<br>
+
+                                        Adams MS, 31010
+                                        <input id="Client_CurrentAddress_Address_FullAddress"
+                                               name="Client.CurrentAddress.Address.FullAddress"
+                                               type="hidden" value="8 Merril Street, Adams, MS 31010">
+                                    </span>
+
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function () {
+
+                    $('#cliensummaryinfo').panelBar();
+                    ltssPanelBar.collapseAll('#cliensummaryinfo')
+                });
+            </script>
+        </div>
+    </div>
+    <nav id="Main_Content_Menu" tabindex="0">
+        <div class="hide-for-print" id="lftNav">
+            <div>
+                <ul class="left-side-nav js-accordion">
+                    <li>
+                        <span id="clientManagement" class="leftNavHeader">
+                            <span class="arrow expand"></span>
+                            Client
+                        </span>
+                        <ul class="leftnav-groupcontainer" id="div_sublinks_clientManagement" style=""
+                            collapsible="true">
+
+                            <li>
+                                <a href="#/client/profile/details">Profile</a>
+                            </li>
+                            <li style="display: none;">
+
+                                <ul>
+                                    <li style="display: none;">
+
+                                    </li>
+                                    <li style="display: none;">
+
+                                    </li>
+                                    <li style="display: none;">
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li style="display: none;">
+
+                            </li>
+                            <li style="display: none;">
+
+                                <ul>
+                                    <li style="display: none;">
+
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hideIfNoLinks active-node">
+                        <span id="mfpManagement" class="leftNavHeader">
+                            <span class="arrow expand"></span>
+                            B2i
+                        </span>
+                        <ul class="leftnav-groupcontainer" id="div_sublinks_mfpManagement" style="display: block;"
+                            collapsible="true">
+                            <li>
+                                <a class="ltss-icon-arrow" href="#/questionnaire/list">Questionnaire<span
+                                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                         class="ltss-icon-container icon-arrow"></span></a>
+                            </li>
+                            <li class="active-node">
+                                <a class="ltss-icon-arrow" href="#/initialreferral/history" onclick="return false">
+                                    Initial Referral History
+                                    <span role="presentation" class="ltss-icon-container icon-arrow"></span>
+                                </a>
+                                <ul>
+                                    <li class="active-node">
+                                        <a class="ltss-icon-arrow" href="#/initialreferral/details">Initial Referral<span
+                                                class="offset-hidden js-selected-menu-item">selected</span><span
+                                                role="presentation"
+                                                class="ltss-icon-container icon-arrow"></span></a>
+
+                                        <ul>
+                                            <li>
+                                                <a class=" ltss-icon-arrow" href="#/initialreferral/edit">General Information<span
+                                                        class="offset-hidden js-selected-menu-item">selected</span><span
+                                                        role="presentation"
+                                                        class="ltss-icon-container icon-arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a class=" ltss-icon-arrow" href="#/initialreferral/editrepresentatives">Representatives<span
+                                                        class="offset-hidden js-selected-menu-item">selected</span><span
+                                                        role="presentation"
+                                                        class="ltss-icon-container icon-arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a class=" ltss-icon-arrow" href="#/initialreferral/editfacility">Facility Information<span
+                                                        class="offset-hidden js-selected-menu-item">selected</span><span
+                                                        role="presentation"
+                                                        class="ltss-icon-container icon-arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a class=" ltss-icon-arrow" href="#/initialreferral/editreferral">Referral Information<span
+                                                        class="offset-hidden js-selected-menu-item">selected</span><span
+                                                        role="presentation"
+                                                        class="ltss-icon-container icon-arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a class="selected ltss-icon-arrow" href="#/initialreferral/editlivingarrangement">Preferred Living Arrangement<span
+                                                        class="offset-hidden js-selected-menu-item">selected</span><span
+                                                        role="presentation"
+                                                        class="ltss-icon-container icon-arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a class=" ltss-icon-arrow" href="#/initialreferral/editwaiver">Waiver Information<span
+                                                        class="offset-hidden js-selected-menu-item">selected</span><span
+                                                        role="presentation"
+                                                        class="ltss-icon-container icon-arrow"></span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                                <a class="funds ltss-icon-arrow" href="#/freedomofchoice/list">Freedom of Choice<span
+                                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                         class="ltss-icon-container icon-arrow"></span></a>
+                            </li>
+                            <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                                <a class="funds ltss-icon-arrow" href="#/providerassignment/list">Provider Assignment<span
+                                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                         class="ltss-icon-container icon-arrow"></span></a>
+                            </li>
+                            <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                                <a class="funds ltss-icon-arrow" href="#/applicationassistance/list">Application Assistance<span
+                                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                         class="ltss-icon-container icon-arrow"></span></a>
+                            </li>
+                            <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                                <a class="funds ltss-icon-arrow" href="#/consenttoparticipate/list">Consent to Participate<span
+                                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                         class="ltss-icon-container icon-arrow"></span></a>
+                            </li>
+                            <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                                <a class="funds ltss-icon-arrow" href="#/qualityoflife/list">Quality of Life Survey<span
+                                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                         class="ltss-icon-container icon-arrow"></span></a>
+                            </li>
+                            <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                                <a class="funds ltss-icon-arrow" href="#/dischargeform/list">Discharge Form<span
+                                        class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                         class="ltss-icon-container icon-arrow"></span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- Main_Content Content Area-->
+<div id="workspace" tabindex="0">
+<div role="presentation" class="workspace p-client-layout">
+<div class="selection-summaryinfo">
+    <div role="presentation">
+
+        <button class="leftNav-dropDownButton hide-for-print"><span class="icon-reorder "></span></button>
+        <h3>B2i - Initial Referral - Preferred Living Arrangement</h3>
+        <div aria-label="Read-only &amp; Edit Toggle Modes" class="read-edit-toggle">
+            <span>Edit</span>
+        </div>
+        <div class="workspace-header-bar">
+            <div class="float-left">
+                <a href="#/initialreferral/details" role="button">Cancel</a>
+            </div>
+            <div class="float-right">
+                <button type="button" onclick="saveButton()">Save</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Content Body -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        //ltssPanelBar.addExpandCollapseButton();
+    });
+</script>
+<div class="workspace-content-container" id="workspace-maincontent">
+
+<div class="genericform-style">
+<h4>Preferred Living Arrangement</h4>
+<fieldset class="fieldset-container-one">
+    <legend class="legend-header-one">Referral Information</legend>
+    <div class="row">
+        <label class="complete-required" for="AtpForm_AtpTypeId">Referral Date:<span
+                class="ui-hide complete-required-title">This field is required to save.</span><span
+                class="complete-required-indicator" title="This field is required to save." aria-hidden="true"
+                role="presentation">*</span></label>
+        <span class="k-widget k-datepicker k-header required date dateUS" style=""><span
+                class="k-picker-wrap k-state-default"><input class="required date dateUS k-input" data-val="true"
+                                                             data-val-date="The field DateOfBirth must be a date."
+                                                             data-val-required="'Date Of Birth' is required."
+                                                             id="ClientProfile_DateOfBirth"
+                                                             name="ClientProfile.DateOfBirth" type="text" value=""
+                                                             data-role="datepicker" role="textbox" aria-haspopup="true"
+                                                             aria-expanded="false"
+                                                             aria-owns="ClientProfile_DateOfBirth_dateview"
+                                                             aria-disabled="false" aria-readonly="false" title=""
+                                                             style="width: inherit;"><span unselectable="on"
+                                                                                           class="k-select"
+                                                                                           role="button"
+                                                                                           aria-controls="ClientProfile_DateOfBirth_dateview"><span
+                unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                if ("required date dateUS".indexOf("readonly") != -1) {
+
+                } else {
+                    $("#ClientProfile_DateOfBirth").kendoDatePicker({ format: "MM/dd/yyyy" });
+                }
+
+                $("#ClientProfile_DateOfBirth").attr('title', '');
+
+
+            });
+
+        </script>
+    </div>
+</fieldset>
+<h5>Individual's Information</h5>
+
+<div class="fieldset-container-one">
+    <div class="column-left">
+        <p class="row summary">
+            <span class="label">Full Name:</span>
+            <span class="data-element">Apple Smith</span>
+        </p>
+
+        <p class="row summary">
+            <span class="label">Date Of Birth:</span>
+            <span id="AtpForm_ClientInfo_ClientProfile_DateOfBirth" class="display-date data-element">01/01/1960</span>
+        </p>
+
+        <p class="row summary">
+            <span class="label">SSN#</span>
+            <span class="data-element">223134546</span>
+        </p>
+    </div>
+    <div class="column-right">
+        <p class="row summary">
+            <span class="label">Medicaid #</span>
+            <span class="data-element">11111111112</span>
+        </p>
+
+        <p class="row summary">
+            <span class="label">Medicare #</span>
+            <span class="data-element">22221115547</span>
+        </p>
+    </div>
+</div>
+<div id="divQuestionnaireAndAtpTypeSection" style="display: none;">
+<fieldset class="fieldset-container-one">
+<legend class="legend-header-one">Questionnaire</legend>
+<fieldset class="fieldset-container-two">
+<legend class="legend-header-two">Pre-ATP Questionnaire</legend>
+<div class="row">
+    <span class="label">MFP Eligible:</span>
+
+
+    <span id="AtpForm_IsMfpEligible" class="data-element">N/A</span>
+</div>
+
+<div class="row">
+            <span class="label submit-required">Individual is at least 18 years of age?<span
+                    class="ui-hide submit-required-title">This field is required to submit.</span><span
+                    class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                    role="presentation">**</span></span>
+
+
+    <span id="AtpForm_IsIndividualAtLeast18YeasOfAge" class="data-element">Yes</span>
+</div>
+<div class="row">
+    <label class="complete-required" for="AtpForm_ApplicantTypeId">Applicant Type:<span
+            class="ui-hide complete-required-title">This field is required to save.</span><span
+            class="complete-required-indicator" title="This field is required to save." aria-hidden="true"
+            role="presentation">*</span></label>
+    <select class="required" id="AtpForm_ApplicantTypeId" name="AtpForm.ApplicantTypeId" required="required">
+        <option value=""></option>
+        <option value="coapplicanttypes/-1">Nursing Facility</option>
+        <option value="coapplicanttypes/-2">Assisted Living Facility</option>
+        <option value="coapplicanttypes/-3">Community</option>
+        <option value="coapplicanttypes/-4">Chronic Hospital</option>
+        <option value="coapplicanttypes/-5">ICF Addiction</option>
+        <option value="coapplicanttypes/-6">Residential Treatment Center</option>
+        <option value="coapplicanttypes/-7">State Residential Center</option>
+        <option value="coapplicanttypes/-8">State Psychiatric Hospital</option>
+        <option value="coapplicanttypes/-9">Other</option>
+    </select>
+            <span class="field-validation-valid" data-valmsg-for="AtpForm.ApplicantTypeId"
+                  data-valmsg-replace="true"></span>
+</div>
+<div class="row" id="div_OtherApplicantTypeDescription" style="display: none;">
+    <label class="complete-required" for="AtpForm_OtherApplicantTypeDescription">Other Description:<span
+            class="ui-hide complete-required-title">This field is required to save.</span><span
+            class="complete-required-indicator" title="This field is required to save." aria-hidden="true"
+            role="presentation">*</span></label>
+    <textarea class="comments-textarea required" cols="20" id="AtpForm_OtherApplicantTypeDescription"
+              name="AtpForm.OtherApplicantTypeDescription" rows="2"></textarea>
+            <span class="field-validation-valid" data-valmsg-for="AtpForm.OtherApplicantTypeDescription"
+                  data-valmsg-replace="true"></span>
+</div>
+<div class="row" id="isDeinstChecked">
+    <fieldset class="grouped-radiobuttons">
+        <legend class="submit-required">This person is:<span class="ui-hide submit-required-title">This field is required to submit.</span><span
+                class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                role="presentation">**</span></legend>
+        <input id="IsIndividualDeinstitutionalizedYes" name="AtpForm.IsIndividualDeinstitutionalized"
+               type="radio" value="True"><label for="IsIndividualDeinstitutionalizedYes"
+                                                class="grouped-radiobuttons-label">Deinstitutionalized</label>
+        <input id="IsIndividualDeinstitutionalizedDiverted" name="AtpForm.IsIndividualDeinstitutionalized"
+               type="radio" value="False"><label for="IsIndividualDeinstitutionalizedDiverted"
+                                                 class="grouped-radiobuttons-label">Diverted</label>
+    </fieldset>
+</div>
+<div class="row" id="divDeinstitutionalizedDate" style="display: none;">
+    <label class="submit-required" for="AtpForm_DeinstitutionalizationDate">Date Deinstitutionalized:<span
+            class="ui-hide submit-required-title">This field is required to submit.</span><span
+            class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+            role="presentation">**</span></label>
+
+
+            <span class="k-widget k-datepicker k-header dateUS" style=""><span
+                    class="k-picker-wrap k-state-default"><input class="dateUS k-input" data-val="true"
+                                                                 data-val-date="The field DeinstitutionalizationDate must be a date."
+                                                                 id="AtpForm_DeinstitutionalizationDate"
+                                                                 name="AtpForm.DeinstitutionalizationDate" type="text"
+                                                                 value="" data-role="datepicker" role="textbox"
+                                                                 aria-haspopup="true" aria-expanded="false"
+                                                                 aria-owns="AtpForm_DeinstitutionalizationDate_dateview"
+                                                                 aria-disabled="false" aria-readonly="false" title=""
+                                                                 style="width: inherit;"><span unselectable="on"
+                                                                                               class="k-select"
+                                                                                               role="button"
+                                                                                               aria-controls="AtpForm_DeinstitutionalizationDate_dateview"><span
+                    unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            if ("dateUS".indexOf("readonly") != -1) {
+
+            } else {
+                $("#AtpForm_DeinstitutionalizationDate").kendoDatePicker({ format: "MM/dd/yyyy" });
+            }
+
+            $("#AtpForm_DeinstitutionalizationDate").attr('title', '');
+
+
+        });
+
+    </script>
+            <span class="field-validation-valid" data-valmsg-for="AtpForm.DeinstitutionalizationDate"
+                  data-valmsg-replace="true"></span>
+</div>
+<div class="row" id="divAnticipatedDischargeDate" style="display: none;">
+    <label class="submit-required" for="AtpForm_AnticipatedDischargeDate">Anticipated Discharge Date:<span
+            class="ui-hide submit-required-title">This field is required to submit.</span><span
+            class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+            role="presentation">**</span></label>
+
+
+            <span class="k-widget k-datepicker k-header dateUS" style=""><span
+                    class="k-picker-wrap k-state-default"><input class="dateUS k-input" data-val="true"
+                                                                 data-val-date="The field AnticipatedDischargeDate must be a date."
+                                                                 id="AtpForm_AnticipatedDischargeDate"
+                                                                 name="AtpForm.AnticipatedDischargeDate" type="text"
+                                                                 value="" data-role="datepicker" role="textbox"
+                                                                 aria-haspopup="true" aria-expanded="false"
+                                                                 aria-owns="AtpForm_AnticipatedDischargeDate_dateview"
+                                                                 aria-disabled="false" aria-readonly="false" title=""
+                                                                 style="width: inherit;"><span unselectable="on"
+                                                                                               class="k-select"
+                                                                                               role="button"
+                                                                                               aria-controls="AtpForm_AnticipatedDischargeDate_dateview"><span
+                    unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            if ("dateUS".indexOf("readonly") != -1) {
+
+            } else {
+                $("#AtpForm_AnticipatedDischargeDate").kendoDatePicker({ format: "MM/dd/yyyy" });
+            }
+
+            $("#AtpForm_AnticipatedDischargeDate").attr('title', '');
+
+
+        });
+
+    </script>
+            <span class="field-validation-valid" data-valmsg-for="AtpForm.AnticipatedDischargeDate"
+                  data-valmsg-replace="true"></span>
+</div>
+<div class="row" id="div257" style="display: none;">
+    <fieldset class="grouped-radiobuttons">
+        <legend class="submit-required">Has the 257 been received?<span class="ui-hide submit-required-title">This field is required to submit.</span><span
+                class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                role="presentation">**</span></legend>
+        <input id="Is257ReceivedYes" name="AtpForm.Is257Received" type="radio" value="Yes"><label
+            for="Is257ReceivedYes" class="grouped-radiobuttons-label">Yes</label>
+        <input id="Is257ReceivedNo" name="AtpForm.Is257Received" type="radio" value="No"><label
+            for="Is257ReceivedNo" class="grouped-radiobuttons-label">No</label>
+
+    </fieldset>
+</div>
+<div class="row">
+            <span class="label submit-required">POS has been approved?<span class="ui-hide submit-required-title">This field is required to submit.</span><span
+                    class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                    role="presentation">**</span></span>
+
+
+    <span id="AtpForm_HasPosBeenApproved" class="data-element">No</span>
+</div>
+<div class="row">
+    <span class="label">Individual meets nursing facility level of care?</span>
+
+
+    <span id="AtpForm_IndividualMeetsNursingFaclilityLoc" class="data-element">N/A</span>
+</div>
+<div class="row">
+    <span class="label">Individual meets MAPC level of care?</span>
+
+
+    <span id="AtpForm_IndividualMeetsMapcLoc" class="data-element">N/A</span>
+</div>
+<div class="row">
+    <fieldset class="grouped-radiobuttons">
+        <legend class="submit-required">Individual meets institutional level of care?<span
+                class="ui-hide submit-required-title">This field is required to submit.</span><span
+                class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                role="presentation">**</span></legend>
+        <input id="IndividualMeetsInstitutionalYes" name="AtpForm.IndividualMeetsInstitutionalLoc" type="radio"
+               value="Yes"><label for="IndividualMeetsInstitutionalYes"
+                                  class="grouped-radiobuttons-label">Yes</label>
+        <input id="IndividualMeetsInstitutionalNo" name="AtpForm.IndividualMeetsInstitutionalLoc" type="radio"
+               value="No"><label for="IndividualMeetsInstitutionalNo"
+                                 class="grouped-radiobuttons-label">No</label>
+    </fieldset>
+</div>
+<div class="row">
+    <span class="label">Individual has Community MA?</span>
+
+
+    <span id="AtpForm_IndividualHasCommunityMa" class="data-element">No</span></div>
+<div class="row">
+    <span class="label">Freedom of Choice signed?</span>
+
+
+    <span id="AtpForm_FreedOfChoiceSigned" class="data-element">No</span>
+</div>
+<div class="row">
+    <span class="label">Individual agreed to participate through the Freedom of Choice Form?</span>
+
+
+    <span id="AtpForm_IndividualAgreedToParticipateInFoc" class="data-element">No</span>
+</div>
+</fieldset>
+</fieldset>
+<div id="divPartialAuthorization" style="display: none;">
+<fieldset class="fieldset-container-one">
+<legend class="legend-header-one">Authorization</legend>
+<div class="row" id="MayReceiveWaiverServicesEffectiveDate">
+    <p>
+        This certifies that the individual named above is authorized to participate in the waiver/program.
+        All non-financial targeting criteria, including level of care, are met. If found eligible
+        for Medical Assistance, this person may begin to receive services based upon instructions
+        in the
+        <span>regulations.</span>
+    </p>
+    <label class="submit-required" for="AtpAuthorization_MayReceiveWaiverServicesEffectiveDate">Service
+        Effective Date:<span class="ui-hide submit-required-title">This field is required to submit.</span><span
+                class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                role="presentation">**</span></label>
+
+
+            <span class="k-widget k-datepicker k-header dateUS k-input" style="width: 100%;"><span
+                    class="k-picker-wrap k-state-default"><input class="dateUS k-input" data-val="true"
+                                                                 data-val-date="The field MayReceiveWaiverServicesEffectiveDate must be a date."
+                                                                 id="AtpAuthorization_MayReceiveWaiverServicesEffectiveDate"
+                                                                 name="AtpAuthorization.MayReceiveWaiverServicesEffectiveDate"
+                                                                 type="text" value="" data-role="datepicker"
+                                                                 role="textbox" aria-haspopup="true"
+                                                                 aria-expanded="false"
+                                                                 aria-owns="AtpAuthorization_MayReceiveWaiverServicesEffectiveDate_dateview"
+                                                                 aria-disabled="false" aria-readonly="false" title=""
+                                                                 style="width: 100%;"><span unselectable="on"
+                                                                                            class="k-select"
+                                                                                            role="button"
+                                                                                            aria-controls="AtpAuthorization_MayReceiveWaiverServicesEffectiveDate_dateview"><span
+                    unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            if ("dateUS".indexOf("readonly") != -1) {
+
+            } else {
+                $("#AtpAuthorization_MayReceiveWaiverServicesEffectiveDate").kendoDatePicker({ format: "MM/dd/yyyy" });
+            }
+
+            $("#AtpAuthorization_MayReceiveWaiverServicesEffectiveDate").attr('title', '');
+
+
+        });
+
+    </script>
+            <span class="field-validation-valid"
+                  data-valmsg-for="AtpAuthorization.MayReceiveWaiverServicesEffectiveDate"
+                  data-valmsg-replace="true"></span>
+</div>
+<div class="row">
+    <label class="submit-required" for="AtpAuthorization_LocEffectiveDate">Level of Care (LOC) Effective
+        Date:<span class="ui-hide submit-required-title">This field is required to submit.</span><span
+                class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                role="presentation">**</span></label>
+
+
+            <span class="k-widget k-datepicker k-header dateUS" style=""><span
+                    class="k-picker-wrap k-state-default"><input class="dateUS k-input" data-val="true"
+                                                                 data-val-date="The field LocEffectiveDate must be a date."
+                                                                 id="AtpAuthorization_LocEffectiveDate"
+                                                                 name="AtpAuthorization.LocEffectiveDate" type="text"
+                                                                 value="" data-role="datepicker" role="textbox"
+                                                                 aria-haspopup="true" aria-expanded="false"
+                                                                 aria-owns="AtpAuthorization_LocEffectiveDate_dateview"
+                                                                 aria-disabled="false" aria-readonly="false" title=""
+                                                                 style="width: inherit;"><span unselectable="on"
+                                                                                               class="k-select"
+                                                                                               role="button"
+                                                                                               aria-controls="AtpAuthorization_LocEffectiveDate_dateview"><span
+                    unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            if ("dateUS".indexOf("readonly") != -1) {
+
+            } else {
+                $("#AtpAuthorization_LocEffectiveDate").kendoDatePicker({ format: "MM/dd/yyyy" });
+            }
+
+            $("#AtpAuthorization_LocEffectiveDate").attr('title', '');
+
+
+        });
+
+    </script>
+            <span class="field-validation-valid" data-valmsg-for="AtpAuthorization.LocEffectiveDate"
+                  data-valmsg-replace="true"></span>
+</div>
+<div class="row">
+    <label class="submit-required" for="AtpAuthorization_FreedomOfChoiceSignatureDate">Signature Date on Freedom
+        of Choice Statement:<span class="ui-hide submit-required-title">This field is required to submit.</span><span
+                class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                role="presentation">**</span></label>
+
+
+            <span class="k-widget k-datepicker k-header dateUS" style=""><span
+                    class="k-picker-wrap k-state-default"><input class="dateUS k-input" data-val="true"
+                                                                 data-val-date="The field FreedomOfChoiceSignatureDate must be a date."
+                                                                 id="AtpAuthorization_FreedomOfChoiceSignatureDate"
+                                                                 name="AtpAuthorization.FreedomOfChoiceSignatureDate"
+                                                                 type="text" value="" data-role="datepicker"
+                                                                 role="textbox" aria-haspopup="true"
+                                                                 aria-expanded="false"
+                                                                 aria-owns="AtpAuthorization_FreedomOfChoiceSignatureDate_dateview"
+                                                                 aria-disabled="false" aria-readonly="false" title=""
+                                                                 style="width: inherit;"><span unselectable="on"
+                                                                                               class="k-select"
+                                                                                               role="button"
+                                                                                               aria-controls="AtpAuthorization_FreedomOfChoiceSignatureDate_dateview"><span
+                    unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            if ("dateUS".indexOf("readonly") != -1) {
+
+            } else {
+                $("#AtpAuthorization_FreedomOfChoiceSignatureDate").kendoDatePicker({ format: "MM/dd/yyyy" });
+            }
+
+            $("#AtpAuthorization_FreedomOfChoiceSignatureDate").attr('title', '');
+
+
+        });
+
+    </script>
+            <span class="field-validation-valid" data-valmsg-for="AtpAuthorization.FreedomOfChoiceSignatureDate"
+                  data-valmsg-replace="true"></span>
+</div>
+<div class="row">
+    <label class="submit-required" for="AtpAuthorization_PocPosCompletionDate">POS Completion Date:<span
+            class="ui-hide submit-required-title">This field is required to submit.</span><span
+            class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+            role="presentation">**</span></label>
+
+
+            <span class="k-widget k-datepicker k-header dateUS" style=""><span
+                    class="k-picker-wrap k-state-default"><input class="dateUS k-input" data-val="true"
+                                                                 data-val-date="The field PocPosCompletionDate must be a date."
+                                                                 id="AtpAuthorization_PocPosCompletionDate"
+                                                                 name="AtpAuthorization.PocPosCompletionDate"
+                                                                 type="text" value="" data-role="datepicker"
+                                                                 role="textbox" aria-haspopup="true"
+                                                                 aria-expanded="false"
+                                                                 aria-owns="AtpAuthorization_PocPosCompletionDate_dateview"
+                                                                 aria-disabled="false" aria-readonly="false" title=""
+                                                                 style="width: inherit;"><span unselectable="on"
+                                                                                               class="k-select"
+                                                                                               role="button"
+                                                                                               aria-controls="AtpAuthorization_PocPosCompletionDate_dateview"><span
+                    unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            if ("dateUS".indexOf("readonly") != -1) {
+
+            } else {
+                $("#AtpAuthorization_PocPosCompletionDate").kendoDatePicker({ format: "MM/dd/yyyy" });
+            }
+
+            $("#AtpAuthorization_PocPosCompletionDate").attr('title', '');
+
+
+        });
+
+    </script>
+            <span class="field-validation-valid" data-valmsg-for="AtpAuthorization.PocPosCompletionDate"
+                  data-valmsg-replace="true"></span>
+</div>
+<div class="row">
+    <label class="submit-required" for="AtpAuthorization_LatestCompletionDate">Latest date that all three above
+        items are completed:<span class="ui-hide submit-required-title">This field is required to submit.</span><span
+                class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                role="presentation">**</span></label>
+
+
+            <span class="k-widget k-datepicker k-header dateUS" style=""><span
+                    class="k-picker-wrap k-state-default"><input class="dateUS k-input" data-val="true"
+                                                                 data-val-date="The field LatestCompletionDate must be a date."
+                                                                 id="AtpAuthorization_LatestCompletionDate"
+                                                                 name="AtpAuthorization.LatestCompletionDate"
+                                                                 type="text" value="" data-role="datepicker"
+                                                                 role="textbox" aria-haspopup="true"
+                                                                 aria-expanded="false"
+                                                                 aria-owns="AtpAuthorization_LatestCompletionDate_dateview"
+                                                                 aria-disabled="false" aria-readonly="false" title=""
+                                                                 style="width: inherit;"><span unselectable="on"
+                                                                                               class="k-select"
+                                                                                               role="button"
+                                                                                               aria-controls="AtpAuthorization_LatestCompletionDate_dateview"><span
+                    unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            if ("dateUS".indexOf("readonly") != -1) {
+
+            } else {
+                $("#AtpAuthorization_LatestCompletionDate").kendoDatePicker({ format: "MM/dd/yyyy" });
+            }
+
+            $("#AtpAuthorization_LatestCompletionDate").attr('title', '');
+
+
+        });
+
+    </script>
+            <span class="field-validation-valid" data-valmsg-for="AtpAuthorization.LatestCompletionDate"
+                  data-valmsg-replace="true"></span>
+</div>
+</fieldset>
+
+</div>
+<div id="divPartialDenial" style="display: none;">
+    <fieldset class="fieldset-container-one" id="editDenialFieldset">
+        <legend class="legend-header-one">Denial and Reason(s) for Denial to Participate in
+            the Waiver/Program
+        </legend>
+        <div class="row submit-required">
+            This certifies that the individual named above is not authorized to participate
+            in the waiver/program due to the criteria indicated below: Note: when ATP Type = Denial
+            at least one of the options below must be selected in order to Submit the ATP Questionnaire
+            Form.
+            <span class="ui-hide submit-required-title">This field is required to submit.</span><span
+                class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                role="presentation">**</span></div>
+        <div class="row">
+            <input id="AtpDenial_NotCertifiedToMeetMapcLoc" name="AtpDenial.NotCertifiedToMeetMapcLoc" type="checkbox"
+                   value="true"><input name="AtpDenial.NotCertifiedToMeetMapcLoc" type="hidden" value="false">
+            <label for="AtpDenial_NotCertifiedToMeetMapcLoc" class="auto-width">Not certified to meet MAPC level of
+                care.</label>
+
+            <div class="fieldset-container-three fieldset-sub-container" id="liNotCertifiedToMeetMapcLocComments"
+                 style="display:none;">
+                <label for="AtpDenial_NotCertifiedToMeetMapcLocComments">Comments:</label>
+                <textarea class="comments-textarea" cols="20" id="AtpDenial_NotCertifiedToMeetMapcLocComments"
+                          name="AtpDenial.NotCertifiedToMeetMapcLocComments" rows="2"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input id="AtpDenial_NotAbleToLiveSafelyInTheCommunity" name="AtpDenial.NotAbleToLiveSafelyInTheCommunity"
+                   type="checkbox" value="true"><input name="AtpDenial.NotAbleToLiveSafelyInTheCommunity" type="hidden"
+                                                       value="false">
+            <label for="AtpDenial_NotAbleToLiveSafelyInTheCommunity" class="auto-width">Not able to live safely in the
+                community with the assistance of available services.</label>
+
+            <div class="fieldset-container-three fieldset-sub-container" style="display: none;"
+                 id="liNotAbleToLiveSafelyInTheCommunityComments">
+                <label for="AtpDenial_NotAbleToLiveSafelyInTheCommunityComments">Comments:</label>
+                <textarea class="comments-textarea" cols="20" id="AtpDenial_NotAbleToLiveSafelyInTheCommunityComments"
+                          name="AtpDenial.NotAbleToLiveSafelyInTheCommunityComments" rows="2"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input id="AtpDenial_DoesNotLiveInTheCommunity" name="AtpDenial.DoesNotLiveInTheCommunity" type="checkbox"
+                   value="true"><input name="AtpDenial.DoesNotLiveInTheCommunity" type="hidden" value="false">
+            <label for="AtpDenial_DoesNotLiveInTheCommunity" class="auto-width">Does not live in the community.</label>
+
+            <div class="fieldset-container-three fieldset-sub-container" style="display: none;"
+                 id="liDoesNotLiveInTheCommunityComments">
+                <label for="AtpDenial_DoesNotLiveInTheCommunityComments">Comments:</label>
+                <textarea class="comments-textarea" cols="20" id="AtpDenial_DoesNotLiveInTheCommunityComments"
+                          name="AtpDenial.DoesNotLiveInTheCommunityComments" rows="2"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input id="AtpDenial_CouldNotApprovePlanOfServiceForTheFollowingReason"
+                   name="AtpDenial.CouldNotApprovePlanOfServiceForTheFollowingReason" type="checkbox"
+                   value="true"><input name="AtpDenial.CouldNotApprovePlanOfServiceForTheFollowingReason" type="hidden"
+                                       value="false">
+            <label for="AtpDenial_CouldNotApprovePlanOfServiceForTheFollowingReason" class="auto-width">The POS could
+                not be approved.</label>
+        </div>
+        <div class="row">
+            <input id="AtpDenial_ApplicantPresentlyEnrolled" name="AtpDenial.ApplicantPresentlyEnrolled" type="checkbox"
+                   value="true"><input name="AtpDenial.ApplicantPresentlyEnrolled" type="hidden" value="false">
+            <label for="AtpDenial_ApplicantPresentlyEnrolled" class="auto-width">The applicant is presently enrolled and
+                chooses to remain in another community based program:</label>
+            <fieldset class="fieldset-container-two" style="display: none;" id="divSection7">
+                <legend class="legend-header-two">Specify the Choice</legend>
+                <div class="row">
+                    <input id="AtpDenial_AnotherMedicaid1915Waiver" name="AtpDenial.AnotherMedicaid1915Waiver"
+                           type="checkbox" value="true"><input name="AtpDenial.AnotherMedicaid1915Waiver" type="hidden"
+                                                               value="false">
+                    <label for="AtpDenial_AnotherMedicaid1915Waiver" class="auto-width">(a.) Another Medicaid 1915 (c)
+                        home and community-based services waiver/program</label>
+                    <fieldset class="fieldset-container-three fieldset-sub-container" style="display: none;"
+                              id="AnotherMedicaid1915WaiverA">
+                        <legend class="legend-header-three ui-hide">Specify:</legend>
+                        <label for="AtpDenial_AnotherMedicaid1915WaiverSpecify">Specify:</label>
+                        <textarea class="comments-textarea" cols="20" id="AtpDenial_AnotherMedicaid1915WaiverSpecify"
+                                  name="AtpDenial.AnotherMedicaid1915WaiverSpecify" rows="2"></textarea>
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <input id="AtpDenial_ProgramAllInclusiveCareElderly" name="AtpDenial.ProgramAllInclusiveCareElderly"
+                           type="checkbox" value="true"><input name="AtpDenial.ProgramAllInclusiveCareElderly"
+                                                               type="hidden" value="false">
+                    <label for="AtpDenial_ProgramAllInclusiveCareElderly" class="auto-width">(b.) Program of
+                        All-Inclusive Care for the Elderly (PACE)</label>
+                </div>
+                <hr>
+            </fieldset>
+        </div>
+        <div class="row">
+            <input id="AtpDenial_IndividualDied" name="AtpDenial.IndividualDied" type="checkbox" value="true"><input
+                name="AtpDenial.IndividualDied" type="hidden" value="false">
+            <label for="AtpDenial_IndividualDied" class="auto-width">The person died.</label>
+
+            <div class="fieldset-container-three fieldset-sub-container" style="display: none;"
+                 id="liIndividualDiedDate">
+                <label for="AtpDenial_IndividualDiedDate">Date of death:</label>
+
+
+                <span class="k-widget k-datepicker k-header dateUS IndividualDiedDate k-input"
+                      style="width: inherit;"><span class="k-picker-wrap k-state-default"><input
+                        class="dateUS IndividualDiedDate k-input" data-val="true"
+                        data-val-date="The field IndividualDiedDate must be a date." id="AtpDenial_IndividualDiedDate"
+                        name="AtpDenial.IndividualDiedDate" type="text" value="" data-role="datepicker" role="textbox"
+                        aria-haspopup="true" aria-expanded="false" aria-owns="AtpDenial_IndividualDiedDate_dateview"
+                        aria-disabled="false" aria-readonly="false" title="" style="width: 100%;"><span
+                        unselectable="on" class="k-select" role="button"
+                        aria-controls="AtpDenial_IndividualDiedDate_dateview"><span unselectable="on"
+                                                                                    class="k-icon k-i-calendar">select</span></span></span></span>
+                <script type="text/javascript">
+
+                    $(document).ready(function () {
+
+                        if ("dateUS IndividualDiedDate".indexOf("readonly") != -1) {
+
+                        } else {
+                            $("#AtpDenial_IndividualDiedDate").kendoDatePicker({ format: "MM/dd/yyyy" });
+                        }
+
+                        $("#AtpDenial_IndividualDiedDate").attr('title', '');
+
+
+                    });
+
+                </script>
+                <span class="field-validation-valid" data-valmsg-for="AtpDenial.IndividualDiedDate"
+                      data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="row">
+            <input id="AtpDenial_IndividualInstitutionalizedLongTermCareFacilityFor30Days"
+                   name="AtpDenial.IndividualInstitutionalizedLongTermCareFacilityFor30Days" type="checkbox"
+                   value="true"><input name="AtpDenial.IndividualInstitutionalizedLongTermCareFacilityFor30Days"
+                                       type="hidden" value="false">
+            <label for="AtpDenial_IndividualInstitutionalizedLongTermCareFacilityFor30Days" class="auto-width">The
+                person is institutionalized in a long-term care facility (nursing facility, chronic care hospital,
+                rehabilitation hospital, chronic institution for mental disease, ICF/ID) for at least 30 days with
+                Medicaid, rather than Medicare, as the primary payer.</label>
+        </div>
+        <div class="row">
+            <input id="AtpDenial_OtherReasons" name="AtpDenial.OtherReasons" type="checkbox" value="true"><input
+                name="AtpDenial.OtherReasons" type="hidden" value="false">
+            <label for="AtpDenial_OtherReasons" class="auto-width">Other reason(s).</label>
+
+            <div class="fieldset-container-three fieldset-sub-container" style="display: none;"
+                 id="liOtherReasonsComments">
+                <label for="AtpDenial_OtherReasonsComments">Explain:</label>
+                <textarea class="comments-textarea" cols="20" id="AtpDenial_OtherReasonsComments"
+                          name="AtpDenial.OtherReasonsComments" rows="2"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <label for="AtpDenial_AdditionalComments">Additional Comments:</label>
+            <textarea class="comments-textarea" cols="20" id="AtpDenial_AdditionalComments"
+                      name="AtpDenial.AdditionalComments" rows="2"></textarea>
+        </div>
+    </fieldset>
+
+</div>
+<div id="divPartialDenialOverTurned" style="display: none;">
+    <fieldset class="fieldset-container-one">
+        <legend class="legend-header-one">Authorization Denial Overturned</legend>
+        <div class="row">
+            <label class="submit-required" for="AtpDenialOverTurned_AppealDecisionDate">Appeal Decision Date:<span
+                    class="ui-hide submit-required-title">This field is required to submit.</span><span
+                    class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                    role="presentation">**</span></label>
+
+
+            <span class="k-widget k-datepicker k-header dateUS" style=""><span
+                    class="k-picker-wrap k-state-default"><input class="dateUS k-input" data-val="true"
+                                                                 data-val-date="The field AppealDecisionDate must be a date."
+                                                                 id="AtpDenialOverTurned_AppealDecisionDate"
+                                                                 name="AtpDenialOverTurned.AppealDecisionDate"
+                                                                 type="text" value="" data-role="datepicker"
+                                                                 role="textbox" aria-haspopup="true"
+                                                                 aria-expanded="false"
+                                                                 aria-owns="AtpDenialOverTurned_AppealDecisionDate_dateview"
+                                                                 aria-disabled="false" aria-readonly="false" title=""
+                                                                 style="width: inherit;"><span unselectable="on"
+                                                                                               class="k-select"
+                                                                                               role="button"
+                                                                                               aria-controls="AtpDenialOverTurned_AppealDecisionDate_dateview"><span
+                    unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+            <script type="text/javascript">
+
+                $(document).ready(function () {
+
+                    if ("dateUS".indexOf("readonly") != -1) {
+
+                    } else {
+                        $("#AtpDenialOverTurned_AppealDecisionDate").kendoDatePicker({ format: "MM/dd/yyyy" });
+                    }
+
+                    $("#AtpDenialOverTurned_AppealDecisionDate").attr('title', '');
+
+
+                });
+
+            </script>
+            <span class="field-validation-valid" data-valmsg-for="AtpDenialOverTurned.AppealDecisionDate"
+                  data-valmsg-replace="true"></span>
+        </div>
+        <div class="row">
+            <label for="AtpDenialOverTurned_DenialEffectiveDate">Effective Date:</label>
+
+
+            <span class="k-widget k-datepicker k-header dateUS" style=""><span
+                    class="k-picker-wrap k-state-default"><input class="dateUS k-input" data-val="true"
+                                                                 data-val-date="The field DenialEffectiveDate must be a date."
+                                                                 id="AtpDenialOverTurned_DenialEffectiveDate"
+                                                                 name="AtpDenialOverTurned.DenialEffectiveDate"
+                                                                 type="text" value="" data-role="datepicker"
+                                                                 role="textbox" aria-haspopup="true"
+                                                                 aria-expanded="false"
+                                                                 aria-owns="AtpDenialOverTurned_DenialEffectiveDate_dateview"
+                                                                 aria-disabled="false" aria-readonly="false" title=""
+                                                                 style="width: inherit;"><span unselectable="on"
+                                                                                               class="k-select"
+                                                                                               role="button"
+                                                                                               aria-controls="AtpDenialOverTurned_DenialEffectiveDate_dateview"><span
+                    unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span>
+            <script type="text/javascript">
+
+                $(document).ready(function () {
+
+                    if ("dateUS".indexOf("readonly") != -1) {
+
+                    } else {
+                        $("#AtpDenialOverTurned_DenialEffectiveDate").kendoDatePicker({ format: "MM/dd/yyyy" });
+                    }
+
+                    $("#AtpDenialOverTurned_DenialEffectiveDate").attr('title', '');
+
+
+                });
+
+            </script>
+            <span class="field-validation-valid" data-valmsg-for="AtpDenialOverTurned.DenialEffectiveDate"
+                  data-valmsg-replace="true"></span>
+        </div>
+        <div class="row">
+            <label class="submit-required" for="AtpDenialOverTurned_DenialTypeOfAppealId">Type of Appeal:<span
+                    class="ui-hide submit-required-title">This field is required to submit.</span><span
+                    class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                    role="presentation">**</span></label>
+            <select id="AtpDenialOverTurned_DenialTypeOfAppealId" name="AtpDenialOverTurned.DenialTypeOfAppealId">
+                <option value=""></option>
+                <option value="atpreapprovalappealtypes/-1">Medical</option>
+                <option value="atpreapprovalappealtypes/-2">Technical</option>
+                <option value="atpreapprovalappealtypes/-4">Other</option>
+            </select>
+        </div>
+        <div class="row" id="div_OtherAppealTypeDescription" style="display: none;">
+            <label for="AtpDenialOverTurned_OtherAppealTypeDescription">Other Description:</label>
+            <textarea class="comments-textarea" cols="20" id="AtpDenialOverTurned_OtherAppealTypeDescription"
+                      name="AtpDenialOverTurned.OtherAppealTypeDescription" rows="2"></textarea>
+        </div>
+    </fieldset>
+
+</div>
+<fieldset class="fieldset-container-one">
+    <legend class="legend-header-one js-legend-sign-off">DHMH Sign Off</legend>
+    <div class="row">
+        <label class="submit-required" for="AtpForm_DhmhSignatureSection_SignatureName">Signature:<span
+                class="ui-hide submit-required-title">This field is required to submit.</span><span
+                class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                role="presentation">**</span></label>
+        <input class="readonly" id="AtpForm_DhmhSignatureSection_SignatureName"
+               name="AtpForm.DhmhSignatureSection.SignatureName" readonly="readonly" type="text"
+               value="DHMH, dhmhadministrator1">
+    </div>
+    <div class="row">
+        <label class="submit-required" for="AtpForm_DhmhSignatureSection_SignatureDate">Date:<span
+                class="ui-hide submit-required-title">This field is required to submit.</span><span
+                class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                role="presentation">**</span></label>
+
+
+        <input class="readonly" data-val="true" data-val-date="The field SignatureDate must be a date."
+               id="AtpForm_DhmhSignatureSection_SignatureDate" name="AtpForm.DhmhSignatureSection.SignatureDate"
+               readonly="readonly" type="text" value="03/18/2014" title="">
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                if ("readonly".indexOf("readonly") != -1) {
+
+                } else {
+                    $("#AtpForm_DhmhSignatureSection_SignatureDate").kendoDatePicker({ format: "MM/dd/yyyy" });
+                }
+
+                $("#AtpForm_DhmhSignatureSection_SignatureDate").attr('title', '');
+
+
+            });
+
+        </script>
+    </div>
+    <div class="row">
+        <label class="submit-required" for="AtpForm_DhmhSignatureSection_Title">Title:<span
+                class="ui-hide submit-required-title">This field is required to submit.</span><span
+                class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                role="presentation">**</span></label>
+        <input class="text-box single-line" id="AtpForm_DhmhSignatureSection_Title"
+               name="AtpForm.DhmhSignatureSection.Title" type="text" value="Random Title">
+    </div>
+    <div class="row">
+        <label class="submit-required" for="AtpForm_DhmhSignatureSection_PhoneNumber">Telephone Number: (XXX XXX
+            XXXX)<span class="ui-hide submit-required-title">This field is required to submit.</span><span
+                    class="submit-required-indicator" title="This field is required to submit." aria-hidden="true"
+                    role="presentation">**</span></label>
+        <input class="phoneUS" id="AtpForm_DhmhSignatureSection_PhoneNumber"
+               name="AtpForm.DhmhSignatureSection.PhoneNumber" type="text" value="">
+        <span class="field-validation-valid" data-valmsg-for="AtpForm.DhmhSignatureSection.PhoneNumber"
+              data-valmsg-replace="true"></span>
+    </div>
+</fieldset>
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+    function saveButton()
+    {
+        window.location.assign("#/initialreferral/details")
+    }
+
+    $(document).ready(function () {
+        $(".ProfileEditLink").click(function (event) {
+            event.stopPropagation();
+        });
+        $('.panelbar-task-style').panelBar();
+
+        $(".TaskDetailLink").click(function (event) {
+            event.stopPropagation();
+        });
+        ltssPanelBar.setup(".panelbar-task-style");
+        $(".panelbar-formheader-style").panelBar();
+        ltssPanelBar.setup(".panelbar-formheader-style");
+    });
+</script>
+</div>
+</div>
+</div>

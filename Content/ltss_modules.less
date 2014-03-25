@@ -1,0 +1,2344 @@
+﻿@import "ltss_layout.less";
+
+/*Login Module
+====================================================================================================================================================================================================*/
+
+.login-body
+{
+	.text-accent-color-one;
+	margin: 10% auto auto auto;
+	overflow: hidden;
+	max-width: 1200px;
+	padding: 0px 50px;
+}
+
+.login-logo
+{
+	font-weight: bold;
+	font-size: 500%;
+	line-height: 100%;
+	display: inline-block;
+}
+
+.login-panel
+{
+	.background-base-color-five;
+	.box-shadow;
+	padding: 40px;
+	border-radius: 8px;
+	width: 400px;
+	.margin-x(10px);
+}
+
+#login-form
+{
+	.text-style-base-one;
+	width: 400px;
+
+	legend
+	{
+		.text-style-base-one(200%);
+		color: @gray-tone-two;
+		text-align: center;
+		position: static;
+		margin-bottom: 50px;
+	}
+
+	.row
+	{
+		margin-bottom: 15px;
+	}
+
+	label
+	{
+		.text-style-base-one(110%);
+		margin-left: 0px;
+	}
+
+	.login-roles
+	{
+		.text-style-base-one(90%, 115%);
+		padding-top: 5px;
+	}
+
+
+	input[type="text"]
+	{
+		.text-style-base-one(110%, 150%);
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 100%;
+		text-indent: 4px;
+		-ms-text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.k-dropdown,
+	.k-combobox
+	{
+		width: 100% !important;
+
+		.k-dropdown-wrap
+		{
+
+			.k-input
+			{
+				width: 100% !important;
+				font-size: 110%;
+				line-height: 150%;
+			}
+		}
+	}
+}
+/*Header Module
+====================================================================================================================================================================================================*/
+
+header
+{
+	color: #fff;
+
+	h1
+	{
+		.text-style-base-one(140%, 170%); /*Style: Text Element*/
+		.text-shadow(-1px, -1px, 0px, #023B60); /*Style: Text Element*/
+		padding: 4px 0px 2px 0px;
+		color: inherit;
+	}
+
+	.logo-comment
+	{
+		font-size:90%;
+		font-weight:normal;
+	}
+
+	#userinfo
+	{
+		font-size: 95%;
+		padding: 5px 0;
+
+		ul strong
+		{
+			margin-right: 10px;
+		}
+
+		ul span
+		{
+			font-size: 80%;
+		}
+
+		ul ul li
+		{
+			border-right: 1px solid white;
+			padding-right: 10px;
+			margin-right: 10px;
+			display: inline-block;
+			font-size: 80%;
+		}
+
+			ul ul li:last-child
+			{
+				border: none;
+			}
+	}
+	/* Global Header - Navigation List - Styling
+----------------------------------------------------------*/
+	#ltss-mainmenu-container
+	{
+		float: right;
+		font-weight: bold;
+		color: inherit;
+		.drop-down-menu-style-one; /*Style: Drop Down Menu Element*/
+	}
+}
+/* Top Level Navigation (Workspace Tabs) Module
+====================================================================================================================================================================================================*/
+#mainTabbedNav
+{
+	.tabbed-nav
+	{
+		.navigation-bar-style-one; /*Style: Navigation Bar Element*/
+	}
+}
+/*Left Side Navigation Module
+====================================================================================================================================================================================================*/
+#sidenav
+{ /* Left Side Navigation: Client Profile Summary Collapsible Panel
+----------------------------------------------------------*/
+	.LeftContentNav-clientinfo
+	{
+		border-bottom: 2px groove threedface;
+
+		h2
+		{
+			.text-style-accent-one(125%); /*Style: Text Element*/
+			margin-top: 4px;
+		}
+
+		.p-auto-width
+		{
+			display: block;
+		}
+
+		.p-label,
+		.p-data-element
+		{
+			.text-style-accent-one(90%); /*Style: Text Element*/
+		}
+
+		#cliensummaryinfo
+		{ /*CSS TO DO: Remove the span header in the header partial in order to remove the "div".header prefix*/
+			div.header
+			{
+				.client-summary-header-brush; /*Theme: Brush*/
+				padding: 4px 5px 3px 20px;
+				position: relative;
+				min-height: 58px;
+			}
+
+			.body
+			{
+				.drop-shadow-background-top(@client-summary-body-color); /*Theme: Brush*/
+			}
+
+			.panelbar-content
+			{
+				.drop-shadow-background-bottom; /*Theme: Brush*/
+				.border-top; /*Theme: Brush*/
+				padding: 0 10px 10px 10px;
+			}
+
+			.row
+			{
+				.text-style-base-one(13px);
+				.border-bottom(#e6e6e6); /*Theme: Brush*/
+				margin: 0 !important;
+				padding: 3px 5px 8px 5px;
+
+				.label
+				{
+					.text-style-base-one(11px);
+					.margin;
+					.padding(5px);
+					display: block !important;
+					font-weight: bold;
+				}
+			}
+
+			.p-right .row:last-child
+			{
+				border: 0;
+			}
+		}
+	}
+	/*Start Navigation Styles*/
+	.left-side-nav
+	{
+		.tree-menu-style-one; /*Style: Tree Menu Element*/ /*CSS TO DO: Clean this code*/
+		.leftNavLink-Style
+		{
+			.tree-menu-parent-list-item-style-one;
+			.border-top(@primary-color-four); /*Theme: Brush*/
+		}
+
+		> li
+		{
+
+			.arrow.expand,
+			.arrow.collapse
+			{
+				border-color: @accent-color-one;
+				left: 10px;
+			}
+		}
+
+			> li.active-node
+			{
+				> span,
+				> span:hover
+				{
+					.tree-menu-category-item-selected-state;
+					border: none;
+
+					.arrow
+					{
+						border-color: #fff;
+					}
+				}
+
+				ul
+				{
+					li.active-node
+					{
+						a.selected
+						{
+							.tree-menu-list-item-selected-state;
+						}
+					}
+				}
+
+				> ul
+				{
+					border-top: 1px solid darken(@action-color, 10%);
+
+					> li.active-node
+					{
+						> a:before,
+						> span:before
+						{
+							.tree-menu-active-node-arrow
+						}
+
+						.arrow
+						{
+							border-left: 3px solid transparent !important;
+							border-top: 4px solid #fff;
+							border-right: 3px solid transparent !important;
+							margin-top: -2px;
+							margin-left: 0px;
+						}
+
+						> ul
+						{
+							> li.active-node
+							{
+
+								.arrow
+								{
+									margin-left: 10px;
+								}
+
+								> a:before
+								{
+									.tree-menu-active-node-arrow
+								}
+							}
+
+							> li
+							{
+								> span:before
+								{
+									.tree-menu-active-node-arrow
+								}
+
+								> ul
+								{
+									> li.active-node
+									{
+
+										.arrow
+										{
+											margin-left: 10px;
+										}
+
+										> a:before
+										{
+											.tree-menu-active-node-arrow
+										}
+									}
+
+									> li
+									{
+										> span:before
+										{
+											.tree-menu-active-node-arrow
+										}
+									}
+								}
+							}
+						}
+					}
+
+					> li
+					{
+						> span:before
+						{
+							.tree-menu-active-node-arrow
+						}
+					}
+				}
+			}
+
+		.hideIfNoLinks:first-child .leftNavLink-Style
+		{
+			border-top: 0 !important;
+		}
+		/* Client Level Links */
+		.leftnav-groupcontainer.client-level
+		{
+			.tree-menu-child-list-style-one; /*Style: Tree Menu Element*/
+			li
+			{
+				a:link,
+				a:visited
+				{
+					.text-indent(0); /*Style: Text Element*/
+				}
+			}
+
+			.ltss-icon-container
+			{
+				margin: 8px 7px;
+			}
+		}
+	}
+	/*ISAS related styles*/
+	.workspace-header-bar
+	{
+		.workspace-header-toolbar-style-one; /*Style: Workspace Element*/
+		.action-link-button-style; /*Style: Interface Element*/
+	}
+
+	h3
+	{
+		font-size: 95% !important;
+		.text-shadow;
+	}
+
+	.dataTable
+	{
+		.table-style-two; /*Style: Table Element*/
+		td
+		{
+			.text-style-base-one(95% escape("!important"));
+		}
+	}
+
+	.dataTables_wrapper
+	{
+		.full-height-table-style-one; /*Style: Table Element*/
+	}
+	/*End ISAS styles*/
+}
+/*Search Area Module
+====================================================================================================================================================================================================*/
+
+.fieldset-container-searcharea
+{
+	.two-tone-gradient-inverse; /*Theme: Brush*/
+	.border-bottom; /*Theme: Brush*/
+	padding: 10px;
+	.action-button-style-one; /*Style: Interface Element*/
+	.action-link-style-one; /*Style: Interface Element*/
+	.row.stacked
+	{
+		.form-row-style-two; /*Style: Form Element*/
+		input[type="checkbox"]
+		{
+			margin: 4px 0px 6px 0px;
+		}
+	}
+
+	div,
+	fieldset
+	{
+		background: none;
+	}
+
+	button,
+	input[type='submit'],
+	input[type='button']
+	{
+		.box-shadow(0px, 0px, 0px, 0px, transparent); /*Theme: Brush*/
+	}
+
+	a:link,
+	a:visited
+	{
+		margin: 4px;
+		.text-shadow(0px, 0px, 0px, transparent); /*Theme: Brush*/
+	}
+}
+
+.fullworkspace-content-container
+{
+	.dataTable
+	{
+		.table-style-two; /*Style: Table Element*/
+	}
+
+	.dataTables_wrapper
+	{
+		.full-height-table-style-one; /*Style: Table Element*/
+	}
+}
+
+/*Workspace Module
+====================================================================================================================================================================================================*/
+#workspace
+{
+	.workspace-background-brush; /*Common Elements
+	----------------------------------------------------------*/
+	.text-style-base-one(95%, 130%); /*Style: Text Element*/
+}
+/*Workspace Header Module
+====================================================================================================================================================================================================*/
+.selection-summaryinfo
+{
+	.workspace-header-bar-style-one; /*Style: Workspace Element*/
+	h2,
+	h3
+	{
+		.workspace-header-style-one; /*Style: Workspace Element*/
+		span
+		{
+			font-weight: normal;
+		}
+	}
+
+	ul,
+	li
+	{
+		display: inline-block;
+	}
+
+	.read-edit-toggle
+	{
+		.workspace-header-control-panel-style-one; /*Style: Workspace Element*/
+		span /*Edit Mode "Selected" Indicator*/
+		{
+			.button-selected-state-one(darken(@action-color, 15%), @action-color); /*Style: Interface Element*/
+			min-width: 0px;
+		}
+
+		.action-link-button-style; /*Style: Interface Element*/
+		a:link
+		{
+			min-width: 0px;
+			margin: 0px;
+			float: none;
+		}
+	}
+
+	.new-form
+	{
+		.workspace-header-control-panel-style-one; /*Style: Workspace Element*/
+		span /*New Form "Selected" Indicator*/
+		{
+			.button-selected-state-one(darken(@success-color, 15%), @success-color);
+			min-width: 0px;
+		}
+	}
+
+
+
+	.workspace-header-bar
+	{
+		.workspace-header-toolbar-style-one; /*Style: Workspace Element*/
+		border-top: 2px groove threedface;
+
+
+		a:hover
+		{
+			background: @primary-color-six;
+		}
+
+		.row.stacked
+		{
+			.form-row-style-two
+		}
+
+		.float-right,
+		.float-left
+		{
+			input[type=text]
+			{
+				margin: 3px 0px !important;
+			}
+
+			form
+			{
+				display: inline-block;
+			}
+		}
+	}
+}
+/*Workspace Body Module
+====================================================================================================================================================================================================*/
+/*Workspace Components
+	----------------------------------------------------------*/
+.workspace-content-container,
+.workspace-content-containerformylist,
+.LeftNav-Fixed-Workarea,
+.Client-LeftNav-Fixed-Workarea,
+.searchspace-content-container-one .LeftNav-Fixed-Workarea,
+.searchspace-content-container-two .LeftNav-Fixed-Workarea,
+.threepanel-workspace-container-one,
+.threepanel-workspace-container-two,
+.threepanel-workspace-container-three
+{
+	.background-base-color-four;
+	.box-shadow-inset;
+}
+
+.ui-iList-fakeheader
+{
+	.section-header-style-one; /*Style: Section Element*/
+	line-height: 200%;
+}
+
+.genericform-style
+{
+	.section-style-one; /*Style: Section Element*/
+	.box-shadow( 0px, 2px, 8px, 0px, @gray-tone-one); /*Theme: Brush*/
+	fieldset
+	{
+		hr
+		{
+			margin: 10px 0px;
+		}
+	}
+
+
+	h4
+	{
+		.section-header-style-one; /*Style: Section Element*/
+		line-height: 200%;
+	}
+
+	h5
+	{
+		.content-block-header-style-one; /*Style: Content Block Element*/
+		margin: 10px 20px 10px 20px;
+		background: inherit;
+		display: inline-block;
+		border: none;
+	}
+
+	> h4 + .header-info:first-of-type:nth-child(2)
+	{
+		.margin-top;
+	}
+
+	div.fieldset-container-one
+	{
+		.content-block-style-five; /*Style: Content Block Element*/
+		h6
+		{
+			.content-block-header-style-two;
+			background: inherit;
+			margin-top: 20px;
+			display: inline-block;
+		}
+	}
+
+	.fieldset-container-one:last-of-type
+	{
+		margin-bottom: 20px;
+	}
+
+	div.fieldset-container-two
+	{
+		.content-block-style-two; /*Style: Content Block Element*/
+		margin-top: -20px;
+		padding-top: 20px;
+	}
+
+	hr,
+	.add-button
+	{
+		margin: 0px 20px;
+	}
+
+	.row
+	{
+		.form-row-style-one; /*Style: Form Element*/
+		.action-button-style-one;
+
+		button,
+		input[type='submit'],
+		input[type='button']
+		{
+			.box-shadow(0px, 0px, 0px, 0px, transparent);
+		}
+	}
+
+	.two-column-row-style; /*Style: Formatting Style*/
+	.data-element
+	{
+		.form-data-element-style-one; /*Style: Form Element*/
+	}
+
+	.inline-table,
+	.inline-dataTable
+	{
+		border: 1px solid @primary-color-four; /*TO DO (YP): this color needs to be updated to #808080*/
+	}
+
+
+	.TaskDetailLink
+	{
+		.content-block-control-panel-style-one; /*Style: Content Block Element*/
+		top: -31px;
+		margin-bottom: -31px;
+		right: 10px;
+		.action-link-style-one; /*Style: Interface Element*/
+		a,
+		a:visited
+		{
+			color: #fff;
+			text-decoration: none;
+		}
+
+			a:hover
+			{
+				background-color: @accent-color-five;
+			}
+	}
+	/*Manage Workflow Elements
+====================================================================================================================================================================================================*/ /*Add table*/
+	.add-to-table
+	{
+		.content-block-well-style; /*Style: Content Block Element*/
+		.margin(10px, 0, 20px, 0);
+		padding: 10px 20px 20px 20px;
+
+		.addTo-button,
+		.row.addTo-button,
+		.CancelEdit-link
+		{
+			text-align: center;
+			margin: 10px 0px;
+			display: inline-block;
+		}
+
+		table
+		{
+			.margin(10px);
+			word-wrap: break-word;
+		}
+
+
+		.addTo-button
+		{
+			.action-button-add-item-style; /*Style: Interface Element*/
+		}
+
+		.CancelEdit-link
+		{
+			.action-button-cancel-edit-item-style; /*Style: Interface Element*/
+		}
+
+		.header-info
+		{
+			.margin-y;
+		}
+	}
+	/*iForm Elements
+====================================================================================================================================================================================================*/
+	.iform-fieldset
+	{
+		margin: 5px 10px 0px 10px;
+		padding: 1px 0px; /*Fieldset Level One
+	----------------------------------------------------------*/
+		.fieldset-container-one,
+		.fieldset-container-one:last-of-type
+		{
+			margin: 5px 10px 5px 10px;
+		}
+	}
+
+		.iform-fieldset:last-of-type
+		{
+			margin-bottom: 20px;
+		}
+
+	.fieldset-container-one
+	{
+		.iform-fieldset
+		{
+			margin: 0px -10px;
+			padding: 0px 10px;
+		}
+
+		.column-left
+		{
+			.iform-fieldset
+			{
+				margin: 0px 0px 0px -10px;
+				padding: 0px 0px 0px 10px;
+			}
+		}
+
+		.column-right
+		{
+			.iform-fieldset
+			{
+				padding: 0px 20px 0px 10px;
+			}
+		}
+	}
+
+	.iform-fieldset.iform-active-fieldset,
+	.iform-row.iform-active-row
+	{
+		background: (rgba(red(@focus-color-one), green(@focus-color-one), blue(@focus-color-one),0.05));
+		.box-shadow(0px, 0px, 0px, 2px, @focus-color-one);
+	}
+
+	.fieldset-container-three
+	{
+
+		.iform-fieldset
+		{
+			.margin-y(5px);
+			.padding;
+		}
+	}
+
+	.fieldset-container-four
+	{
+		.iform-fieldset
+		{
+			.margin;
+			padding: 0px 5px;
+		}
+	}
+
+
+	.iform-fieldset.iform-nested
+	{
+		margin-bottom: 5px;
+	}
+	/*.iform-fieldset label
+	{
+		width: auto;
+		max-width: 91%;
+		min-width: 0px;
+	}*/
+	.errorBox.iform-fieldset.iform-active-fieldset,
+	.errorBox.iform-row.iform-active-row
+	{
+		background-color: (rgba(red(@danger-color), blue(@danger-color), green(@danger-color), 0.2)) !important;
+		.box-shadow(0px, 0px, 0px, 2px, @danger-color)
+	}
+	/*Error Box Styling*/
+	.errorBox
+	{
+		background-color: (rgba(red(@danger-color), blue(@danger-color), green(@danger-color), 0.2)) !important;
+		.box-shadow(0px, 0px, 0px, 3px, (rgba(red(@danger-color), blue(@danger-color), green(@danger-color), 0.2)));
+
+
+		input:not([type="radio"]):not([type="checkbox"]):focus,
+		textarea:focus,
+		select:focus
+		{
+			.border(@danger-color escape("!important"));
+			.box-shadow(0px, 0px, 0px, 1px, @danger-color)
+		}
+
+		input[type=radio]:focus,
+		input[type=checkbox]:focus
+		{
+			.box-shadow(0px, 0px, 0px, 1px, @danger-color)
+		}
+	}
+
+	.iform-grouped-radiobuttons
+	{
+		padding-top: 1px !important;
+
+		> legend
+		{
+			position: relative;
+			left: 0;
+			margin-right: 10px;
+			height: auto;
+			margin-bottom: 10px;
+			top: 10px;
+		}
+
+
+		> label
+		{
+			.form-label-style-two; /*Style: Form Element*/
+		}
+
+		>.row
+		{
+			> label
+			{
+				.form-label-style-two; /*Style: Form Element*/
+			}
+		}
+	}
+}
+	.genericform-style.read-only
+	{
+		.form-read-only-background-brush;
+		color: lighten(@gray-tone-one, 10%);
+
+		.header-link
+		{
+			.form-read-only-background-brush;
+		}
+	}
+	.genericform-style.announcements {
+		.notice-yellow {
+			background: #FFFF99;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			border-bottom: 1px solid #044272;
+		}
+
+		ol.home-page-alerts {
+			margin-left: 13px;
+		}
+
+			ol.home-page-alerts li {
+				line-height: 16px;
+				min-height: 0px;
+				list-style: decimal;
+				margin-bottom: 10px;
+			}
+
+		.announcements-header-link a {
+			color: white !important;
+			margin: 8px 8px auto;
+			font-size: inherit;
+			font-weight: bold;
+			float: right;
+			background-color: inherit;
+		}
+
+		h2 {
+			.section-header-style-one; /*Style: Section Element*/
+			line-height: 200%;
+		}
+
+		h3 {
+			.content-block-header-style-one; /*Style: Content Block Element*/
+			margin: 10px 20px;
+			background: inherit;
+			border: none;
+		}
+
+		h4 {
+			.content-block-header-style-two;
+			background: inherit;
+			margin-top: 20px;
+		}		
+
+		h5 {
+			display:block;
+			margin: 12px 0px 6px 0px;
+		}
+
+		ul {
+			margin: 10px 20px 20px 20px; 
+			
+			li {
+				list-style: disc inside none;
+				line-height: 160%;
+				display: list-item;
+
+				li {
+					list-style: circle inside none;
+					line-height: 160%;
+					display: list-item;
+				}	
+			}		
+		}
+
+		p {
+			margin: 10px 20px;
+		}
+
+		.form-one-column {
+			padding-left: 20px;
+			padding-right: 20px;
+			margin-top: 8px;
+			margin-bottom: 8px;
+		}
+	}
+	.releaseNotes {
+			padding-left: 20px;
+			padding-right: 20px;
+			margin-top: 4px;
+			margin-bottom: 4px;	
+	  .releaseNotes li {
+		list-style: disc outside none;
+	}
+	  .releaseNotes li li {
+			list-style: circle outside none;
+			display: list-item;
+		}		
+		}
+
+/*Accordion
+====================================================================================================================================================================================================*/
+.panelbar-formheader-style
+{
+	.accordion-style-one; /*Style: Accordion Element*/
+	> .panel
+	{
+		background: inherit;
+
+		> .header
+		{
+			overflow: hidden;
+
+			.header
+			{
+				.padding;
+			}
+
+			h4:hover
+			{
+				background-color: lighten(@accent-color-one, 5%);
+				border-top: 1px solid lighten(@accent-color-one, 10%);
+			}
+
+
+			.arrow.expand,
+			.arrow.collapse
+			{
+				border-color: lighten(@accent-color-one, 20%);
+				left: 9px;
+			}
+
+			.TaskDetailLink
+			{
+				background: none;
+			}
+		}
+
+		> .body
+		{
+			background: inherit;
+
+			> .form-panelbar-content
+			{
+				background: inherit;
+			}
+		}
+	}
+}
+
+.panelbar-form-style
+{
+	.accordion-style-one; /*Style: Accordion Element*/
+	background: inherit;
+
+	.panelBarItem
+	{
+		background: inherit;
+
+		.header,
+		h5
+		{
+			background: inherit;
+
+			.header
+			{
+				.padding;
+			}
+
+			.arrow.expand,
+			.arrow.collapse
+			{
+				border-color: @accent-color-one;
+				left: 4px;
+			}
+		}
+
+		.body
+		{
+			background: inherit;
+
+			.panelbar-content
+			{
+			}
+
+			.form-panelbar-content
+			{
+				padding-bottom: 20px;
+			}
+		}
+	}
+}
+
+.new-panelbar-task-style
+{
+	.position-absolute;
+	.background-base-color-six;
+	overflow-y: auto;
+	padding: 0px 20px 40px 20px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background: #EEE;
+
+	h4
+	{
+		.border-bottom(@gray-tone-four);
+		color: @accent-color-four;
+		padding-bottom: 3px;
+		font-size: 130%;
+		margin-top: 30px;
+		z-index: 1;
+	}
+
+	.panelbar-section-header
+	{
+		position: relative;
+
+		.TaskDetailLink
+		{
+			.content-block-control-panel-style-one; /*Style: Content Block Element*/
+			position: absolute;
+			top: -8px;
+			right: 0px;
+			.action-link-style-one; /*Style: Interface Element*/
+		}
+	}
+
+	.panel
+	{
+		padding-top: 10px;
+
+		.header
+		{
+			display: inline-block;
+
+			h4,
+			h5
+			{
+				.content-block-header-style-two;
+				color: @primary-color-two;
+				.margin;
+				display: inline-block;
+			}
+
+				h4:hover,
+				h5:hover
+				{
+					cursor: pointer;
+				}
+
+			.arrow
+			{
+				display: none;
+			}
+		}
+
+		.body
+		{
+
+			.new-panelbar-content
+			{
+				margin-bottom: 10px;
+
+				.toolbar
+				{
+					position: relative;
+					min-height: 16px;
+					height: auto;
+					text-align: right;
+
+					.table-arrow
+					{
+						border-left: 12px solid transparent;
+						border-bottom: 12px solid @gray-tone-four;
+						border-right: 12px solid transparent;
+						display: inline-block;
+						position: absolute;
+						bottom: 0px;
+						left: 5px;
+					}
+				}
+
+				.task-action
+				{
+					.content-block-control-panel;
+					.action-link-style-one;
+					position: absolute;
+					display: inline-block;
+					right: 0px;
+					top: -10px;
+				}
+
+				.inline-dataTable
+				{
+					.border;
+				}
+
+				.fieldset-container-one
+				{
+					.border(@gray-tone-four);
+					margin: 0px;
+
+					.data-element
+					{
+						.form-data-element-style-one; /*Style: Form Element*/
+					}
+				}
+			}
+		}
+	}
+}
+
+/*Additional Form Elements
+	----------------------------------------------------------*/
+/* info icons */
+.header-info
+{
+	.notification-bar-base-style;
+}
+
+	.header-info.note
+	{
+		.notification-bar-info-style;
+	}
+
+.tableRowEditSelected
+{
+	.notification-bar-base-style;
+	.notification-bar-info-style;
+	.margin-y;
+	background-color: @action-color;
+}
+
+.label-info
+{
+	.margin-bottom;
+	color: (rgba(red(@gray-tone-one), green(@gray-tone-one), blue(@gray-tone-one), 0.75));
+	font-style: italic;
+	display: block !important;
+	width: auto !important;
+	text-align: justify;
+	-ms-text-justify: distribute;
+	text-justify: distribute;
+}
+/*Add Row Button*/
+.add-button
+{
+	.margin(10px);
+	text-align: center;
+	padding: 10px 0px 20px 10px;
+	border-top: 1px solid (rgba(red(@accent-color-one), green(@accent-color-one), blue(@accent-color-one), 0.10));
+	.action-button-add-fieldset-row-style;
+}
+/*Required Fields & Validation Styles
+	----------------------------------------------------------*/
+.required-indicator-style
+{
+	.text-style-base-one(125%, 80%);
+	font-weight: 600;
+	margin-left: 2px;
+	cursor: pointer;
+}
+/*Required Save*/
+.complete-required-indicator,
+.selection-required-indicator,
+.filter-required-indicator
+{
+	.required-indicator-style;
+	color: @danger-color;
+}
+/*Required to submit*/
+.submit-required-indicator,
+.section-submit-required-indicator
+{
+	.required-indicator-style;
+	color: @warning-color;
+}
+/*Validation*/
+.error,
+.field-validation-error
+{
+	.text-style-base-one(90%);
+	color: @danger-color;
+	display: inline-block;
+	font-weight: bold;
+
+	label
+	{
+		margin: 0px !important;
+		width: auto !important;
+		max-width: none !important;
+	}
+}
+
+.inline-validation-text
+{
+	color: @danger-color;
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	margin-top: -6px;
+	font-size: 85%;
+	margin-left: 5px;
+}
+
+.field-validation-valid
+{
+	display: none;
+}
+
+
+input[type="text"].input-validation-error,
+input[type="text"].required.input-validation-error,
+input[type="text"][readonly="readonly"].input-validation-error,
+input[type="text"][readonly="readonly"].required.input-validation-error,
+input[type="textarea"].input-validation-error,
+input[type="textarea"].required.input-validation-error,
+input[type="textarea"][readonly="readonly"].input-validation-error,
+input[type="textarea"][readonly="readonly"].required.input-validation-error,
+input[type="password"].input-validation-error,
+input[type="password"].required.input-validation-error,
+input[type="password"][readonly="readonly"].input-validation-error,
+input[type="password"][readonly="readonly"].required.input-validation-error,
+select.input-validation-error,
+select.required.input-validation-error
+{
+	.border(@danger-color);
+	.box-shadow(0px, 0px, 0px, 1px, @danger-color);
+}
+
+.validation-summary-errors
+{
+	color: @danger-color;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.validation-summary-valid
+{
+	display: none;
+}
+/* Accordions 
+====================================================================================================================================================================================================*/
+.panelbar-task-style
+{
+	.accordion-style-one; /*Style: Accordion Element*/
+	padding-bottom: 0px;
+
+	.panel
+	{
+		border-bottom: 1px solid @accent-color-two;
+		background: inherit;
+
+		.header
+		{
+			background: darken(@accent-color-three, 5%);
+			padding-top: 10px;
+			padding-bottom: 10px;
+			color: #fff;
+
+			h4,
+			h5,
+			.header
+			{
+				.section-header-style-one; /*Style: Section Element*/
+				.padding;
+				background: inherit;
+				border: none;
+
+				span
+				{
+					color: inherit;
+				}
+			}
+
+			.TaskDetailLink
+			{
+				.content-block-control-panel-style-one; /*Style: Content Block Element*/
+				position: absolute;
+				top: 50%;
+				margin-top: -13px;
+				right: 10px;
+				.action-link-style-one; /*Style: Interface Element*/
+				a,
+				a:visited
+				{
+					color: #fff;
+					text-decoration: none;
+				}
+
+					a:hover
+					{
+						background-color: @accent-color-five;
+					}
+			}
+
+
+			.arrow.expand,
+			.arrow.collapse
+			{
+				border-color: #fff;
+				left: 9px;
+			}
+
+			.header.inline
+			{
+				display: inline-block;
+				width: auto;
+				margin-right: 20px;
+			}
+
+			p
+			{
+				.section-header-style-one; /*Style: Section Element*/
+				.margin;
+				background: inherit;
+				border: none;
+				font-size: 90%;
+				font-weight: normal;
+			}
+
+			.task-summary
+			{
+				display: block;
+				height: auto;
+			}
+
+			.label,
+			label
+			{
+				color: inherit;
+				font-weight: bold;
+				margin: 8px 4px 0px 0px;
+				width: auto;
+				vertical-align: baseline;
+			}
+
+			.data-element,
+			.data-element span
+			{
+				color: inherit;
+				margin: 8px 20px 0px 0px;
+				width: auto;
+				vertical-align: baseline;
+
+				div,
+				div span
+				{
+					.margin(8px);
+					width: auto;
+					vertical-align: bottom;
+				}
+			}
+		}
+
+			.header:hover
+			{
+				background: @accent-color-three;
+			}
+
+		.body
+		{
+			background: inherit;
+
+			.panelbar-content
+			{
+				border: none;
+				background: inherit;
+
+				p,
+				.row
+				{
+					.form-row-style-one; /*Style: Form Element*/
+				}
+
+					p:nth-of-type(odd)
+					{
+						background: @alternate-row-color-one;
+					}
+
+				.data-element
+				{
+					.form-data-element-style-one; /*Style: Form Element*/
+				}
+
+				h5
+				{
+					.content-block-header-style-one; /*Style: Content Block Element*/
+					margin: 10px 20px 10px 20px;
+					background: inherit;
+					display: inline-block;
+					border: none;
+				}
+
+				div.fieldset-container-one
+				{
+					.content-block-style-five;
+				}
+
+				.fieldset-container-one
+				{
+					.content-block-style-one; /*Style: Content Block Element*/
+					margin-top: -20px;
+					padding-top: 10px;
+
+					.inline-table,
+					.inline-dataTable
+					{
+						.table-style-two; /*Style: Table Element*/
+						border: 1px solid @primary-color-three;
+						.margin-x(10px);
+					}
+				}
+
+
+				.inline-table,
+				.inline-dataTable
+				{
+					.table-style-two; /*Style: Table Element*/
+				}
+			}
+
+				.panelbar-content:first-of-type
+				{
+
+
+					h5:first-of-type,
+					h6:first-of-type
+					{
+						.margin-top;
+					}
+				}
+		}
+	}
+}
+
+
+/*Content Block Elements
+====================================================================================================================================================================================================*/
+/*Fieldset Level One
+	----------------------------------------------------------*/
+
+.fieldset-container-one
+{
+	.content-block-style-one; /*Style: Content Block Element*/
+	.legend-header-one
+	{
+		.content-block-header-style-one; /*Style: Content Block Element*/
+		padding-left: 0px;		
+	}
+
+	.header-link
+	{
+		.content-block-control-panel-style-one; /*Style: Content Block Element*/
+		.form-background-brush;
+		top: -33px;
+		margin-bottom: -33px;
+	}
+	/*p
+	{
+		.margin-y;
+	}*/
+	hr
+	{
+		margin: 10px 0px;
+	}
+
+	.add-button
+	{
+		margin: 0px;
+	}
+
+	.header-info
+	{
+		.notification-bar-base-style;
+		.margin-y;
+	}
+	/*Fieldset Level Two
+	----------------------------------------------------------*/
+	.fieldset-container-two
+	{
+		.content-block-style-two; /*Style: Content Block Element*/
+		.legend-header-two
+		{
+			.content-block-header-style-two; /*Style: Content Block Element*/
+		}
+
+		.header-link
+		{
+			.content-block-control-panel-style-two; /*Style: Content Block Element*/
+			top: -31px;
+			margin-bottom: -31px;
+		}
+	}
+
+	> .fieldset-container-two:last-of-type
+	{
+		margin-bottom: 0px;
+	}
+
+	> .fieldset-container-two:first-child,
+	> .fieldset-container-two:nth-child(2)
+	{
+		margin-top: 0px;
+	}
+	/*Fieldset Level Three
+	----------------------------------------------------------*/
+	.fieldset-container-three
+	{
+		.content-block-style-three; /*Style: Content Block Element*/
+		.legend-header-three
+		{
+			.content-block-header-style-three; /*Style: Content Block Element*/
+		}
+
+		> .row
+		{
+			> label,
+			.label
+			{
+				width: 290px;
+			}
+		}
+
+		.fieldset-container-four,
+		.fieldset-container-four:nth-child(even)
+		{
+			.content-block-style-four; /*Style: Content Block Element*/
+			background: none;
+			border-left: 0px;
+			border-right: 0px;
+			border-bottom: 0px;
+			margin-top: 0px;
+			padding-top: 10px;
+
+			.legend-header-four
+			{
+				.content-block-header-style-four; /*Style: Content Block Element*/
+			}
+
+			> .row
+			{
+				> label,
+				.label
+				{
+					.form-label-style-one;
+				}
+			}
+		}
+
+		.header-info
+		{
+			.margin-y;
+		}
+	}
+	/*Fieldset Level Four
+	----------------------------------------------------------*/
+	.fieldset-container-four
+	{
+		.content-block-style-four; /*Style: Content Block Element*/
+		.legend-header-four
+		{
+			.content-block-header-style-four; /*Style: Content Block Element*/
+		}
+
+		.header-link
+		{
+			.content-block-control-panel-style-two; /*Style: Content Block Element*/
+			top: -21px;
+			margin-bottom: -21px;
+		}
+	}
+
+		.fieldset-container-four:nth-child(even)
+		{
+			background-color: @alternate-row-border-color-one;
+			border: 1px solid @alternate-row-color-one;
+			position: relative;
+			padding-top: 24px;
+
+			.legend-header-four
+			{
+				position: absolute;
+				top: 0px;
+				padding: 5px 0px 0px 0px;
+				text-indent: 4px;
+			}
+
+			.header-link
+			{
+				.content-block-control-panel-style-two; /*Style: Content Block Element*/
+				background: none;
+			}
+		}
+
+		.fieldset-container-four:first-child,
+		.fieldset-container-four:nth-child(2)
+		{
+			margin-top: 0px;
+		}
+}
+
+	/*Direct clearfix applied to the fieldset*/
+	.fieldset-container-one:after
+	{
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+
+/*div.fieldset-container-one
+{
+	.header-link
+	{
+		top: -24px;
+	}
+}*/
+
+.searchspace-content-container-one
+{
+	.background-base-color-five; /*Theme: Brush*/
+	.js-workarea-panel
+	{
+		background: inherit;
+
+		h4
+		{
+			.content-block-header-style-one; /*Style: Content Block Element*/
+			margin: 10px 20px 10px 20px;
+			background: inherit;
+			display: inline-block;
+			border: none;
+			color: @gray-tone-one;
+			.text-shadow;
+		}
+
+		div.fieldset-container-one
+		{
+			background: inherit;
+			.content-block-style-one; /*Style: Content Block Element*/
+			margin-top: -20px;
+			padding-top: 20px;
+			border-color: @gray-tone-one;
+
+			h5
+			{
+				.content-block-header-style-two;
+				background: inherit;
+				margin-top: 20px;
+				display: inline-block;
+			}
+
+			.row
+			{
+				.text-shadow;
+				color: @gray-tone-one;
+			}
+		}
+	}
+}
+/*Kendo Related Styles*/
+.k-window
+{
+	.fieldset-container-one
+	{
+		margin: 0px 0px 20px 0px;
+	}
+
+	table
+	{
+		thead
+		{
+			tr
+			{
+				th
+				{
+					.border-top;
+				}
+			}
+		}
+	}
+}
+/*End Kendo Styles*/
+
+/*Form Elements
+====================================================================================================================================================================================================*/
+
+.row
+{
+	.form-row-style-one; /*Style: Form Element*/
+	.action-button-style-one;
+
+	button,
+	input[type='submit'],
+	input[type='button']
+	{
+		.box-shadow(0px, 0px, 0px, 0px, transparent);
+	}
+}
+
+	.row.summary
+	{
+		.margin;
+	}
+
+		.row.summary:nth-of-type(odd)
+		{
+			background-color: @alternate-row-color-one;
+		}
+
+	.row.stacked
+	{
+		.form-row-style-two; /*Style: Form Element*/
+		.grouped-radiobuttons
+		{
+			legend
+			{
+				float: none;
+				display: block;
+				width: auto;
+			}
+
+			.row
+			{
+				.margin;
+				min-height: 0px;
+			}
+		}
+	}
+
+
+/*.two-column-row-style;*/ /*Style: Formatting Style*/
+.column-left,
+.column-right
+{
+	.fieldset-container-three
+	{
+
+		label,
+		.label
+		{
+			width: 40%;
+		}
+
+		textarea:not(.k-input)
+		{
+			width: 98%;
+		}
+	}
+}
+
+.column-right
+{
+	float: right;
+}
+
+.grouped-radiobuttons
+{
+	> legend
+	{
+		.form-label-style-one;
+		display: inline-block;
+		position: relative;
+		float: left;
+		height: auto;
+		left: 0px;
+		color: inherit;
+	}
+
+	> label
+	{
+		.form-label-style-two; /*Style: Form Element*/
+	}
+
+	>.row
+	{
+		> label
+		{
+			.form-label-style-two; /*Style: Form Element*/
+		}
+	}
+}
+
+.collapsible-key
+{
+	margin-bottom: 20px;
+	.accordion-style-two;
+}
+
+
+.searchspace-footer-bar {
+	.workspace-header-toolbar-style-one;
+	border-top: 1px solid @gray-tone-four;
+	padding: 10px 0px;
+	margin-top: 5px;	
+}
+
+/*Custom Controls
+====================================================================================================================================================================================================*/
+
+/*View Filter Drop Down 
+----------------------------------------------------------*/
+.viewOptionsDropdown
+{
+	.border;
+	.box-shadow(0px, 3px, 10px, -2px);
+	background: @primary-color-five !important;
+	position: absolute;
+	top: 61px;
+	right: 10px;
+	width: 250px;
+	padding: 10px;
+	border-radius: 2px;
+	z-index: 9999;
+	display: none;
+
+	.switch-candy
+	{
+		label
+		{
+			color: @gray-tone-one;
+		}
+
+		a
+		{
+			background-color: @accent-color-three;
+		}
+
+		> span
+		{
+			span
+			{
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+/* jQuery multiselect 
+	http://www.erichynds.com/blog/jquery-ui-multiselect-widget
+	Widget will be automatically attached if ~/Scripts/ltss.multiselect.js is included
+ */
+
+select[multiple].js-multiselect
+{
+	display: none;
+}
+
+/*Interface Elements
+====================================================================================================================================================================================================*/
+.action-button-style-one;
+/*Table Elements
+====================================================================================================================================================================================================*/
+table
+{
+	.data-element
+	{
+		margin: 0px !important;
+	}
+
+	input[type="checkbox"]
+	{
+		.margin;
+	}
+
+	thead
+	{
+		tr
+		{
+			th
+			{
+			}
+		}
+	}
+
+	tbody
+	{
+		tr
+		{
+			td
+			{
+				.popup-info
+				{
+					padding-left: 3px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+	table.letter
+	{
+		padding: 0px 20px;
+		width: 100%;
+
+		tbody
+		{
+			tr:nth-child(even)
+			{
+				background: #fff !important;
+			}
+		}
+	}
+
+.tableRowHighlight.odd,
+.tableRowHighlight.even,
+.tableRowHighlight
+{
+	tr
+	{
+		background-color: @action-color !important;
+	}
+
+	td
+	{
+		color: #fff !important;
+		background-color: @action-color !important;
+	}
+}
+
+.generalTable,
+.dataTable.generalTable
+{
+	.table-style-one; /*Style: Table Element*/
+}
+
+
+.inline-table,
+.inline-dataTable,
+.dataTable-list-style,
+.dataTable-first-column-checkbox
+{
+	.table-style-two; /*Style: Table Element*/
+}
+
+.LeftNav-Fixed-Workarea,
+.ClientSummaryPanelTwo-Wrapper
+{
+	.dataTable
+	{
+		.table-style-two; /*Style: Table Element*/
+	}
+
+	> .dataTables_wrapper
+	{
+		.full-height-table-style-one; /*Style: Table Element*/
+	}
+}
+
+.dataTable-summarylist-style
+{
+	.full-height-table-style-one; /*Style: Table Element*/
+}
+
+.dataTable-list-style-footer-filter,
+.dataTable-summarylist-style-footer-filter
+{
+	.full-height-table-style-two
+}
+/*ISAS Dashboard related Styles*/
+.tableContainer
+{
+
+	.dataTable
+	{
+		.table-style-two; /*Style: Table Element*/
+	}
+
+	.dataTable-summarylist-style-footer-filter
+	{
+		.full-height-table-style-one; /*Style: Table Element*/
+	}
+}
+/*End ISAS Styles*/
+/*Notifications Module
+====================================================================================================================================================================================================*/
+.Message-Container
+{
+	.position-absolute( none, 33px, 15px, none);
+	z-index: 10;
+
+	.notification
+	{
+		width: 300px;
+		border-radius: 7px;
+	}
+}
+
+.message-wrapper
+{
+	.notification
+	{
+		.notification-bar-info-style-two;
+	}
+
+	.message-info
+	{
+		.notification
+		{
+			border-color: @info-color;
+		}
+	}
+
+	.message-success
+	{
+		.notification
+		{
+			border-color: @success-color;
+		}
+	}
+
+	.message-error
+	{
+		.notification
+		{
+			border-color: @danger-color;
+		}
+	}
+}
+/*Begin Qtip Tooltip override styles*/
+.qtip-titlebar {	
+	background: @primary-color-five !important;    
+	color: #000 !important;	
+	border: 2px solid #fff !important;
+				}
+.qtip-content {	
+	background: #fff !important;
+	color: @primary-color-one !important;	
+				}
+.qtip-default {		
+	border-color: @primary-color-one !important;		
+				}
+/*End Qtip Tooltip override styles*/
+/* Responsive Conversions
+====================================================================================================================================================================================================*/
+/* Note: Design for a min width of 1280px & beyond */
+.clientNameIdDob,
+.leftNav-dropDownButton,
+.show-for-tablet
+{
+	display: none;
+}
+/* States */
+.hide-for-tablet
+{
+	display: block;
+}
+/* Note: Design for a min width of 768px & max width of 1280px */
+@media only screen and (min-width: 1289px)
+{
+	.genericform-style
+	{
+		margin: 10px auto 20px auto;
+		max-width: 900px;
+	}
+}
+
+/* Note: Design for a min width of 0px & max width of 1200px */
+@media only screen and (min-width: 0px) and (max-width: 1199px)
+{
+	.login-body
+	{
+		max-width: 460px;
+	}
+}
+/* Note: Design for a min width of 0px & max width of 960px */
+@media only screen and (min-width: 0px) and (max-width: 959px)
+{
+
+	/* Layout 
+----------------------------------------------------------*/
+
+	/* no sidenav/full workspace layout */
+	#workspace
+	{
+		.full-workspace-one,
+		.full-workspace-two
+		{
+			.position-absolute;
+			overflow-y: hidden;
+			overflow-x: hidden;
+		}
+
+		.fullworkspace-content-container-one
+		{
+			.position-absolute(110px);
+			.box-shadow-inset;
+			.border-sides;
+			background: transparent !important;
+			overflow-y: auto;
+			overflow-x: hidden;
+			padding: 20px 1% 0px 1%;
+		}
+
+		.fullworkspace-content-container-two
+		{
+			.position-absolute(160px);
+			.box-shadow-inset;
+			.border-sides;
+			background: transparent !important;
+			overflow-y: auto;
+			overflow-x: hidden;
+			padding: 20px 1% 0px 1%;
+		}
+
+		.workspace
+		{
+			left: 0px;
+		}
+	}
+
+	#sidenav
+	{
+		margin: -9999px;
+		z-index: 1000;
+		top: 40px;
+		max-height: 85%;
+		left: 3px;
+		height: auto !important;
+		position: relative;
+		-moz-box-shadow: 0px 2px 20px #111;
+		-webkit-box-shadow: 0px 2px 20px #111;
+		box-shadow: 0px 2px 20px #111;
+		border-radius: 0px !important;
+
+		.LeftContentNav-clientinfo
+		{
+			display: none;
+		}
+
+		.no-sidenav
+		{
+			display: none;
+		}
+	}
+	/* Authorization/Login Page 
+----------------------------------------------------------*/
+
+	/* Login */
+	.login-wrapper
+	{
+		padding: 0;
+	}
+
+	.login-panel-wrapper,
+	.login-logo-wrapper
+	{
+		display: block;
+		width: 100%;
+		text-align: center;
+		height: auto;
+		position: static;
+		padding: 0 !important;
+	}
+
+		.login-panel-wrapper .login-panel,
+		.login-logo-wrapper .login-logo
+		{
+			display: block !important;
+			width: auto !important;
+			height: auto;
+			text-align: left !important;
+			position: relative !important;
+			padding: 20px 0 !important;
+			margin: 0 20% !important;
+			float: none !important;
+		}
+	/*Left Nav Drop Down Button 
+----------------------------------------------------------*/
+	button.leftNav-dropDownButton
+	{
+		.text-style-base-one(110%);
+		display: inline-block;
+		min-width: 0px;
+		margin: 0px 0px 2px 5px;
+		padding: 3px 6px;
+		float: left;
+	}
+
+		button.leftNav-dropDownButton.dropDownActive
+		{
+			display: inline-block;
+		}
+
+
+	/* Client Summary Infor Panel to Sub Header Block
+----------------------------------------------------------*/
+	nav.tabbed-nav
+	{
+		span.clientNameIdDob
+		{
+			display: inline-block;
+			font-weight: normal !important;
+			font-size: 95%;
+			margin-left: 0px !important;
+		}
+
+		ul
+		{
+			li.selected
+			{
+
+				span.p-label
+				{
+					margin-left: 20px;
+					font-weight: bold !important;
+					font-size: 75%;
+				}
+
+				a:link,
+				a:visited
+				{
+					.glossy-background-brush;
+					color: #fff !important;
+					position: absolute !important;
+					top: 0px;
+					left: 0px;
+					right: 0px;
+					text-align: center;
+					z-index: 1;
+
+					div,
+					fieldset,
+					span
+					{
+						background: none;
+					}
+				}
+			}
+		}
+
+		span.clientNameIdDob span
+		{
+			font-weight: normal !important;
+			font-size: 95%;
+		}
+
+		.toplevelTab
+		{
+			display: none;
+		}
+
+		.ltss-icon-container
+		{
+			display: none !important;
+		}
+	}
+
+	/* States */
+	.hide-for-tablet
+	{
+		display: none;
+	}
+
+	.show-for-tablet
+	{
+		display: block;
+	}
+}
+
+/*LTSS Icons*/
+
+.popup-info:before
+{
+	.info-icon-s1;
+	color: lighten(@accent-color-three, 15%);
+}

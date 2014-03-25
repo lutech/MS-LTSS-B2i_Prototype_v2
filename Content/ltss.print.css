@@ -1,0 +1,300 @@
+﻿html {font-family: arial, Arial}
+body { color: #333; font-size: 16px; }
+
+
+.k-content {display:block !important;}
+
+/* Common */
+h1 {font-size:200%; border-bottom: 2px solid #444; position:absolute; top:0; left:0; width:790px !important}
+h2 {font-size: 150%; display:inline !important;}
+h3 {font-size: 185%; display:block; left:0; right:0; background-color:#666; color: white;height:30px; padding-left:5px; margin-left:0;}
+h3 span {margin-left:10px;}
+h4 {font-size:175%; margin-bottom:5px}
+ul {}
+li { list-style: none }
+textarea,
+textarea.comments-textarea,
+textarea.comments-textarea.readonly,
+textarea[readonly="readonly"],
+textarea.readonly,
+fieldset.fieldset-container-one textarea {background-color:#f9f9f9 !important; width:100% !important; height:100% !important; overflow:visible !important; display:block !important;  margin:0 !important; padding:10px !important; font-family: arial, Arial; border: none !important; font-size: 100% !important; }
+span.comments-textarea-tall {background:none !important; height:180px !important; display: block; border: 1px solid #A5B3C5 !important; margin-bottom:20px !important;}
+
+/* Common Classes*/
+.auto-width {width:auto !important}
+.ui-hide  {top:0px; position:absolute !important; left: -999999px !important; height: 0px !important; width:0px !important}
+
+/*User Summary Information*/
+#userinfo {position:absolute; top:40px; left:0; width:auto;}
+#userinfo ul,
+#userinfo ul li {margin:0 !important; padding:0 !important;}
+
+
+/*Client Summary Information*/
+#cliensummaryinfo {width:790px !important; left:0px; top:80px; background-color:#f1f1f1; padding:10px; position:absolute;}
+#cliensummaryinfo div.panel div.header div.p-auto-width {display:inline-block !important; width:auto !important;}
+#cliensummaryinfo .p-label {font-weight:bold !important; margin-left:10px}
+#cliensummaryinfo .name {margin:0 0 5px 0; padding:0; line-height:normal;}
+#cliensummaryinfo .name span {font-weight:normal; font-size:75%}
+#cliensummaryinfo .body { padding-left:28px !important; margin-top:2px !important; border-top: 1px solid #999; padding-top:6px !important;}
+#cliensummaryinfo .body span { margin:0 !important;}
+#cliensummaryinfo span.label { margin-right:4px !important; font-weight:bold}
+#cliensummaryinfo .body,
+#cliensummaryinfo .row {margin:0 !important; padding:0 !important; color:#444}
+header {margin-bottom:50px}
+#mainHeader-MenuBar h1 {background-color:#235070; color:white}
+#cliensummaryinfo span.p-left {width:45%;float:left; padding-top:10px;}
+#cliensummaryinfo span.p-right {width:45%;float:left; padding-top:10px;}
+
+
+/*Workspace Area*/
+.workspace {position:absolute; top:210px; width:790px !important; padding:0; margin:0; left:0;}
+.full-workspace-one {position:absolute; top:190px; width:790px !important; padding:0; margin:0; left:0;}
+.full-workspace-two {position:absolute; top:240px; width:790px !important; padding:0; margin:0; left:0;}
+.workspace-content-container { width:790px !important}
+.selection-summaryinfo {  left:0; right:0; }
+.selection-summaryinfo h2 {display:none}
+
+.workspace.p-valign-top {top:110px !important}
+.workspace.p-valign-two {top:210px !important}
+.LeftNav-Fixed-Workarea {position:absolute;top:60px;}
+.LeftNav-ListWorkspace-content-container .LeftNav-Fixed-Workarea {position:absolute; top:180px;}
+
+.searchspace-footer-bar {display:none}
+
+/*Forms*/
+ul.auto-dynamicform-style {margin-left:0px}
+
+fieldset {border:none; margin-top:5px; padding:0 0 0 2px}
+fieldset.fieldset-container-one {padding-left:10px; margin-bottom:0px}
+fieldset legend {font-weight:bold; font-size: 125%; margin-left: -8px; margin-bottom:5px; max-width: 775px}
+    
+    input[type="text"],
+    input[readonly="readonly"],
+    input.readonly,
+    textarea.readonly,
+    select.readonly,
+    select:disabled,
+    textblock.readonly,
+    .extension, .frequency {display:inline-block !important; width:auto !important; border:0 !important; font-size: 100% !important;  line-height: 12px  !important; padding:0 !important; margin:0!important;}
+
+
+fieldset.fieldset-container-searcharea { width:790px; top:90px; left:0; position:absolute;}
+fieldset.fieldset-container-searcharea legend {font-size: 185%; display:block !important; left:0; width:790px; background-color:#666; color: white; height:30px; padding-left:5px; margin:0 0 10px -10px!important;}
+.workspace.p-valign-two h2 { display:none !important;}
+.workspace.p-valign-two fieldset.fieldset-container-searcharea { width:790px; top:0px; left:0; position:absolute;}
+.workspace.p-valign-two .LeftNav-Fixed-Workarea {margin-top:110px;}
+fieldset.fieldset-container-three legend,
+fieldset.fieldset-container-searcharea legend {display:none}
+fieldset.fieldset-container-one {border-top: 1px solid #999}
+
+/* hide for print */
+
+.hide-for-print {display:none !important;}
+#mainTabbedNav .hide-for-print {display:none !important;}
+.disclaimer {display:none;}
+.k-icon-calendar {display:none !important;}
+.workspace-header-bar {display:none !important;}
+#cliensummaryinfo .row label,
+#cliensummaryinfo .row span.label {width:auto;}
+
+.row label,
+.row span.label { margin:2px 0; width:35%; padding:0 20px 0 0 !important; display:inline-block;  min-width:250px; vertical-align:top;}
+label.grouped-radiobuttons-label {width:auto}
+
+fieldset.grouped-radiobuttons,
+.div.grouped-radiobuttons {display:inline; margin:0; width:auto !important; min-width:0 !important; }
+fieldset.grouped-radiobuttons legend {display:none;}
+fieldset.grouped-radiobuttons .grouped-radiobuttons-label,
+div.grouped-radiobuttons .grouped-radiobuttons-label {margin:4px 10px 4px 0 !important; width:auto !important; min-width:0 !important; vertical-align:baseline !important; display:inline !important;}
+
+input[type="radio"] {margin-top:0 !important; padding-top:0 !important}
+
+div.row {margin-bottom:0;}
+
+
+.span-full {max-width:95% !important; display:inline-block !important; width:95% !important; vertical-align:top;}
+fieldset.fieldset-container-one span.list-item {display: inline-block !important; width:24px !important; margin: 0  !important; padding: 0 0 0 5px !important; font-size: 100%; color: inherit; font-weight: normal;  margin: 2px 0 !important}
+.header-info {color: #444; font-size: 95%; font-style: normal; display: block !important; margin:0px -10px 10px -10px !important; padding:10px; line-height:125%; width:auto !important; max-width:100%; background-color:#e4e4e4; border: none !important}
+.question-info {color: #666; font-size: 95%; font-style: normal; display: block; margin:-5px 0px 10px 0px !important; padding:10px; line-height:125%; width:auto !important; max-width:100%; background-color:#ECECEC}
+
+
+/*Custom p-styling*/
+.p-column-left {width:45%; display:inline-block; float:left}
+.p-column-right {width:45%;display:inline-block; float:left}
+.p-home-area {margin-top:100px}
+.p-client-layout .dataTables_scroll {width:790px !important ; height: 100% !important; border-left:none;  border-right:none;  background-color: #F7F7F7 !important; top:0;}
+.p-client-layout .dataTables_scrollBody {width:790px !important ; position:absolute; overflow-x:hidden !important; border:none !important;  left:0; right:0px; top:30px; height:auto !important; width:auto !important; margin-top:26px; background-color:transparent !important}
+
+
+/* PanelBar Styling*/
+.panelbar-task-style div.panel div.header {background-color:#eee; width:100%; padding:5px; border-bottom:1px solid #bbb; border-right:1px solid #bbb; }
+.panelbar-task-style div.panel div.header span.header {font-size:140%; font-weight:bold; margin-right:10px}
+.panelbar-task-style div.panel div.header span.label {margin-right:4px; font-weight:bold}
+.panelbar-task-style div.panel div.header span.data-element {margin-right:15px;}
+.panelbar-task-style div.panel div.body {overflow: visible !important; height:auto !important}
+
+
+.panelbar-task-style div.panel div.header span.label,
+.panelbar-task-style div.panel div.header label { font-size:100%; line-height:normal !important;font-weight:bold !important; margin:8px 4px 0 0 !important; width: auto !important; padding: 0  !important;  vertical-align:baseline !important;}
+.panelbar-task-style div.panel div.header span.data-element,
+.panelbar-task-style div.panel div.header span.data-element span {font-size:13px !important; line-height:145%;font-weight:normal !important; margin:8px 20px 0 0!important; width: auto !important; padding: 0  !important; vertical-align:baseline !important;}
+.panelbar-task-style div.panel div.header span.data-element div,
+.panelbar-task-style div.panel div.header span.data-element div span { display:inline;   font-size:13px !important; line-height:95%;font-weight:normal !important; margin:8px 0 0 0!important; width: auto !important; padding: 0  !important; vertical-align:baseline !important;}
+
+.panelbar-task-style div.panel { margin-bottom:20px; }
+
+div.data-element {display:inline !important; width: auto !important}
+
+ /*complete-required to save*/
+    .complete-required{}
+    .complete-required-indicator {display:none;}
+    
+    /*selection-required to save*/
+    .selection-required{}
+    .selection-required-indicator {display:none;}
+    
+    /*selection-required to submit*/
+    .submit-required{}
+    .submit-required-indicator {display:none;}
+    
+    /*complete-required to filter*/
+    .filter-required{}
+    .filter-required-indicator {display:none;}
+    
+    
+    .formsubitem-header {margin-bottom:20px;margin-top:5px}
+    
+
+
+/* DataTable Styling */
+
+
+/* general table */
+table.generalTable  { left:0; right:0; margin:0; padding:0; font-size:1em;overflow:auto; border-collapse: collapse; border-bottom: 1px #A5B3C5 solid; background-color: Transparent;}
+table.generalTable th.compactRow {text-align:center;padding:5px 2px 0px 2px; vertical-align:bottom}
+
+/* data table */
+.scroll-pane {width:790px !important ; margin:0 !important; border: none !important;padding:0; font-size:95%; line-height:105%; overflow-x:hidden; border-collapse: collapse; background-color: white}
+table.dataTable  {width:790px !important ; margin:0 !important; border: none !important;padding:0; font-size:95%; line-height:105%; overflow-x:hidden; border-collapse: collapse;color:#444 !important;}
+table.dataTable a {font-size:100%; line-height:105%; color:#444 !important; text-decoration:none !important;}
+.dataTables_scroll,
+.LeftNav-Fixed-Workarea .dataTables_scroll {width:790px !important ; height: 100% !important; border-left:none;  border-right:none ;  background-color: #F7F7F7 !important;}
+.dataTables_scrollBody,
+.LeftNav-Fixed-Workarea .dataTables_scroll{width:790px !important ; overflow-x:hidden !important; border:none !important;  left:0; right:0px; height:auto !important; width:auto !important; margin-top:0px; background-color:transparent !important; position:relative;}
+.dataTables_scrollHead {width:790px !important ;border:none !important; border-bottom: none !important;  border-top: none !important; background-color:transparent !important }
+.dataTables_scrollFoot {display:none}
+table td.group { border-bottom: 1px solid #AAA !important; padding-top:15px !important; font-size:100% !important; font-weight:bold !important;}
+table.rowgrouping {border: none !important; height:30px}
+.dataTables_scrollHeadInner {left:0; right:0; border: none !important; background-color:transparent !important; }
+table.dataTable td,
+table.generalTable td, 
+table.generalTable th { border:none;}
+table.dataTable thead th,
+table.generalTable thead th {  height:25px; padding:2px 0; background-color:#ccc !important;border:none  !important; text-align: left; /*font-weight: bold;*/ cursor:pointer;}
+table.dataTable thead th:last-child,
+table.generalTable thead th:last-child {border-right:2px solid #2597FA !important;}
+table.dataTable p,
+table.generalTable p {font-size:1em;}
+table.dataTable a:link,
+table.dataTable a:active {width:auto; height:auto; display:inline-block; line-height:normal; font-size:90%; color:#1683E0; padding: 2px 5px; text-decoration:underline; font-weight:normal;}
+table.dataTable a:visited {width:auto; height:auto; display:inline-block; line-height:normal; font-size:90%; color:#1D63BF; padding: 2px 5px; background-color:transparent; color:#235070; text-decoration:underline;font-weight:normal;}
+table.dataTable a:hover {width:auto; height:auto; line-height:normal; background-color:#ddd; border-radius:3px;}
+table.dataTable th,
+table.generalTable th,
+table.generalTable thead {background-color:#A1A8AA; font-size:100%; font-weight:bold;}
+table.dataTable th.max,
+table.generalTable th.max { width:100%;  border:none !important}
+table.dataTable td,
+table.generalTable td {text-align:left; padding:6px 2px 6px 3px; margin-right:-2px;}
+table.dataTable td ul,
+table.generalTable td ul {margin-top:0; margin-bottom:0; padding:0;}
+table.dataTable td li,
+table.generalTable td li {list-style-type:none !important;}
+table.generalTable tr.alt {	background-color: #EBEFF3;}
+table.dataTable th.border-bottom {border-bottom:1px solid #A5B3C5;}
+table.dataTable .ui-icon {float:right;}
+table.dataTable tr  {left:0; right:0; background-color: transparent;}
+table.dataTable tr.odd  {background-color: #fff;}
+table.dataTable tr.even  {background-color: #f4f4f4;}
+table.dataTable .DataTables_sort_wrapper {padding-left: 3px; padding-right:18px; position:relative; line-height:12px;}
+table.dataTable thead th div.DataTables_sort_wrapper span {position: absolute;top: 50%;margin:-8px 0 0 0; right: 0;}
+table.dataTable thead th div.DataTables_sort_wrapper {vertical-align:bottom !important; }
+.actions-disabled {color:Gray;}
+div.dataTableInfoPanel {padding:0 !important; background: #e6e6e6/*{bgColorDefault}*/ url(images/ui-bg_glass_75_e6e6e6_1x400.png)/*{bgImgUrlDefault}*/ 50%/*{bgDefaultXPos}*/ 50%/*{bgDefaultYPos}*/ repeat-x/*{bgDefaultRepeat}*/ !important; border: 1px solid #DDD !important; border-top: 1px solid #BBB !important; border-bottom: none !important; padding: 5px 0 !important;}
+.dataTables_filter {margin-right:10px;}
+.dataTables_info {margin-left:10px !important;margin-top:4px !important;}
+table.inline-dataTable tbody {border: 2px solid #BBB;border-top: 1px solid #BBB; background-color: #F7F7F7;}
+table.inline-dataTable tbody span {color:#444 }
+table.inline-dataTable tbody .even {background-color:#f4f4f4 }
+table.inline-dataTable tbody tr td ul li {display:inline-block; width: auto ; list-style: none;font-size: 98%; line-height: 20px; min-width: 0px; height: 20px}
+table.inline-dataTable tbody tr td ul li a:link,
+table.inline-dataTable tbody tr td ul li a:visited {display:inline-block; width: auto ; list-style: none;font-size: 98%;}
+table.inline-dataTable tbody tr td ul {min-width:0px;max-width:500px; width:auto;display: inline-block;padding: 0 10px 0 0;clear: both;vertical-align: top;min-width: 0px;margin: 0;}
+
+
+table.inline-table-noFilter { width:100%; margin:0; padding:6px; overflow:auto; border-collapse: collapse; border: 1px #A5B3C5 solid; background-color: transparent; line-height:normal; color:#1683E0; text-decoration:none; font-weight:normal;}
+table.inline-table-noFilter th {background-color:#A1A8AA; font-size:100%; font-weight:bold;}
+table.inline-table-noFilter thead th {height:25px; padding:2px 0; border-left:1px solid #2597FA; border-bottom:1px solid #2597FA !important; text-align: left; /*font-weight: bold*/; cursor:pointer;}
+table.inline-table-noFilter tr:nth-child(odd) {background-color: #fff; width:100%; }
+table.inline-table-noFilter tr:nth-child(even)  {background-color: #f4f4f4;width:100%; }
+table.inline-table-noFilter .ui-icon {float:right;}
+table.inline-table-noFilter td,
+table.inline-table-noFilter td {text-align:left; padding:0; }
+
+
+/* Firefox has missing border bug! https://bugzilla.mozilla.org/show_bug.cgi?id=410621 */
+/* Firefox 2 */
+html>/**/body .dataTable, x:-moz-any-link {margin:1px;}
+/* Firefox 3 */
+html>/**/body .dataTable, x:-moz-any-link, x:default {margin:1px;}	
+
+/* table information & filter */
+div.dataTableInfoPanel
+{
+    display:none
+}
+
+ul.task-panelbar-style,
+ul.task-panelbar-style li {width: 790px !important; left:0; margin:0 !important; padding:0 !important; }
+
+tbody {position:relative}
+tfoot {display:none}
+
+.dataTable-summarylist-style  {margin-top:-18px}
+.dataTable-summarylist-style  tbody {display:block;}
+.dataTable-summarylist-style div.dataTableInfoPanel ,
+.dataTable-summarylist-style-footer  {}
+
+#AlertGridId_wrapper {margin-top:-20px; }
+.panelbar-content {width:790px; left:0; height:auto;}
+.column-left {width:48%; margin-right:1%;  display:inline-block; vertical-align:top; float:left; position:relative} 
+.column-right {width:48%; margin-left:1%; display:inline-block; vertical-align:top; float:right; position:relative}
+fieldset.fieldset-container-two div.column-left {width:45%; margin-right:1%; padding:0; display:inline-block; vertical-align:top;} 
+fieldset.fieldset-container-two div.column-right {width:45%; margin-left:1%; padding:0; display:inline-block; vertical-align:top;}
+div.column-left fieldset.fieldset-container-one div.row.summary label,
+div.column-right fieldset.fieldset-container-one div.row.summary label,
+div.column-left fieldset.fieldset-container-one div.row.summary span.label,
+div.column-right fieldset.fieldset-container-one div.row.summary span.label {width: 43% !important; min-width: 0 !important;}
+
+div.column-left fieldset.fieldset-container-one div.row.summary input,
+div.column-right fieldset.fieldset-container-one div.row.summary input,
+div.column-left fieldset.fieldset-container-one div.row.summary span,
+div.column-right fieldset.fieldset-container-one div.row.summary span {width: 43% !important; min-width: 0 !important;}
+
+div.column-left fieldset.fieldset-container-one div.row.summary div.data-element,
+div.column-right fieldset.fieldset-container-one div.row.summary div.data-element {word-wrap: break-word; display:inline-block !important; max-width:450px !important; width:47% !important;  padding: 2px 2px 2px 0px !important; line-height: normal !important; vertical-align:top !important;  font-weight:normal  !important;}
+
+div.column-left fieldset.fieldset-container-one div.row.summary div.data-element span,
+div.column-right fieldset.fieldset-container-one div.row.summary div.data-element span { margin: 0; width: 100% !important; word-wrap: break-word; display:inline-block !important; max-width:450px !important; line-height: normal !important; vertical-align:top !important;  font-weight:normal  !important;}
+
+.leftNavHeader,
+.fancybox-wrap
+{
+    display:none;
+    }
+
+.offset-hidden {position: absolute; left:-999px;top:auto; width:1px; height:1px; overflow: hidden; }
+
+/*Fix for Skype Click To Call Bug. This hides all Skype artifacts generated when a user has this extension installed on thier browser*/
+.skype_pnh_container {display: none !important}

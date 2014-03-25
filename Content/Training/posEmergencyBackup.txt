@@ -1,0 +1,16 @@
+﻿{
+	"EditMode" : false,
+	"IsPrimary" : false,
+	"PlanContactName" : "test backup",
+	"RelationshipTypeId" : "relationshiptypes/-2",
+	"IsBackupPlanProviderMaEnrolled" : false,
+	"ServiceProvider" : null,
+	"Address" : {},
+	"Phones" : [{
+			"PhoneTypeId" : "phonetypes/-1",
+			"Number" : "123-456-7890"
+		}
+	],
+	"AvailabilityDescription" : "test",
+	"CanRemovePhone" : false
+}

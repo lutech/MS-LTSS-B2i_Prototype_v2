@@ -1,0 +1,86 @@
+﻿
+@font-face { font-family: Calibri; src: url('fonts/Calibri.ttf')}
+ 
+.dewsLetterPrintContent { font-family: Calibri, Verdana, Times New Roman; font-size:14px; line-height: 21px; }
+.field-placeholder-short {width:40px; display:inline-block; border-bottom:1px dashed gray;}
+.field-placeholder {width:90px; display:inline-block; border-bottom:1px dashed gray;}
+.field-placeholder-long {width:190px; display:inline-block; border-bottom:1px dashed gray;}
+.field-placeholder-textarea {width:100%; display:inline-block; border-bottom:1px dashed gray;}
+
+li {padding: 0 0 10px 0;}
+.indent60 {padding-left: 60px;}
+.page-break {page-break-before: always;}
+.dews-disclaimer {font-size:16px;border-top:1px solid gray;}
+
+.dewsLetterPrintContent li.list-circle {list-style-type:circle; padding-left: 5px; margin-left:15px;}
+
+.table-border
+
+.table-border { border-collapse:collapse; border:1px dotted gray;}
+.table-border td,
+.table-border tr,
+.table-border th { border-bottom:1px dotted gray; padding:2px; }
+
+
+
+.dewsLetterPrintContent p,
+.dewsLetterPrintContent td
+{
+    /*line-height:22px;*/
+}
+
+.dewsLetterPrintContent .checked
+{
+    height:18px;
+    width:18px;
+    background-color:Green;
+    display:block;
+    /*background: url('images/checkbox.png') 0px 50px no-repeat;*/
+}
+
+.dewsLetterPrintContent .unchecked
+{
+    height:18px;
+    width:18px;
+    display:block;
+    background-color:Red;
+    /*background: url('images/checkbox.png') 0px 0px no-repeat;*/
+}
+
+.dewsLetterPrintContent table
+{
+    /*font-size:18px*/
+}
+
+.dewsLetterPrintContent .letterHeader span
+{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+    text-align:center;
+    font-size:16px;
+}
+    
+.dewsLetterPrintContent .letterHeader .address
+{
+    
+}
+    
+.dewsLetterPrintContent .letterHeader .address span
+{
+    display:block;
+    font-weight:bold;
+    /*font-size:20px;*/
+    margin-bottom:0px
+}
+
+.dewsLetterPrintContent .letterHeader .letterTitle    
+{
+    /*margin-top: 27px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;*/
+}
+
+
+

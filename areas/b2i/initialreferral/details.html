@@ -1,0 +1,807 @@
+<!-- Left Side Navigation-->
+<div id="sidenav" class="sidenav">
+    <div class="LeftContentNav-clientinfo" id="Client_Profile_Summary" tabindex="0">
+        <a href="#Main_Content_Menu" class="ui-hide">Skip to Main Content Menu</a>
+
+        <div>
+            <div id="cliensummaryinfo">
+                <div class="panel panelBarItem">
+                    <div class="header collapsed">
+                        <div class="arrow collapse"></div>
+                        <span class="header">
+                            <h2 class="name"><span class="show-for-print">Client: </span>Cicio Smith</h2>
+                        </span>
+                        <span class="p-auto-width">
+                            <span id="cs-id"><span class="p-label">ID: </span><span
+                                    class="p-data-element">1119088IC885100</span></span>
+                            <span id="cs-dob"><span class="p-label">DOB: </span><span
+                                    class="p-data-element">01/01/1950</span></span>
+                        </span>
+                        <span id="cs-mfpe">
+                            <span class="p-label">MFP Eligible: </span>
+                            <span class="p-data-element">N/A</span>
+                        </span>
+                    </div>
+                    <div class="body" style="display: none; height: 0px; overflow: hidden;">
+                        <div class="panelbar-content">
+                            <span class="p-left">
+                                <div class="row">
+                                    <span class="label">Medicaid #</span>
+
+
+                                    <span class="data-element">12345678901 (Community)</span>
+                                </div>
+                                <div class="row">
+                                    <span class="label">Primary Language:</span>
+
+
+                                    <span class="data-element"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="label">Phone #:</span>
+
+
+                                    <span id="Client_PrimaryPhone_Phone"
+                                          class="readonly data-element">(123) 456-7890</span>
+
+
+                                </div>
+                            </span>
+                            <span class="p-right">
+                                <div class="row">
+                                    <span class="label">Facility Name:</span>
+
+
+                                    <span class="data-element"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="label">Jurisdiction/County:</span>
+
+
+                                    <span class="data-element">Adams</span>
+                                </div>
+                                <div class="row">
+                                    <span class="label">Address:</span>
+                                    <span class="data-element">
+                                        8 Merril Street<br>
+
+                                        Adams MS, 31010
+                                        <input id="Client_CurrentAddress_Address_FullAddress"
+                                               name="Client.CurrentAddress.Address.FullAddress"
+                                               type="hidden" value="8 Merril Street, Adams, MS 31010">
+                                    </span>
+
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function () {
+
+                    $('#cliensummaryinfo').panelBar();
+                    ltssPanelBar.collapseAll('#cliensummaryinfo')
+                });
+            </script>
+        </div>
+    </div>
+    <nav id="Main_Content_Menu" tabindex="0">
+        <div class="hide-for-print" id="lftNav">
+            <div>
+                <ul class="left-side-nav js-accordion">
+                    <li>
+                        <span id="clientManagement" class="leftNavHeader">
+                            <span class="arrow expand"></span>
+                            Client
+                        </span>
+                        <ul class="leftnav-groupcontainer" id="div_sublinks_clientManagement" style=""
+                            collapsible="true">
+
+                            <li>
+                                <a href="#/client/profile/details">Profile</a>
+                            </li>
+                            <li style="display: none;">
+
+                                <ul>
+                                    <li style="display: none;">
+
+                                    </li>
+                                    <li style="display: none;">
+
+                                    </li>
+                                    <li style="display: none;">
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li style="display: none;">
+
+                            </li>
+                            <li style="display: none;">
+
+                                <ul>
+                                    <li style="display: none;">
+
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hideIfNoLinks active-node">
+                        <span id="mfpManagement" class="leftNavHeader">
+                            <span class="arrow expand"></span>
+                            B2i
+                        </span>
+                        <ul class="leftnav-groupcontainer" id="div_sublinks_mfpManagement" style="display: block;"
+                            collapsible="true">
+                            <li>
+                                <a class="ltss-icon-arrow" href="#/questionnaire/list">
+                                    Questionnaire
+                                    <span role="presentation" class="ltss-icon-container icon-arrow"></span>
+                                </a>
+                            </li>
+                            <li class="active-node">
+                                <a class="ltss-icon-arrow" href="#" onclick="return false">
+                                    Initial Referral History
+                                    <span role="presentation" class="ltss-icon-container icon-arrow"></span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a class="selected ltss-icon-arrow" href="#" onclick="return false;">Initial Referral
+                                            <span
+                                                    class="offset-hidden js-selected-menu-item">selected</span><span
+                                                    role="presentation"
+                                                    class="ltss-icon-container icon-arrow"></span></a>
+                                    </li>
+                                    <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                                        <a class="funds ltss-icon-arrow" href="#/freedomofchoice/list">Freedom of Choice<span
+                                                class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                                 class="ltss-icon-container icon-arrow"></span></a>
+                                    </li>
+                                    <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                                        <a class="funds ltss-icon-arrow" href="#/providerassignment/list">Provider Assignment<span
+                                                class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                                 class="ltss-icon-container icon-arrow"></span></a>
+                                    </li>
+                                    <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                                        <a class="funds ltss-icon-arrow" href="#/applicationassistance/list">Application Assistance<span
+                                                class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                                 class="ltss-icon-container icon-arrow"></span></a>
+                                    </li>
+                                    <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                                        <a class="funds ltss-icon-arrow" href="#/consenttoparticipate/list">Consent to Participate<span
+                                                class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                                 class="ltss-icon-container icon-arrow"></span></a>
+                                    </li>
+                                    <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                                        <a class="funds ltss-icon-arrow" href="#/qualityoflife/list">Quality of Life Survey<span
+                                                class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                                 class="ltss-icon-container icon-arrow"></span></a>
+                                    </li>
+                                    <li ng-show="questionnaireStatus == 'submitted' && referralStatus == 'submitted' ">
+                                        <a class="funds ltss-icon-arrow" href="#/dischargeform/list">Discharge Form<span
+                                                class="offset-hidden js-selected-menu-item">selected</span><span role="presentation"
+                                                                                                                 class="ltss-icon-container icon-arrow"></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- Main_Content Content Area-->
+<div id="workspace" tabindex="0">
+<div role="presentation" class="workspace p-client-layout">
+<div class="selection-summaryinfo">
+    <div role="presentation">
+
+        <button class="leftNav-dropDownButton hide-for-print"><span class="icon-reorder "></span></button>
+        <h3>B2i - Initial Referral - Overview <span ng-hide="referralStatus == 'inProgress'">Status: Submitted</span> <span ng-hide="referralStatus == 'submitted'">Status: In Progress</span></h3>
+
+        <div class="workspace-header-bar">
+            <div class="float-left">
+                <a href="#/initialreferral/list" role="button">Back to List</a>
+            </div>
+            <div class="float-right">
+                <button type="button" ng-click="submitReferral()" ng-hide="referralStatus == 'submitted'">Submit</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Content Body -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        //ltssPanelBar.addExpandCollapseButton();
+    });
+</script>
+<div class="workspace-content-container" id="workspace-maincontent">
+
+<div class="panelbar-formheader-style no-auto-expand genericform-style read-only">
+
+<div class="panel panelBarItem">
+<div class="header collapsed">
+    <div class="arrow collapse"></div>
+    <h4>General Information</h4>
+
+    <div class="form-action TaskDetailLink">
+        <a ng-hide="referralStatus == 'submitted'" class="ProfileEditLink" href="#/initialreferral/edit" title="Edit General Information">Edit</a>
+    </div>
+</div>
+<div class="body" style="height: 0px; overflow: hidden; display: block;">
+<div class="form-panelbar-content">
+<fieldset class="fieldset-container-one">
+    <legend class="legend-header-one">Client Information</legend>
+    <div class="row">
+        <label for="Client_ClientProfile_PersonName_LastName">Last Name:</label>
+        <input id="Client_ClientProfile_PersonName_LastName" name="Client.ClientProfile.PersonName.LastName"
+               readonly="readonly" type="text" value="Smith">
+    </div>
+    <div class="row">
+        <label for="Client_ClientProfile_PersonName_FirstName">First Name:</label>
+        <input id="Client_ClientProfile_PersonName_FirstName" name="Client.ClientProfile.PersonName.FirstName"
+               readonly="readonly" type="text" value="Apple">
+    </div>
+    <div class="row">
+        <label for="Client_ClientProfile_PersonName_MiddleName">Middle Name:</label>
+        <input id="Client_ClientProfile_PersonName_MiddleName" name="Client.ClientProfile.PersonName.MiddleName"
+               readonly="readonly" type="text" value="">
+    </div>
+    <div class="row">
+        <label for="Client_ClientProfile_PersonName_Suffix">Suffix:</label>
+        <input id="Client_ClientProfile_PersonName_Suffix" name="Client.ClientProfile.PersonName.Suffix"
+               readonly="readonly" type="text" value="">
+    </div>
+    <div class="row">
+        <label for="Client_ClientProfile_DateOfBirth">Date of Birth:</label>
+
+
+        <input class="readonly" data-val="true" data-val-date="The field DateOfBirth must be a date."
+               id="Client_ClientProfile_DateOfBirth" name="Client.ClientProfile.DateOfBirth" readonly="readonly"
+               type="text" value="01/01/1960" title="">
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                if ("readonly".indexOf("readonly") != -1) {
+
+                } else {
+                    $("#Client_ClientProfile_DateOfBirth").kendoDatePicker({ format: "MM/dd/yyyy" });
+                }
+
+                $("#Client_ClientProfile_DateOfBirth").attr('title', '');
+
+
+            });
+
+        </script>
+    </div>
+    <div class="row">
+        <label for="Client_ClientProfile_Gender_Name">Gender:</label>
+        <input id="Client_ClientProfile_Gender_Name" name="Client.ClientProfile.Gender.Name" readonly="readonly"
+               type="text" value="Female">
+    </div>
+    <div class="row">
+        <label for="Client_ClientProfile_Race_Name">Race:</label>
+        <input id="Client_ClientProfile_Race_Name" name="Client.ClientProfile.Race.Name" readonly="readonly" type="text"
+               value="Native Hawaiian/Other Pacific Islander" class="textbox-medium">
+    </div>
+    <div class="row">
+        <label for="Client_ClientProfile_IsHispanicLatino">Hispanic:</label>
+        <input id="isHispanicLatinoDisplay" name="isHispanicLatinoDisplay" readonly="readonly" type="text" value="No">
+
+
+    </div>
+    <div class="row">
+        <label for="Client_ClientJurisdicationName">Jurisdiction/County:</label>
+        <input id="Client_ClientJurisdicationName" name="Client.ClientJurisdicationName" readonly="readonly" type="text"
+               value="Baltimore">
+    </div>
+</fieldset>
+<fieldset class="fieldset-container-one">
+    <legend class="legend-header-one">Additional Client Information</legend>
+    <div class="row">
+        <label for="Client_ClientProfile_ClientIdentifier">Client Identifier:</label>
+        <input id="Client_ClientProfile_ClientIdentifier" name="Client.ClientProfile.ClientIdentifier"
+               readonly="readonly" type="text" value="1119056PA446100">
+    </div>
+    <div class="row">
+        <label for="MaskedSocialSecurityIdentifier">SSN #</label>
+        <input id="MaskedSocialSecurityIdentifier" name="MaskedSocialSecurityIdentifier" readonly="readonly" type="text"
+               value="***-**-4546">
+    </div>
+    <div class="row">
+        <label for="Client_ClientProfile_MedicareNumber">Medicare #</label>
+        <input id="Client_ClientProfile_MedicareNumber" name="Client.ClientProfile.MedicareNumber" readonly="readonly"
+               type="text" value="">
+    </div>
+    <div class="row">
+        <label for="Client_ClientProfile_MaritalStatusType_Name">Marital Status:</label>
+        <input id="Client_ClientProfile_MaritalStatusType_Name" name="Client.ClientProfile.MaritalStatusType.Name"
+               readonly="readonly" type="text" value="">
+    </div>
+    <div class="row">
+        <label for="Client_ClientProfile_EmailAddress">Email Address:</label>
+        <input id="Client_ClientProfile_EmailAddress" name="Client.ClientProfile.EmailAddress" readonly="readonly"
+               type="text" value="">
+    </div>
+    <div class="row">
+        <label for="Client_ClientProfile_PrimaryLanguage_Name">Primary Language:</label>
+        <input id="Client_ClientProfile_PrimaryLanguage_Name" name="Client.ClientProfile.PrimaryLanguage.Name"
+               readonly="readonly" type="text" value="">
+    </div>
+    <div class="row">
+        <label for="Client_ClientProfile_DateOfDeath">Date of Death:</label>
+
+
+        <input class="readonly" data-val="true" data-val-date="The field DateOfDeath must be a date."
+               id="Client_ClientProfile_DateOfDeath" name="Client.ClientProfile.DateOfDeath" readonly="readonly"
+               type="text" value="" title="">
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                if ("readonly".indexOf("readonly") != -1) {
+
+                } else {
+                    $("#Client_ClientProfile_DateOfDeath").kendoDatePicker({ format: "MM/dd/yyyy" });
+                }
+
+                $("#Client_ClientProfile_DateOfDeath").attr('title', '');
+
+
+            });
+
+        </script>
+    </div>
+    <div class="row">
+        <label for="Client_FacilityName">Facility Name:</label>
+        <input id="Client_FacilityName" name="Client.FacilityName" readonly="readonly" type="text"
+               value="Nursing Facility1">
+    </div>
+</fieldset>
+<fieldset class="fieldset-container-one">
+    <legend class="legend-header-one">Advanced Directives</legend>
+    <div class="row">
+        <fieldset class="grouped-radiobuttons">
+            <legend>DNR:</legend>
+            <input disabled="disabled" id="DnrYes" name="Client.ClientAdvancedDirectives.Dnr" type="radio" value="Yes">
+            <label for="DnrYes" class="grouped-radiobuttons-label">Yes</label>
+            <input disabled="disabled" id="DnrNo" name="Client.ClientAdvancedDirectives.Dnr" type="radio" value="No">
+            <label for="DnrNo" class="grouped-radiobuttons-label">No</label>
+            <input checked="checked" disabled="disabled" id="DnrUnknown" name="Client.ClientAdvancedDirectives.Dnr"
+                   type="radio" value="Unknown">
+            <label for="DnrUnknown" class="grouped-radiobuttons-label">Unknown</label>
+        </fieldset>
+    </div>
+    <div class="row">
+        <fieldset class="grouped-radiobuttons">
+            <legend>Living Will:</legend>
+            <input disabled="disabled" id="LivingWillYes" name="Client.ClientAdvancedDirectives.LivingWill" type="radio"
+                   value="Yes">
+            <label for="LivingWillYes" class="grouped-radiobuttons-label">Yes</label>
+            <input disabled="disabled" id="LivingWillNo" name="Client.ClientAdvancedDirectives.LivingWill" type="radio"
+                   value="No">
+            <label for="LivingWillNo" class="grouped-radiobuttons-label">No</label>
+            <input checked="checked" disabled="disabled" id="LivingWillUnknown"
+                   name="Client.ClientAdvancedDirectives.LivingWill" type="radio" value="Unknown">
+            <label for="LivingWillUnknown" class="grouped-radiobuttons-label">Unknown</label>
+        </fieldset>
+    </div>
+    <div class="row">
+        <fieldset class="grouped-radiobuttons">
+            <legend>Medical POA:</legend>
+            <input disabled="disabled" id="MedicalPoaYes" name="Client.ClientAdvancedDirectives.MedicalPoa" type="radio"
+                   value="Yes">
+            <label for="MedicalPoaYes" class="grouped-radiobuttons-label">Yes</label>
+            <input disabled="disabled" id="MedicalPoaNo" name="Client.ClientAdvancedDirectives.MedicalPoa" type="radio"
+                   value="No">
+            <label for="MedicalPoaNo" class="grouped-radiobuttons-label">No</label>
+            <input checked="checked" disabled="disabled" id="MedicalPoaUnknown"
+                   name="Client.ClientAdvancedDirectives.MedicalPoa" type="radio" value="Unknown">
+            <label for="MedicalPoaUnknown" class="grouped-radiobuttons-label">Unknown</label>
+        </fieldset>
+    </div>
+    <div class="row">
+        <fieldset class="grouped-radiobuttons">
+            <legend>Medical POA Durable:</legend>
+            <input disabled="disabled" id="MedicalPoaDurableYes"
+                   name="Client.ClientAdvancedDirectives.MedicalPoaDurable" type="radio" value="Yes">
+            <label for="MedicalPoaDurableYes" class="grouped-radiobuttons-label">Yes</label>
+            <input disabled="disabled" id="MedicalPoaDurableNo" name="Client.ClientAdvancedDirectives.MedicalPoaDurable"
+                   type="radio" value="No">
+            <label for="MedicalPoaDurableNo" class="grouped-radiobuttons-label">No</label>
+            <input checked="checked" disabled="disabled" id="MedicalPoaDurableUnknown"
+                   name="Client.ClientAdvancedDirectives.MedicalPoaDurable" type="radio" value="Unknown">
+            <label for="MedicalPoaDurableUnknown" class="grouped-radiobuttons-label">Unknown</label>
+        </fieldset>
+    </div>
+    <div class="row">
+        <fieldset class="grouped-radiobuttons">
+            <legend>General POA:</legend>
+            <input disabled="disabled" id="GeneralPoaYes" name="Client.ClientAdvancedDirectives.GeneralPoa" type="radio"
+                   value="Yes">
+            <label for="GeneralPoaYes" class="grouped-radiobuttons-label">Yes</label>
+            <input disabled="disabled" id="GeneralPoaNo" name="Client.ClientAdvancedDirectives.GeneralPoa" type="radio"
+                   value="No">
+            <label for="GeneralPoaNo" class="grouped-radiobuttons-label">No</label>
+            <input checked="checked" disabled="disabled" id="GeneralPoaUnknown"
+                   name="Client.ClientAdvancedDirectives.GeneralPoa" type="radio" value="Unknown">
+            <label for="GeneralPoaUnknown" class="grouped-radiobuttons-label">Unknown</label>
+        </fieldset>
+    </div>
+    <div class="row">
+        <fieldset class="grouped-radiobuttons">
+            <legend>General POA Durable:</legend>
+            <input disabled="disabled" id="GeneralPoaDurableYes"
+                   name="Client.ClientAdvancedDirectives.GeneralPoaDurable" type="radio" value="Yes">
+            <label for="GeneralPoaDurableYes" class="grouped-radiobuttons-label">Yes</label>
+            <input disabled="disabled" id="GeneralPoaDurableNo" name="Client.ClientAdvancedDirectives.GeneralPoaDurable"
+                   type="radio" value="No">
+            <label for="GeneralPoaDurableNo" class="grouped-radiobuttons-label">No</label>
+            <input checked="checked" disabled="disabled" id="GeneralPoaDurableUnknown"
+                   name="Client.ClientAdvancedDirectives.GeneralPoaDurable" type="radio" value="Unknown">
+            <label for="GeneralPoaDurableUnknown" class="grouped-radiobuttons-label">Unknown</label>
+        </fieldset>
+    </div>
+    <div class="row">
+        <fieldset class="grouped-radiobuttons">
+            <legend>Guardian of Person:</legend>
+            <input checked="checked" disabled="disabled" id="GuardianOfPersonYes"
+                   name="Client.ClientAdvancedDirectives.GuardianOfPerson" type="radio" value="Yes">
+            <label for="GuardianOfPersonYes" class="grouped-radiobuttons-label">Yes</label>
+            <input disabled="disabled" id="GuardianOfPersonNo" name="Client.ClientAdvancedDirectives.GuardianOfPerson"
+                   type="radio" value="No">
+            <label for="GuardianOfPersonNo" class="grouped-radiobuttons-label">No</label>
+            <input disabled="disabled" id="GuardianOfPersonUnknown"
+                   name="Client.ClientAdvancedDirectives.GuardianOfPerson" type="radio" value="Unknown">
+            <label for="GuardianOfPersonUnknown" class="grouped-radiobuttons-label">Unknown</label>
+        </fieldset>
+    </div>
+    <div class="row">
+        <fieldset class="grouped-radiobuttons">
+            <legend>Guardian of Property:</legend>
+            <input checked="checked" disabled="disabled" id="GuardianOfPropertyYes"
+                   name="Client.ClientAdvancedDirectives.GuardianOfProperty" type="radio" value="Yes">
+            <label for="GuardianOfPropertyYes" class="grouped-radiobuttons-label">Yes</label>
+            <input disabled="disabled" id="GuardianOfPropertyNo"
+                   name="Client.ClientAdvancedDirectives.GuardianOfProperty" type="radio" value="No">
+            <label for="GuardianOfPropertyNo" class="grouped-radiobuttons-label">No</label>
+            <input disabled="disabled" id="GuardianOfPropertyUnknown"
+                   name="Client.ClientAdvancedDirectives.GuardianOfProperty" type="radio" value="Unknown">
+            <label for="GuardianOfPropertyUnknown" class="grouped-radiobuttons-label">Unknown</label>
+        </fieldset>
+    </div>
+</fieldset>
+</div>
+</div>
+</div>
+
+<div class="panel panelBarItem">
+    <div class="header collapsed">
+        <div class="arrow collapse"></div>
+        <h4>Representatives</h4>
+
+        <div class="form-action TaskDetailLink">
+            <a ng-hide="referralStatus == 'submitted'" class="ProfileEditLink"
+               href="#/initialreferral/editrepresentatives"
+               title="Manage Representatives">Manage</a>
+        </div>
+    </div>
+    <div class="body" style="height: 0px; overflow: hidden; display: block;">
+        <div class="form-panelbar-content">
+
+            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid"></div>
+            <table style="table-layout:fixed;" class="inline-dataTable dataTable" summary="Strengths"
+                   id="DataTables_Table_0">
+                <thead>
+                <tr role="row">
+                    <th style="min-width:95px;" class="ui-state-default" role="columnheader" tabindex="0"
+                        aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                        aria-label="Date Created: activate to sort column ascending">
+                        <div class="DataTables_sort_wrapper">Date Created<span
+                                class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+                    </th>
+                    <th class="ui-state-default" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0"
+                        rowspan="1" colspan="1" aria-label="Strength Detail: activate to sort column ascending">
+                        <div class="DataTables_sort_wrapper">Strength Detail<span
+                                class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="odd">
+                    <td valign="top" colspan="2" class="dataTables_empty">No data available in table</td>
+                </tr>
+                </tbody>
+            </table>
+            <div id="strengthViewWindow" style="display: none">
+                <fieldset class="fieldset-container-one">
+                    <legend class="legend-header-one">Strength Information</legend>
+                    <div class="row">
+                        <label for="Strength_CreatedDate">Created Date:</label>
+                        <input type="text" name="Strength.CreatedDate" id="Strength_CreatedDate" class="readonly"
+                               readonly="readonly" data-bind="value: Strength().CreatedDateFormatted">
+                    </div>
+                    <div class="row ">
+                        <label for="Strength_StrengthDescription">Strength Detail:</label>
+                        <textarea name="Strength.StrengthDescription" id="Strength_StrengthDescription"
+                                  readonly="readonly" class="comments-textarea readonly"
+                                  data-bind="value: Strength().StrengthDescription"></textarea>
+                    </div>
+                </fieldset>
+            </div>
+            <script type="text/javascript">
+                function openStrengthViewWindow(value) {
+                    var strengthDetailsModel;
+
+                    if (typeof (value) == "string") {
+                        var strengths = [];
+                        var selectedstrengths = ko.utils.arrayFilter(strengths, function (item) {
+                            return item.Id === value;
+                        });
+                        var selectedstrength = selectedstrengths[0];
+                        strengthDetailsModel = new strengthDetailsViewModel();
+                        strengthDetailsModel.Strength(ko.mapping.fromJS(selectedstrength, new strength()));
+                    } else {
+                        strengthDetailsModel = new strengthDetailsViewModel();
+
+                        strengthDetailsModel.Strength(value);
+                    }
+
+                    ko.applyBindings(strengthDetailsModel, document.getElementById('strengthViewWindow'));
+
+                    var strengthPopupWindow = $("#strengthViewWindow").kendoWindow({
+                        title: "Strength",
+                        visible: false,
+                        maxHeight: "800px",
+                        maxWidth: "550px",
+                        modal: true
+                    }).data("kendoWindow");
+
+                    strengthPopupWindow.center();
+                    strengthPopupWindow.open();
+                }
+
+                var strength = function () {
+                    var self = this;
+                    self.Id = ko.observable();
+                    self.CreatedDateFormatted = ko.observable();
+                    self.StrengthDescription = ko.observable();
+                }
+
+                var strengthDetailsViewModel = function () {
+                    var self = this;
+
+                    self.Strength = ko.observable(new strength());
+                };
+
+            </script>
+        </div>
+    </div>
+</div>
+<div class="panel panelBarItem">
+    <div class="header collapsed">
+        <div class="arrow collapse"></div>
+        <h4>Facility Information</h4>
+
+        <div class="form-action TaskDetailLink">
+            <a ng-hide="referralStatus == 'submitted'" class="ProfileEditLink"
+               href="#/initialreferral/editfacility" title="Edit Facility Information">Edit</a>
+        </div>
+    </div>
+    <div class="body" style="height: 0px; overflow: hidden; display: block;">
+        <div class="form-panelbar-content">
+            <h5>Current Medicaid #</h5>
+
+            <div class="fieldset-container-one">
+                <p class="row summary">
+                    <span class="label">MA #</span>
+
+
+                    <span class="data-element">11111111112</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panelBarItem">
+    <div class="header collapsed">
+        <div class="arrow collapse"></div>
+        <h4>Referral Information</h4>
+
+        <div class="form-action TaskDetailLink">
+            <a ng-hide="referralStatus == 'submitted'" class="ProfileEditLink"
+               href="#/initialreferral/editreferral"
+               title="Edit Referral Information">Edit</a>
+        </div>
+    </div>
+    <div class="body" style="height: 0px; overflow: hidden; display: block;">
+        <div class="form-panelbar-content">
+            <h5>Primary Phone #</h5>
+
+            <div class="fieldset-container-one">
+                <p class="row summary">
+                    <span class="label">Phone Type:</span>
+
+
+                    <span class="data-element">Home</span>
+                </p>
+
+                <p class="row summary">
+                    <span class="label">Phone #</span>
+
+
+                    <span id="Client_PrimaryPhone_Phone" class="readonly data-element">(412) 000-2221</span>
+
+
+                </p>
+
+                <p class="row summary">
+                    <span class="label">Notes:</span>
+                        <span class="comments-textarea">
+
+<span class="data-element"></span></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panelBarItem">
+    <div class="header collapsed">
+        <div class="arrow collapse"></div>
+        <h4>Preferred Living Arrangements</h4>
+
+        <div class="form-action TaskDetailLink">
+            <a ng-hide="referralStatus == 'submitted'" class="ProfileEditLink"
+               href="#/initialreferral/editlivingarrangement" title="Edit Preferred Living Arrangements">Edit</a>
+        </div>
+    </div>
+    <div class="body" style="height: 0px; overflow: hidden; display: block;">
+        <div class="form-panelbar-content">
+            <h5>Current Address</h5>
+
+            <div class="fieldset-container-one">
+                <div class="row summary">
+                    <span class="label">Address Type:</span>
+
+
+                    <span class="data-element">Nursing Facility</span>
+                </div>
+                <div class="row summary">
+                    <span class="label">Address Description:</span>
+
+
+                    <span class="data-element">CATONSVILLE COMFORT CARE CENTER (test)</span>
+                </div>
+                <div class="row summary">
+                    <span class="label">Address:</span>
+
+                    <div class="data-element">
+                            <span class="data-element">
+
+
+<span class="data-element">Test Street 1</span><br>
+
+
+<span class="data-element">Baltimore</span><span>,</span>
+
+
+<span class="data-element">MD</span><span>,</span>
+
+
+<span class="data-element">20103</span><br>
+
+
+<span class="data-element">Baltimore</span>                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panelBarItem">
+    <div class="header collapsed">
+        <div class="arrow collapse"></div>
+        <h4>Waiver Information</h4>
+
+        <div class="form-action TaskDetailLink">
+            <a ng-hide="referralStatus == 'submitted'" class="ProfileEditLink"
+               href="#/initialreferral/editwaiver"
+               title="Edit Waiver Information">Edit</a>
+        </div>
+    </div>
+    <div class="body" style="height: 0px; overflow: hidden; display: block;">
+        <div class="form-panelbar-content">
+            <fieldset class="fieldset-container-one">
+                <legend class="legend-header-one">Representative</legend>
+                <nav class="header-link">
+                    <a href="/md/ltsstraining2/Ltss.Web/Clients/ClientContact/Edit/clientcontacts/321?clientId=clients%2F577">Edit</a>
+                    <a href="/md/ltsstraining2/Ltss.Web/Clients/ClientContact/DeactivateContact/"
+                       onclick="confirm({url: '/md/ltsstraining2/Ltss.Web/Clients/ClientContact/DeactivateContact/clientcontacts/321?clientId=clients%2F577',msg: 'Do you want to delete this record?'});return false;">Delete</a>
+                </nav>
+                <div class="row summary">
+                    <span class="label">Name:</span>
+
+
+                    <span class="data-element">Pear Smith</span>
+                </div>
+                <div class="row summary">
+                    <span class="label">Relationship:</span>
+
+
+                    <span class="data-element">Daughter</span>
+                </div>
+                <div class="row summary">
+                    <span class="label">Primary Phone #</span>
+
+
+                    <span id="item_ContactPhone_Phone" class="readonly data-element">(425) 887-9696</span>
+
+
+                </div>
+                <div class="row summary">
+                    <span class="label">Address:</span>
+
+
+                    <span class="data-element">111 mian st, Columbia, MD 21044-4677</span>
+                </div>
+
+                <div class="row summary">
+                    <span class="label">Guardian of Person:</span>
+                    <span class="data-element">Yes</span>
+
+                </div>
+                <div class="row summary">
+                    <span class="label">Guardian of Property:</span>
+                    <span class="data-element">Yes</span>
+
+                </div>
+                <div class="row summary">
+                            <span class="label">Receive copies of all letters about my eligibility and discuss my
+                                eligibility with the Department of Health and Mental Hygiene:</span>
+                    <span class="data-element">No</span>
+
+                </div>
+                <div class="row summary">
+                    <span class="label">Receive and complete my annual application form for me:</span>
+                    <span class="data-element">No</span>
+
+                </div>
+                <div class="row summary">
+                    <span class="label">Receive a Medical Assistance Card on my behalf:</span>
+                    <span class="data-element">No</span>
+
+                </div>
+
+            </fieldset>
+        </div>
+    </div>
+</div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".ProfileEditLink").click(function (event) {
+            event.stopPropagation();
+        });
+
+        $('.panelbar-task-style').panelBar();
+
+        $('.panelbar-formheader-style').panelBar();
+
+        $(".TaskDetailLink").click(function (event) {
+            event.stopPropagation();
+        });
+        ltssPanelBar.setup(".panelbar-task-style");
+        $(".panelbar-formheader-style").panelBar();
+        ltssPanelBar.setup(".panelbar-formheader-style");
+    });
+</script>
+</div>
+</div>
+</div>

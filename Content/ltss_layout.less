@@ -1,0 +1,247 @@
+﻿@import "ltss_base.less";
+
+/*LAYOUT
+====================================================================================================================================================================================================*/
+
+
+
+/*Application Layout
+----------------------------------------------------------*/
+#html
+{
+    .position-absolute;
+    .height-width;
+    .margin;
+    .padding;
+    .overflow;
+}
+
+#body
+{
+    .height-width;
+    .margin;
+    .outline;
+    .padding(0px, auto, 0px, auto);
+}
+
+#layoutWrapper
+{
+    .position-absolute;
+}
+
+#bodyContent
+{
+    .position-absolute(37px);
+    z-index: 0;
+}
+
+#body-content
+{
+    .position-absolute(42px);
+}
+
+#mainTabbedNav
+{
+    margin-top: 1px;
+}
+
+header
+{
+    .global-header-brush;
+    .margin;
+    min-height: 41px;
+    z-index: 999;
+}
+
+
+#sidenav
+{
+    .left-navigation-brush;
+    .position-absolute;
+    .overflow(auto);
+    .padding(0px, 0px, 10px);
+    width: 300px !important;
+    z-index:0;
+}
+
+#workspace
+{
+    .workspace
+    {
+        .position-absolute(0px, 0px, 0px, 301px);
+        .overflow;
+        .float-right;
+    }
+
+    .workspace-content-container,
+    .workspace-content-containerformylist,
+    .LeftNav-ListWorkspace-content-container,
+    .searchspace-content-container-one
+    {
+        .position-absolute(66px);
+        .overflow(auto);
+    }
+
+        .workspace-content-container .jspContainer .jspPane
+        {
+            width: 100% !important;
+        }
+
+    .full-workspace-one,
+    .full-workspace-two
+    {
+        .position-absolute;
+        .overflow;
+    }
+
+    .fullworkspace-content-container-one
+    {
+        .workspace-content-container-brush;
+        .padding(20px, 1%, 0px, 1%);
+    }
+
+    .fullworkspace-content-container-two
+    {
+        .workspace-content-container-brush;
+        .position-absolute(160px);
+        .overflow(auto);
+        .padding(20px, 1%, 0px, 1%);
+    }
+
+    .searchspace-content-container
+    {
+        .position-absolute(33px, 0px, 10px);
+        .overflow(auto);
+    }
+
+    .LeftNav-Fixed-Workarea
+    {
+        .workspace-content-container-brush;
+        .position-absolute(146px);
+        .overflow(auto);
+    }
+
+    .Client-LeftNav-Fixed-Workarea
+    {
+        .workspace-content-container-brush;
+        .position-absolute(-1px);
+        .overflow(auto);
+        .padding(0px, 20px);
+    }
+}
+
+.fullworkspace-content-container
+{
+    .position-absolute(110px);
+    .overflow(auto);
+
+    .twelve.columns
+    {
+        .margin;
+        width:100% !important;
+    }
+}
+
+
+
+/*Sections, Containers & Wrappers
+----------------------------------------------------------*/
+
+.content-container
+{
+    .margin;
+    .padding;
+    .height-width;
+}
+
+.content-container-wrapper
+{
+    .position-absolute(94px);
+    .margin;
+    .padding;
+    .height-width(auto);
+}
+
+.content-wrapper
+{
+    .margin;
+}
+
+.main-content-container
+{
+    .position-absolute(60px, 0px, 30px);
+    .margin;
+    .height-width(auto);
+}
+
+.workspacenav-container
+{
+    position: absolute;
+    top: 37px;
+    left: 0px;
+    right: 0px;
+    min-height: 110px;
+    z-index: 1;
+}
+
+.sidenav-header-container
+{
+    height: 30px;
+    width: 100%;
+}
+
+.ClientSummaryPanelOne-Wrapper
+{
+    .position-absolute(0px, 0px, 33%);
+    .overflow;
+}
+
+.ClientSummaryPanelTwo-Wrapper
+{
+    .position-absolute(66%);
+    .overflow;
+}
+
+    .ClientSummaryPanelTwo-Wrapper .selection-summaryinfo
+    {
+        .padding(2px);
+    }
+
+.threepanel-workspace-container-one
+{
+    .workspace-content-container-brush;
+    .position-absolute(66px, 0px, 6px);
+    .overflow(auto);
+}
+
+.threepanel-workspace-container-two
+{
+    .workspace-content-container-brush;
+    .position-absolute(66px);
+    .overflow(auto);
+}
+
+.threepanel-workspace-container-three
+{
+    .workspace-content-container-brush;
+    .position-absolute(67px);
+    .overflow(auto);
+}
+
+.ClientSummaryPanelTwo-Wrapper .threepanel-workspace-container-two
+{
+    .position-absolute(88px);
+}
+
+.column-left,
+.column-right
+{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+div.indent
+{
+    padding-left: 20px;
+}

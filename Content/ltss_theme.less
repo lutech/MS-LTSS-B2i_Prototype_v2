@@ -1,0 +1,388 @@
+﻿
+
+/*Introduction
+====================================================
+The <code>ltss_theme.css</code> file is compiled from it's respective <code>ltss_theme.less</code> file located in the project source code. It is a library of color swatches and brushes that are meant to be used as <code>mixins</code> for components & elements found in the following LESS files only:
+
++   <code>ltss_styles.less</code>
++   <code>ltss_base.less</code>
++   <code>ltss_layout.less</code>
++   <code>ltss_modules.less</code>
+     
+**WARNING: Do not attempt to use the following variables and classes directly in the HTML Markup!!!**
+*/
+
+/*
+Color Palette
+----------------------------------------------------
+    
+The LTSS color palette consists of the following types of color fills:
+
+
++   Grayscale tones
++   Primary theme colors
++   Accent colors
++   Informational & feedback colors
++   Gradient fills
+
+
+<pre>
+    <code>
+
+            <div class="test"></div>
+
+    </code>
+</pre>
+*/
+
+/*
+Grayscale Tones
+----------------------------------------------------
+
+The *grayscale tones* are intended for UI elements that will likely never change from grayscale. Examples are drop-shadows, box-shadows, text-shadows, borders, etc.
+
+<div style="background-color: #333; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @gray-tone-one: #333;
+</div>
+<div style="background-color: #666; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @gray-tone-two: #666;
+</div>
+<div style="background-color: #999; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @gray-tone-three: #999;
+</div>
+<div style="background-color: #ccc; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @gray-tone-four: #ccc;
+</div>
+<div style="background-color: #ddd; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @gray-tone-five: #ddd;
+</div>
+<div style="background-color: #eee; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @gray-tone-six: #eee;
+</div>
+
+**Note:** Since *Black* and *White* are definitive, there is no need for them to be a variable. Thus, they have been intentionally excluded from the mixins. For implementation, simply use the Black <code>#000</code> and White <code>#fff</code> hex codes.
+*/
+
+@gray-tone-one: #333;
+@gray-tone-two: #666;
+@gray-tone-three: #999;
+@gray-tone-four: #ccc;
+@gray-tone-five: #ddd;
+@gray-tone-six: #eee;
+
+
+/*
+Dominant Colors
+----------------------------------------------------
+
+The *dominant colors* are intended for layouts, containers, wrappers, etc. They are primarily used as the background and border colors of the application layout.
+
+<div style="background-color: #333; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @primary-color-one: #333;
+</div>
+<div style="background-color: #666; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @primary-color-two: #666;
+</div>
+<div style="background-color: #999; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @primary-color-three: #999;
+</div>
+<div style="background-color: #ccc; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @primary-color-four: #ccc;
+</div>
+<div style="background-color: #ddd; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @primary-color-five: #ddd;
+</div>
+<div style="background-color: #eee; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @primary-color-six: #eee;
+</div>
+
+*/
+@primary-color-one: #333;
+@primary-color-two: #666;
+@primary-color-three: #999;
+@primary-color-four: #ccc;
+@primary-color-five: #ddd;
+@primary-color-six: #eee;
+
+/*
+Complementary Colors
+----------------------------------------------------
+
+The *complimentary colors* are intended for UI elements that require visual emphasis. Or in other words, to stand out from the supporting *dominant colors* of the application. Some examples are text, headers, footers, borders, icons, etc.
+
+
+<div style="background-color: #044272; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-one: #044272;
+</div>
+<div style="background-color: #0063a7; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-two: #0063a7;
+</div>
+<div style="background-color: #2B7BB4; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-three: #2B7BB4;
+</div>
+<div style="background-color: #249dcc; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-four: #249dcc;
+</div>
+<div style="background-color: #1683E0; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-five: #1683E0;
+</div>
+
+*/
+@accent-color-one: #044272;
+@accent-color-two: #0C5D96;
+@accent-color-three: #2B7BB4;
+@accent-color-four: #249dcc;
+@accent-color-five: #1683E0;
+
+@focus-color-one: #1593FF;
+@focus-color-two: #427cc2;
+
+@warning-color: #FF9900;
+@success-color: #3CB95A;
+@danger-color: #ff0000;
+@highlight-color: #FFFF99;
+@action-color: #1683E0;
+@info-color: #2f96b4;
+
+@shadow-color: (rgba(red(@gray-tone-one), green(@gray-tone-one), blue(@gray-tone-one), 0.6));
+
+@alternate-row-color-one: (rgba(red(@accent-color-one), green(@accent-color-one), blue(@accent-color-one), 0.04));
+@alternate-row-border-color-one: (rgba(red(@accent-color-one), green(@accent-color-one), blue(@accent-color-one), 0.1));
+
+@actionlink-color: @accent-color-two;
+@actionlink-visited-color: @accent-color-two;
+@actionlink-border-color: (rgba(red(@actionlink-color), green(@actionlink-color), blue(@actionlink-color), 0.10));
+
+@hover-color-one: (rgba(red(@actionlink-color), green(@actionlink-color), blue(@actionlink-color), 0.12));
+@active-color-one: @primary-color-two;
+@selected-color-one: @primary-color-two;
+
+@hover-color-two: @primary-color-six;
+@active-color-two: @primary-color-two;
+@selected-color-two: @primary-color-two;
+
+@actionlink-color-two: @accent-color-two;
+@actionlink-visited-color-two: @accent-color-two;
+@actionlink-border-color-two: (rgba(red(@actionlink-color), green(@actionlink-color), blue(@actionlink-color), 0.10));
+
+
+
+.background-base-color-one
+{
+    background: @primary-color-one;
+}
+
+.background-base-color-two
+{
+    background: @primary-color-two;
+}
+
+.background-base-color-three
+{
+    background: @primary-color-three;
+}
+
+.background-base-color-four
+{
+    background: @primary-color-four;
+}
+
+.background-base-color-five
+{
+    background: @primary-color-five;
+}
+
+.background-base-color-six
+{
+    background: @primary-color-six;
+}
+
+.text-base-color-one
+{
+    color: @primary-color-one;
+}
+
+.text-accent-color-one
+{
+    color: @accent-color-one;
+}
+
+.text-accent-color-two
+{
+    color: @accent-color-two;
+}
+
+.text-accent-color-three
+{
+    color: @accent-color-three;
+}
+
+.text-shadow(@horizontal-offset: 0px, @vertical-offset: 1px, @blur-distance: 0px, @shadow-color: #fff)
+{
+    -webkit-text-shadow: @arguments;
+    text-shadow: @arguments;
+}
+
+.border(@border-color: @gray-tone-three, @border: 1px)
+{
+    border: @border solid @border-color;
+}
+
+.border-top(@border-color: @gray-tone-three)
+{
+    border-top: 1px solid @border-color;
+}
+
+.border-bottom(@border-color: @gray-tone-three)
+{
+    border-bottom: 1px solid @border-color;
+}
+
+.border-sides(@border-color: @gray-tone-three)
+{
+    border-left: 1px solid @border-color;
+    border-right: 1px solid @border-color;
+}
+
+.box-shadow(@horizontal-offset: 0px, @vertical-offset: 0px, @blur-distance: 7px, @blur-spread: 0px, @box-shadow-color: @shadow-color)
+{
+    -moz-box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.box-shadow-inset(@inset: inset, @horizontal-offset: 0px, @vertical-offset: 0px, @blur-distance: 7px, @blur-spread: 0px, @box-shadow-color: @shadow-color)
+{
+    -moz-box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.drop-shadow-background-top(@background-color: transparent)
+{
+    background: @background-color url(images/workspace_gradient.png) repeat-x;
+}
+
+.drop-shadow-background-bottom(@background-color: transparent)
+{
+    background: @background-color url(images/tabnav_gradient.png) 0% 100% repeat-x;
+}
+
+.two-tone-gradient(@color-1: @primary-color-six, @color-2: @primary-color-four, @color-1-alpha: 1, @color-2-alpha: 1, @color-stop-1: 0%, @color-stop-2: 75%)
+{
+    @quote: ~"'";
+    @ms-color-1: @quote@color-1@quote;
+    @ms-color-2: @quote@color-2@quote;
+    background: @color-1; /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(red(@color-1), green(@color-1), blue(@color-1), @color-1-alpha) @color-stop-1 rgba(red(@color-2), green(@color-2), blue(@color-2), @color-2-alpha) @color-stop-2); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@color-stop-1, rgba(red(@color-1), green(@color-1), blue(@color-1), @color-1-alpha)), color-stop(@color-stop-2, rgba(red(@color-2), green(@color-2), blue(@color-2), @color-2-alpha))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(red(@color-1), green(@color-1), blue(@color-1), @color-1-alpha) @color-stop-1 rgba(red(@color-2), green(@color-2), blue(@color-2), @color-2-alpha) @color-stop-2); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(red(@color-1), green(@color-1), blue(@color-1), @color-1-alpha) @color-stop-1, rgba(red(@color-2), green(@color-2), blue(@color-2), @color-2-alpha) @color-stop-2); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(red(@color-1), green(@color-1), blue(@color-1), @color-1-alpha) @color-stop-1, rgba(red(@color-2), green(@color-2), blue(@color-2), @color-2-alpha) @color-stop-2); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(red(@color-1), green(@color-1), blue(@color-1), @color-1-alpha) @color-stop-1, rgba(red(@color-2), green(@color-2), blue(@color-2), @color-2-alpha) @color-stop-2); /* W3C */
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorStr= @ms-color-1, EndColorStr= @ms-color-2);*/ /* IE6,IE7 */
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr= "@color-1", EndColorStr="@color-2")";*/ /* IE8 */
+    
+}
+
+.two-tone-gradient-inverse(@color-1: (@primary-color-five - 5%), @color-2: (@primary-color-five + 5%), @color-1-alpha: 1, @color-2-alpha: 1, @color-stop-1: 0%, @color-stop-2: 100%)
+{
+    @quote: ~"'";
+    @ms-color-1: @quote@color-1@quote;
+    @ms-color-2: @quote@color-2@quote;
+    background: @color-1; /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(red(@color-1), green(@color-1), blue(@color-1), @color-1-alpha) @color-stop-1 rgba(red(@color-2), green(@color-2), blue(@color-2), @color-2-alpha) @color-stop-2); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@color-stop-1, rgba(red(@color-1), green(@color-1), blue(@color-1), @color-1-alpha)), color-stop(@color-stop-2, rgba(red(@color-2), green(@color-2), blue(@color-2), @color-2-alpha))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(red(@color-1), green(@color-1), blue(@color-1), @color-1-alpha) @color-stop-1 rgba(red(@color-2), green(@color-2), blue(@color-2), @color-2-alpha) @color-stop-2); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(red(@color-1), green(@color-1), blue(@color-1), @color-1-alpha) @color-stop-1, rgba(red(@color-2), green(@color-2), blue(@color-2), @color-2-alpha) @color-stop-2); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(red(@color-1), green(@color-1), blue(@color-1), @color-1-alpha) @color-stop-1, rgba(red(@color-2), green(@color-2), blue(@color-2), @color-2-alpha) @color-stop-2); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(red(@color-1), green(@color-1), blue(@color-1), @color-1-alpha) @color-stop-1, rgba(red(@color-2), green(@color-2), blue(@color-2), @color-2-alpha) @color-stop-2); /* W3C */
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorStr= @ms-color-1, EndColorStr= @ms-color-2);*/ /* IE6,IE7 */
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr= "@color-1", EndColorStr="@color-2")";*/ /* IE8 */
+}
+
+.glossy-background-brush(@color-1: @gray-tone-one)
+{
+    @quote: ~"'";
+    @ms-color-1: @quote lighten(@color-1, 20%) @quote;
+    @ms-color-2: @quote @color-1 @quote;
+    background: #6d6f70 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, lighten(@color-1, 20%) 0%, @color-1 50%, darken(@color-1, 10%) 51%, darken(@color-1, 20%) 100%) !important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, lighten(@color-1, 20%) ), color-stop(50%, @color-1 ), color-stop(51%, darken(@color-1, 10%) ), color-stop(100%, darken(@color-1, 20%) )) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, lighten(@color-1, 20%) 0%, @color-1 50%, darken(@color-1, 10%) 51%, darken(@color-1, 20%) 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, lighten(@color-1, 20%) 0%, @color-1 50%, darken(@color-1, 10%) 51%, darken(@color-1, 20%) 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, lighten(@color-1, 20%) 0%, @color-1 50%, darken(@color-1, 10%) 51%, darken(@color-1, 20%) 100%) !important; /* IE10+ */
+    background: linear-gradient(to bottom, lighten(@color-1, 20%) 0%, @color-1 50%, darken(@color-1, 10%) 51%, darken(@color-1, 20%) 100%) !important; /* W3C */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@ms-color-1, endColorstr=@ms-color-2,GradientType=0 ) !important;*/ /* IE6-9 */
+}
+
+.outline(@outline: none)
+{
+    outline: @outline;
+}
+
+
+/*End Common Brush Mixins*/
+
+
+/*Layout Brushes
+----------------------------------------------------------*/
+.global-header-brush
+{
+    .two-tone-gradient(@accent-color-two, @accent-color-one, 1, 1, 0%, 80%);
+    border: 1px solid @accent-color-one;
+}
+
+.left-navigation-brush
+{
+    border-right: 1px solid @gray-tone-three;
+    background-color: #ddd;
+}
+
+.workspace-content-container-brush
+{
+    .box-shadow-inset;
+    background: #C2C2C2;
+}
+
+.form-background-brush
+{
+    background: lighten(@primary-color-six, 100%);
+}
+
+.form-read-only-background-brush
+{
+    background: darken(@primary-color-six, 4%);
+}
+
+.workspace-background-brush
+{
+    background: @primary-color-six;
+}
+
+/*Client Summary Panel Brushes
+----------------------------------------------------------*/
+@client-summary-body-color: #f3f3f3;
+
+.client-summary-header-brush
+{
+    background-color: #f9f9f9;
+}
+
+
+/*CSS TO DO: Consolidate all Workspace-Content-Containers and get rid of these*/
+
+#workspace .workspace-content-containerformylist
+{
+    .border-sides;
+    .box-shadow-inset;
+    background: #C2C2C2;
+}
+
+
+.ClientSummaryPanelTwo-Wrapper .selection-summaryinfo
+{
+    .border-top;
+}
+/*End*/
+

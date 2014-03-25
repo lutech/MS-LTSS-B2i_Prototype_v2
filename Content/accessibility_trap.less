@@ -1,0 +1,11 @@
+﻿@import "ltss_theme.less";
+
+/*This will render a Red background on inputs that have Disabled instead of Read-only attributes.*/
+input[type="text"][disabled="disabled"],
+textarea[disabled="disabled"],
+select[disabled="disabled"],
+.k-dropdown .k-dropdown-wrap [disabled="disabled"],
+.k-combobox .k-dropdown-wrap [disabled="disabled"]
+{
+	background: lighten(@danger-color, 10%) !important;
+}

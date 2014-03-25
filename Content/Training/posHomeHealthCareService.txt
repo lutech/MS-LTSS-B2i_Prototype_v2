@@ -1,0 +1,108 @@
+﻿{
+	"IsBeingEdited" : false,
+	"SharingClient" : {
+		"ProfileLink" : "/webapp/CasePrograms/CaseProgram/ClientSummary/?clientId=undefined"
+	},
+	"CanEmergencyBackupBill" : false,
+	"CanEditRate" : true,
+	"IsSharedAttendantCare" : false,
+	"IsTransitionService" : false,
+	"IsTransitionServiceTypeOther" : false,
+	"IsNurseMonitoring" : false,
+	"IsMfpFlexibleFunds" : false,
+	"ServiceDataId" : "patch/1/1/2014/114",
+	"ServiceName" : "Home Health Care",
+	"PlanOfServiceType" : {
+		"Name" : "State Plan Service"
+	},
+	"ProviderFacilityLocationId" : "locations/-1",
+	"ProviderLocationName" : "Assisted Living Facility Baltimore 1",
+	"ProviderLocationNumber" : "555510100",
+	"ProviderRequiredForSubmit" : false,
+	"UserInterfaceType" : {
+		"Name" : "Hours Per Day"
+	},
+	"TemplateToUse" : "Hours Per Day",
+	"FrequencyDataList" : [{
+			"RateDefault" : "0.00",
+			"MaximumRate" : "1000.00",
+			"UnitDefault" : 0,
+			"MaximumUnit" : 168,
+			"FrequencyDefault" : 0,
+			"MaximumFrequency" : 52,
+			"FrequencyType" : {
+				"Name" : "Weekly",
+				"DisplayName" : "Weekly"
+			},
+			"CalculationType" : "UnitRateFrequency",
+			"RateDisplayText" : "",
+			"UnitDisplayText" : "",
+			"FrequencyDisplayText" : "",
+			"Comments" : "",
+			"Id" : "frequencydatas/1252",
+			"PreCalculatedUnitsMaximum" : 0,
+			"HoursPerDayMaximum" : 24,
+			"DaysPerWeekMaximum" : 7,
+			"OtherHoursMaximum" : 0,
+			"OtherItemsMaximum" : 0,
+			"OtherDaysMaximum" : 0
+		}
+	],
+	"FrequencyType" : {
+		"Name" : "Weekly",
+		"DisplayName" : "Weekly"
+	},
+	"SelectedFrequencyData" : {
+		"RateDefault" : "0.00",
+		"MaximumRate" : "1000.00",
+		"UnitDefault" : 0,
+		"MaximumUnit" : 168,
+		"FrequencyDefault" : 0,
+		"MaximumFrequency" : 52,
+		"FrequencyType" : {
+			"Name" : "Weekly",
+			"DisplayName" : "Weekly"
+		},
+		"CalculationType" : "UnitRateFrequency",
+		"RateDisplayText" : "",
+		"UnitDisplayText" : "",
+		"FrequencyDisplayText" : "",
+		"Comments" : "",
+		"Id" : "frequencydatas/1252",
+		"PreCalculatedUnitsMaximum" : 0,
+		"HoursPerDayMaximum" : 24,
+		"DaysPerWeekMaximum" : 7,
+		"OtherHoursMaximum" : 0,
+		"OtherItemsMaximum" : 0,
+		"OtherDaysMaximum" : 0
+	},
+	"RandomTimePeriodTemplate" : "Hours Per Week Subtemplate",
+	"RandomTimePeriodUnitFactorTemplate" : "Hours Per Week Unit Factor Subtemplate",
+	"DayUnitsPerYearTemplate" : "Days Per Week Subtemplate",
+	"OtherTemplate" : "Other Weekly Subtemplate",
+	"Rate" : "5.52",
+	"RateFullDisplayText" : "(max value is $1,000.00)",
+	"Units" : 0,
+	"UnitsFullDisplayText" : "(max value is 168)",
+	"Frequency" : "15",
+	"FrequencyFullDisplayText" : "(max value is 52)",
+	"PreCalculatedUnitsDisplayText" : "",
+	"HoursPerDayDisplayText" : "(max value is 24)",
+	"DaysPerWeekDisplayText" : "(max value is 7)",
+	"CalculationType" : "HoursPerDay",
+	"CalculateUnitsBasedOn" : "HoursPerDayAndNumberOfDaysPerWeek",
+	"UseDailyChart" : false,
+	"WeeklyServiceHours" : null,
+	"UnitsHoursPerDay" : 5,
+	"UnitsDaysPerWeek" : "6",
+	"HoursPerWeek" : 30,
+	"UnitsFactor" : 0,
+	"PreCalculatedUnits" : 0,
+	"UnitsReadonly" : 30,
+	"ItemDescription" : null,
+	"UnitType" : {},
+	"OtherServiceUnitsFullDisplayText" : "(max value is 168)",
+	"AnnualTotal" : "2484.00",
+	"ShouldCalculateTotals" : true,
+	"canClearProvider" : true
+}

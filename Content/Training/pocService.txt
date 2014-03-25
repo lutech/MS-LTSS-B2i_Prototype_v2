@@ -1,0 +1,153 @@
+﻿{
+    "IsBeingEdited" : false,
+    "SharingClient" : {
+        "ProfileLink" : "/sites/Dev2/Ltss.Web/CasePrograms/CaseProgram/ClientSummary/?clientId=undefined"
+    },
+    "IsSharedAttendantCare" : false,
+    "HideFrequencyTypeSection" : false,
+    "IsTransitionService" : false,
+    "IsTransitionServiceTypeOther" : false,
+    "ServiceDataId" : "patch/1/1/2014/33",
+    "ServiceName" : "Consumer Training",
+    "PlanOfCareType" : {
+        "Name" : "Community First Choice"
+    },
+    "UserInterfaceType" : {
+        "Name" : "Random Time Period Unit Factor"
+    },
+    "TemplateToUse" : "Random Time Period Unit Factor",
+    "FrequencyDataList" : [{
+            "UnitDefault" : 0,
+            "MaximumUnit" : 196,
+            "FrequencyDefault" : 0,
+            "MaximumFrequency" : 52,
+            "FrequencyType" : {
+                "Name" : "Daily",
+                "DisplayName" : "Daily"
+            },
+            "CalculationType" : "UnitRateFrequency",
+            "UnitDisplayText" : "",
+            "FrequencyDisplayText" : "",
+            "Comments" : "",
+            "Id" : "frequencydatas/36569",
+            "PreCalculatedUnitsMaximum" : 49,
+            "HoursPerDayMaximum" : 7,
+            "DaysPerWeekMaximum" : 7,
+            "OtherHoursMaximum" : 0,
+            "OtherItemsMaximum" : 0,
+            "OtherDaysMaximum" : 0
+        }, {
+            "UnitDefault" : 0,
+            "MaximumUnit" : 196,
+            "FrequencyDefault" : 0,
+            "MaximumFrequency" : 52,
+            "FrequencyType" : {
+                "Name" : "Weekly",
+                "DisplayName" : "Weekly"
+            },
+            "CalculationType" : "UnitRateFrequency",
+            "UnitDisplayText" : "",
+            "FrequencyDisplayText" : "",
+            "Comments" : "",
+            "Id" : "frequencydatas/36570",
+            "PreCalculatedUnitsMaximum" : 49,
+            "HoursPerDayMaximum" : 7,
+            "DaysPerWeekMaximum" : 0,
+            "OtherHoursMaximum" : 0,
+            "OtherItemsMaximum" : 0,
+            "OtherDaysMaximum" : 0
+        }, {
+            "UnitDefault" : 0,
+            "MaximumUnit" : 868,
+            "FrequencyDefault" : 0,
+            "MaximumFrequency" : 12,
+            "FrequencyType" : {
+                "Name" : "Monthly",
+                "DisplayName" : "Monthly"
+            },
+            "CalculationType" : "UnitRateFrequency",
+            "UnitDisplayText" : "",
+            "FrequencyDisplayText" : "",
+            "Comments" : "",
+            "Id" : "frequencydatas/36571",
+            "PreCalculatedUnitsMaximum" : 217,
+            "HoursPerDayMaximum" : 0,
+            "DaysPerWeekMaximum" : 0,
+            "OtherHoursMaximum" : 0,
+            "OtherItemsMaximum" : 0,
+            "OtherDaysMaximum" : 0
+        }, {
+            "UnitDefault" : 0,
+            "MaximumUnit" : 10220,
+            "FrequencyDefault" : 0,
+            "MaximumFrequency" : 1,
+            "FrequencyType" : {
+                "Name" : "Annual",
+                "DisplayName" : "Annual"
+            },
+            "CalculationType" : "UnitRateFrequency",
+            "UnitDisplayText" : "",
+            "FrequencyDisplayText" : "",
+            "Comments" : "",
+            "Id" : "frequencydatas/36572",
+            "PreCalculatedUnitsMaximum" : 2555,
+            "HoursPerDayMaximum" : 0,
+            "DaysPerWeekMaximum" : 0,
+            "OtherHoursMaximum" : 0,
+            "OtherItemsMaximum" : 0,
+            "OtherDaysMaximum" : 0
+        }
+    ],
+    "FrequencyType" : {
+        "Name" : "Daily",
+        "DisplayName" : "Daily"
+    },
+    "SelectedFrequencyData" : {
+        "UnitDefault" : 0,
+        "MaximumUnit" : 196,
+        "FrequencyDefault" : 0,
+        "MaximumFrequency" : 52,
+        "FrequencyType" : {
+            "Name" : "Daily",
+            "DisplayName" : "Daily"
+        },
+        "CalculationType" : "UnitRateFrequency",
+        "UnitDisplayText" : "",
+        "FrequencyDisplayText" : "",
+        "Comments" : "",
+        "Id" : "frequencydatas/36569",
+        "PreCalculatedUnitsMaximum" : 49,
+        "HoursPerDayMaximum" : 7,
+        "DaysPerWeekMaximum" : 7,
+        "OtherHoursMaximum" : 0,
+        "OtherItemsMaximum" : 0,
+        "OtherDaysMaximum" : 0
+    },
+    "RandomTimePeriodTemplate" : "Hours Per Day Subtemplate",
+    "RandomTimePeriodUnitFactorTemplate" : "Hours Per Day Unit Factor Subtemplate",
+    "DayUnitsPerYearTemplate" : "Unknown",
+    "OtherTemplate" : "Unknown",
+    "Units" : 0,
+    "UnitsFullDisplayText" : "(max value is 196)",
+    "Frequency" : 0,
+    "FrequencyFullDisplayText" : "(max value is 52)",
+    "UnitsFullLabelText" : "undefined undefined",
+    "FrequencyFullLabelText" : "undefined undefined",
+    "PreCalculatedUnitsDisplayText" : "(max value is 49)",
+    "HoursPerDayDisplayText" : "(max value is 7)",
+    "DaysPerWeekDisplayText" : "(max value is 7)",
+    "CalculationType" : "UnitFactorRateFrequencyHoursPerDay",
+    "CalculateUnitsBasedOn" : "HoursPerDayAndNumberOfDaysPerWeek",
+    "UseDailyChart" : false,
+    "WeeklyServiceHours" : null,
+    "UnitsHoursPerDay" : 0,
+    "UnitsDaysPerWeek" : 0,
+    "HoursPerWeek" : 0,
+    "UnitsFactor" : 4,
+    "PreCalculatedUnits" : 0,
+    "UnitsReadonly" : 0,
+    "ItemDescription" : null,
+    "UnitType" : {},
+    "OtherServiceUnitsFullDisplayText" : "(max value is 196)",
+    "ShouldCalculateTotals" : true
+}

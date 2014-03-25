@@ -1,0 +1,209 @@
+/*Introduction
+====================================================
+The <code>ltss_theme.css</code> file is compiled from it's respective <code>ltss_theme.less</code> file located in the project source code. It is a library of color swatches and brushes that are meant to be used as <code>mixins</code> for components & elements found in the following LESS files only:
+
++   <code>ltss_styles.less</code>
++   <code>ltss_base.less</code>
++   <code>ltss_layout.less</code>
++   <code>ltss_modules.less</code>
+     
+**WARNING: Do not attempt to use the following variables and classes directly in the HTML Markup!!!**
+*/
+/*
+Color Palette
+----------------------------------------------------
+    
+The LTSS color palette consists of the following types of color fills:
+    
++   Grayscale tones
++   Primary theme colors
++   Accent colors
++   Informational & feedback colors
++   Gradient fills
+
+
+<pre>
+    <code>
+
+            <div class="test"></div>
+
+    </code>
+</pre>
+*/
+/*
+Grayscale Tones
+----------------------------------------------------
+
+The *grayscale tones* are intended for UI elements that will likely never change from grayscale. Examples are drop-shadows, box-shadows, text-shadows, borders, etc.
+
+<div style="background-color: #333; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @gray-tone-one: #333;
+</div>
+<div style="background-color: #666; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @gray-tone-two: #666;
+</div>
+<div style="background-color: #999; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @gray-tone-three: #999;
+</div>
+<div style="background-color: #ccc; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @gray-tone-four: #ccc;
+</div>
+<div style="background-color: #ddd; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @gray-tone-five: #ddd;
+</div>
+<div style="background-color: #eee; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @gray-tone-six: #eee;
+</div>
+
+**Note:** Since *Black* and *White* are definitive, there is no need for them to be a variable. Thus, they have been intentionally excluded from the mixins. For implementation, simply use the Black <code>#000</code> and White <code>#fff</code> hex codes.
+*/
+/*
+Dominant Colors
+----------------------------------------------------
+
+The *dominant colors* are intended for layouts, containers, wrappers, etc. They are primarily used as the background and border colors of the application layout.
+
+<div style="background-color: #333; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @primary-color-one: #333;
+</div>
+<div style="background-color: #666; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @primary-color-two: #666;
+</div>
+<div style="background-color: #999; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @primary-color-three: #999;
+</div>
+<div style="background-color: #ccc; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @primary-color-four: #ccc;
+</div>
+<div style="background-color: #ddd; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @primary-color-five: #ddd;
+</div>
+<div style="background-color: #eee; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @primary-color-six: #eee;
+</div>
+
+*/
+/*
+Complementary Colors
+----------------------------------------------------
+
+The *complimentary colors* are intended for UI elements that require visual emphasis. Or in other words, to stand out from the supporting *dominant colors* of the application. Some examples are text, headers, footers, borders, icons, etc.
+
+
+<div style="background-color: #044272; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-one: #044272;
+</div>
+<div style="background-color: #0063a7; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-two: #0063a7;
+</div>
+<div style="background-color: #2B7BB4; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-three: #2B7BB4;
+</div>
+<div style="background-color: #249dcc; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-four: #249dcc;
+</div>
+<div style="background-color: #1683E0; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-five: #1683E0;
+</div>
+
+*/
+.background-base-color-one {
+  background: #333333;
+}
+.background-base-color-two {
+  background: #666666;
+}
+.background-base-color-three {
+  background: #999999;
+}
+.background-base-color-four {
+  background: #cccccc;
+}
+.background-base-color-five {
+  background: #dddddd;
+}
+.background-base-color-six {
+  background: #eeeeee;
+}
+.text-base-color-one {
+  color: #333333;
+}
+.text-accent-color-one {
+  color: #044272;
+}
+.text-accent-color-two {
+  color: #0c5d96;
+}
+.text-accent-color-three {
+  color: #2b7bb4;
+}
+/*End Common Brush Mixins*/
+/*Layout Brushes
+----------------------------------------------------------*/
+.global-header-brush {
+  background: #0c5d96;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #0c5d96 0% #044272 80%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0c5d96), color-stop(80%, #044272));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #0c5d96 0% #044272 80%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #0c5d96 0%, #044272 80%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #0c5d96 0%, #044272 80%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #0c5d96 0%, #044272 80%);
+  /* W3C */
+
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorStr= @ms-color-1, EndColorStr= @ms-color-2);*/
+  /* IE6,IE7 */
+
+  /*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr= "@color-1", EndColorStr="@color-2")";*/
+  /* IE8 */
+
+  border: 1px solid #044272;
+}
+.left-navigation-brush {
+  border-right: 1px solid #999999;
+  background-color: #ddd;
+}
+.workspace-content-container-brush {
+  -moz-box-shadow: inset 0px 0px 7px 0px rgba(51, 51, 51, 0.6);
+  -webkit-box-shadow: inset 0px 0px 7px 0px rgba(51, 51, 51, 0.6);
+  box-shadow: inset 0px 0px 7px 0px rgba(51, 51, 51, 0.6);
+  background: #C2C2C2;
+}
+.form-background-brush {
+  background: #ffffff;
+}
+.form-read-only-background-brush {
+  background: #e4e4e4;
+}
+.workspace-background-brush {
+  background: #eeeeee;
+}
+/*Client Summary Panel Brushes
+----------------------------------------------------------*/
+.client-summary-header-brush {
+  background-color: #f9f9f9;
+}
+/*CSS TO DO: Consolidate all Workspace-Content-Containers and get rid of these*/
+#workspace .workspace-content-containerformylist {
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+  -moz-box-shadow: inset 0px 0px 7px 0px rgba(51, 51, 51, 0.6);
+  -webkit-box-shadow: inset 0px 0px 7px 0px rgba(51, 51, 51, 0.6);
+  box-shadow: inset 0px 0px 7px 0px rgba(51, 51, 51, 0.6);
+  background: #C2C2C2;
+}
+.ClientSummaryPanelTwo-Wrapper .selection-summaryinfo {
+  border-top: 1px solid #999999;
+}
+/*End*/
